@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  	<title><%= @title %>: MyQuotable.com</title>
+  	<meta name="description" content="Store, Organize, Discover, and Share your favorite quotes"/>
+	<meta name="keywords" content="quotes, quotable, micro-blog, blog, social"/>
+	<link rel="alternate" type="application/rss+xml" title="Latest Quotables RSS" href="/rss/"/>
+
+	<%= stylesheet_link_tag 'scaffold' %>
+	<%= stylesheet_link_tag 'styles' %>
+	<%= javascript_include_tag :defaults %>
+
+</head>
+<body>
+<div id="container" style="margin: 0px auto; width: 750px;">
+	<div id="header">
+		<center>
+		<table width="100%" cellpadding="10" cellspacing="5" border="0">
+			<tr valign="top">
+				<td>
+					<img src="/images/logo.png"/>
+				</td>
+				<td width="490">
+					</font>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+<%= yield %>
+</div>
+
+<br />
+
+<div id="footer">
+<table cellpadding="5" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td align="left">
+			<span id="footer_text">
+				<%= link_to 'Sign Up', signup_path %>
+				<%= link_to 'Log In', login_path %>
+				<%= link_to 'How it Works', about_path %>
+				<%= link_to 'Blog', 'http://blog.peteonrails.com/' %>
+				<%=	link_to 'Terms', terms_path %>
+				<%= link_to 'Privacy Policy', privacy_path %>
+				<%= link_to 'Developer API', api_path %> 
+				<b><u><a href="mailto:pete@fasteragile.com">Found a bug?</b></u></a></span>
+		</td>
+		<td align="right">
+			<span id="footer_text">&copy; Copyright 2008 FasterAgile, Inc.</span>
+		</td>
+	</tr>
+</table>
+</div>
+
+<%# TODO: Add Google Analytics here. %>
+
+</body>
+</html>

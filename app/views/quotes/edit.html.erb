@@ -1,0 +1,40 @@
+<h1>Editing quote</h1>
+
+<% form_for(@quote) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :quote %><br />
+    <%= f.text_area :quote %>
+  </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_area :author %>
+  </p>
+  <p>
+    <%= f.label :quoted_by %><br />
+    <%= f.text_area :quoted_by %>
+  </p>
+  <p>
+    <%= f.label :quoted_at %><br />
+    <%= f.date_select :quoted_at %>
+  </p>
+  <p>
+    <%= f.label :copyright %><br />
+    <%= f.text_area :copyright %>
+  </p>
+  <p>
+    <%= f.label :quote_context %><br />
+    <%= f.text_area :quote_context %>
+  </p>
+  <p>
+    <%= f.label :author_title %><br />
+    <%= f.text_area :author_title %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @quote %> |
+<%= link_to 'Back', quotes_path %>
