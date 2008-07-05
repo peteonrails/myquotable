@@ -49,7 +49,7 @@ Rails::Initializer.run do |config|
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
     :session_key => '_myquotable_session',
-    :secret      => 'c21fd52173c1c1335f689cdba82bc04d7de135e19eadc22dcb25e03d52bb567041692e7231c94835855d8ca65e52474fb95d7a7b923c6deafc6db5229907631b'
+    :secret      => 'c21fd52173c1c1335f689cdba82bc04d7de135e1345g213234g9834523409812141692e7231c94835855d8ca65e52474fb95d7a7b923c6deafc6db5229907631b'
   }
 
   # Use the database for sessions instead of the cookie-based default,
@@ -64,4 +64,6 @@ Rails::Initializer.run do |config|
 
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector
+  config.active_record.observers = :user_observer
+  
 end
