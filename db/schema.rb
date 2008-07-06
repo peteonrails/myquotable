@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080705023146) do
+ActiveRecord::Schema.define(:version => 20080706171321) do
 
   create_table "quotes", :force => true do |t|
     t.text     "quote"
@@ -22,6 +22,24 @@ ActiveRecord::Schema.define(:version => 20080705023146) do
     t.integer  "user_id",       :limit => 11
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "private"
+  end
+
+  create_table "taggings", :force => true do |t|
+    t.integer  "tag_id",        :limit => 11
+    t.integer  "taggable_id",   :limit => 11
+    t.string   "taggable_type"
+    t.string   "context"
+    t.datetime "created_at"
+    t.integer  "tagger_id",     :limit => 11
+    t.string   "tagger_type"
+  end
+
+  add_index "taggings", ["tag_id"], :name => "index_taggings_on_tag_id"
+  add_index "taggings", ["taggable_id", "taggable_type", "context"], :name => "index_taggings_on_taggable_id_and_taggable_type_and_context"
+
+  create_table "tags", :force => true do |t|
+    t.string "name"
   end
 
   create_table "users", :force => true do |t|

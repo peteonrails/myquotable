@@ -1,1 +1,16 @@
-Homepage
+<% content_for :pagename do %>
+ Home
+<% end %>
+
+<div id="quotes_container">
+
+	<%= link_to 'Recent', root_path %> |
+	<%= link_to 'Popular', root_path %> |
+	<%= link_to 'Friends', root_path %> |
+	<%= link_to 'Sent to You', root_path %>
+
+	<% for @quote in @quotes %>
+		<%= render :partial => "quotes/quote" %>
+	<% end %>
+
+</div>

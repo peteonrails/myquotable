@@ -1,14 +1,23 @@
-<% form_tag session_path do -%>
-<p><label for="login">Login</label><br/>
-<%= text_field_tag 'login' %></p>
+<% content_for :pagename do %>
+ Log In
+<% end %>
 
-<p><label for="password">Password</label><br/>
-<%= password_field_tag 'password' %></p>
+<div id="message_block_container">
+	<div id="message_block_title">
+		Log In
+	</div>
+	<div id="message_block">
+		<% form_tag session_path do -%>
+			<p><label for="login">Login</label><br/>
+			<%= text_field_tag 'login' %></p>
 
-<!-- Uncomment this if you want this functionality
-<p><label for="remember_me">Remember me:</label>
-<%= check_box_tag 'remember_me' %></p>
--->
+			<p><label for="password">Password</label><br/>
+			<%= password_field_tag 'password' %></p>
 
-<p><%= submit_tag 'Log in' %></p>
-<% end -%>
+			<p><label for="remember_me">Remember me:</label>
+			<%= check_box_tag 'remember_me' %></p>
+	
+			<p><%= submit_tag 'Log in' %></p>
+		<% end -%>
+	</div>
+</div>

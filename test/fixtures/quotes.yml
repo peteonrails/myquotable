@@ -1,19 +1,66 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  quote: MyText
-  author: MyText
-  quoted_by: MyText
+  quote: Never so fake a quote were there as the one selected as the placeholder for this page. 
+  author: Peter Jackson
+  quoted_by: Peter Jackson
   quoted_at: 2008-07-04
-  copyright: MyText
-  quote_context: MyText
-  author_title: MyText
-
+  copyright: Peter Jackson
+  quote_context: while working on this site.
+  author_title: Developer of this site.
+  user: pete
+  
 two:
-  quote: MyText
-  author: MyText
-  quoted_by: MyText
+  quote: Really? WTF is that about?
+  author: Peter Jackson
+  quoted_by: Peter Jackson
   quoted_at: 2008-07-04
-  copyright: MyText
-  quote_context: MyText
-  author_title: MyText
+  copyright: Peter Jackson
+  quote_context: while working on this site.
+  author_title: Developer of this site.
+  user: pete
+
+three:
+    quote: I just love it when a plan comes together.
+    author: Hannibal
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    quote_context: in every episode of the A Team.
+    user: pete
+    
+four:
+    quote: That's what SHE said!
+    author: Sean Cook, and others.
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    copyright: Peter Jackson
+    quote_context: almost daily
+    private: true
+
+five:
+    user: pete
+    quote: This is a private quote. It should be private.
+    author: Peter Jackson
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    copyright: Peter Jackson
+    quote_context: while working on this site.
+    author_title: Developer of this site.
+    private: true
+    user: pete
+
+six: 
+    quote: I mean, I really think that I would expect somebody that's leading the country to have some kind of - some kind of courage physically, personally. 
+    author: James Stockdale
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: pete
+
+seven: 
+    quote: 	No, everybody knows I'm not a politician. 
+    author: James Stockdale
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: pete
+        
+    
