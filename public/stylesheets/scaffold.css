@@ -27,27 +27,59 @@ a:hover { color: #fff; background-color:#000; }
   display: table;
 }
 
-#header {
 
+#header {
+	border: 1px dotted #F00;
 }
 
 #header-left {
 	float: left;
+	border: 1px dotted #F00;
 }
 
 #header-right {
 	float: right;
+	margin-right: 10px;
+	border: 1px dotted #F00;
+}
+
+#logo {
+ 	background: url(/images/mqlogo.jpg);
+	height: 60px;
+	width: 150px;
+	float: left;
+	border: 1px dotted #F00;
+	margin-right: 10px;
+}
+
+#statusbar {
+	clear: both;
+	width: 100%;
+	background: #cfe0f0;
+	padding: 5px 10px 5px 10px;
+}
+
+#statusbar-left {
+	float: left;
+	width: 60%;
+}
+
+#searchbox {
+	float: right;
+	width: 30%;
 }
 
 #container {
 	min-height: 500px;
 	margin: 0px auto; 
-	width: 750px; 	
+	min-width: 750px; 	
 }
 
 #main-content {
 	padding-top: 10px;
 	clear: left;
+		
+	border: 2px dotted #F00;
 }
 
 #quote {
@@ -75,15 +107,18 @@ a:hover { color: #fff; background-color:#000; }
 
 
 #message_block_container {
+	float: center;
 	background: #cfe0f0; 
-	width: 500px; 
+	width: 800px; 
 	padding: 5px 5px 5px 5px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #message_block_title {
 	background: #EDF3FE; 
 	padding: 5px 10px 5px 10px; 
-	width: 480px; 
+	width: 780px; 
 	border-bottom: 1px dotted #ddd;
 	font-weight: bold;
 }
@@ -91,7 +126,7 @@ a:hover { color: #fff; background-color:#000; }
 #message_block {
 	background: #fff; 
 	padding: 5px 10px 5px 10px; 
-	width: 480px; 
+	width: 780px; 
 	border-bottom: 1px dotted #ddd;	
 }
 
@@ -104,6 +139,23 @@ a:hover { color: #fff; background-color:#000; }
 	font-size: 10px;
 }
 
+#message_block_left {
+	float: left;
+	width: 200px;
+}
+
+#message_block_right {
+	float: right;
+	width: 500px;
+	margin-top: 30px;
+}
+
+br#clearfix {
+	width: 100%;
+	clear: both;
+	margin: 0;
+	padding: .5em;
+}
 
 #errorExplanation {
   width: 400px;

@@ -3,11 +3,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  	<title><%= yield(:pagename) %>: MyQuotable.com</title>
-  	<meta name="description" content="Store, Organize, Discover, and Share your favorite quotes"/>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title><%= yield(:pagename) %>: MyQuotable.com</title>
+  <meta name="description" content="Store, Organize, Discover, and Share your favorite quotes"/>
 	<meta name="keywords" content="quotes, quotable, micro-blog, blog, social"/>
-	<link rel="alternate" type="application/rss+xml" title="Latest Quotables RSS" href="/rss/"/>
 
 	<%= stylesheet_link_tag 'scaffold' %>
 	<%= javascript_include_tag :defaults %>
@@ -17,6 +16,7 @@
 <div id="container">
 	<div id="header">
 		<div id="header-left">
+		  <div id="logo"></div>
 			<%= link_to 'Home', root_path %> |
 			<%= link_to 'Your Quotes', root_path %>			
 		</div>
@@ -27,6 +27,16 @@
 			<%= link_to 'How it Works', about_path %>
 			 	
 		</div>
+	</div>
+	
+	<div id="statusbar">
+	  <div id="statusbar-left">
+	    Status Bar: This is currently a placeholder
+	  </div>
+	  <div id="searchbox">
+	    <form><input type="text" value="Search" /> <select><option>All Quotes</option><option>My Quotes</option></select></form>
+	  </div>	  
+    <br id="clearfix" />
 	</div>
 	
 	<div id="main-content">
@@ -47,11 +57,11 @@
 			<span id="footer_text">
 				<%=	link_to 'Terms', terms_path %>
 				<%= link_to 'Privacy Policy', privacy_path %>
-				<%= link_to 'Developer API', api_path %> 
+				<%# link_to 'Developer API', api_path %> 
 				<b><u><a href="mailto:pete@fasteragile.com">Found a bug?</b></u></a></span>
 		</td>
 		<td align="right">
-			<span id="footer_text">&copy; Copyright 2008 FasterAgile, Inc.</span>
+			<span id="footer_text">&copy; Copyright 2008 MyQuotable.com</span>
 		</td>
 	</tr>
 </table>
