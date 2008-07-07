@@ -8,7 +8,7 @@
   <meta name="description" content="Store, Organize, Discover, and Share your favorite quotes"/>
 	<meta name="keywords" content="quotes, quotable, micro-blog, blog, social"/>
 
-	<%= stylesheet_link_tag 'scaffold' %>
+	<%= stylesheet_link_tag 'styles' %>
 	<%= javascript_include_tag :defaults %>
 
 </head>
@@ -17,8 +17,10 @@
 	<div id="header">
 		<div id="header-left">
 		  <div id="logo"></div>
-			<%= link_to 'Home', root_path %> |
-			<%= link_to 'Your Quotes', root_path %>			
+        <h1>MyQuotable: Share, Tag, Organize</h1>
+        <%= link_to 'Home', root_path %> | 
+        <%= link_to 'Your Quotes', root_path %> |
+  			<%= link_to("Post", new_quote_path) if logged_in? %>
 		</div>
 		
 		<div id="header-right">
@@ -31,7 +33,7 @@
 	
 	<div id="statusbar">
 	  <div id="statusbar-left">
-	    Status Bar: This is currently a placeholder
+	    <%= yield(:statusbar) %>
 	  </div>
 	  <div id="searchbox">
 	    <form><input type="text" value="Search" /> <select><option>All Quotes</option><option>My Quotes</option></select></form>
@@ -44,6 +46,8 @@
 	</div>
 	
 	<div id="sidebar">
+	  This is a mock sidebar specified in layout/application.html.erb. 
+	  
 		<%= yield(:sidebar) %>
 	</div>
 </div>
@@ -51,20 +55,16 @@
 <br />
 
 <div id="footer">
-<table cellpadding="5" cellspacing="0" border="0" width="100%">
-	<tr>
-		<td align="left">
-			<span id="footer_text">
-				<%=	link_to 'Terms', terms_path %>
-				<%= link_to 'Privacy Policy', privacy_path %>
-				<%# link_to 'Developer API', api_path %> 
-				<b><u><a href="mailto:pete@fasteragile.com">Found a bug?</b></u></a></span>
-		</td>
-		<td align="right">
-			<span id="footer_text">&copy; Copyright 2008 MyQuotable.com</span>
-		</td>
-	</tr>
-</table>
+  <div id="footer_nav">
+    <%=	link_to 'Terms', terms_path %>
+	  <%= link_to 'Privacy Policy', privacy_path %>
+	  <%# link_to 'Developer API', api_path %> 
+	  <b><u><a href="mailto:pete@fasteragile.com">Found a bug?</b></u></a></span>
+	</div>
+	
+	<div id="copyright">		
+		&copy; Copyright 2008 MyQuotable.com
+	</div>
 </div>
 
 <%# TODO: Add Google Analytics here. %>

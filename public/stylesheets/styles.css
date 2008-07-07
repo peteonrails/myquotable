@@ -29,18 +29,23 @@ a:hover { color: #fff; background-color:#000; }
 
 
 #header {
-	border: 1px dotted #F00;
+	font-weight: bold;
+	font-size: +2;
 }
 
 #header-left {
 	float: left;
-	border: 1px dotted #F00;
+	width: 500px;
+}
+
+#header-left h1 {
+	font-size: 16px;
+	margin-top: 0;
 }
 
 #header-right {
 	float: right;
 	margin-right: 10px;
-	border: 1px dotted #F00;
 }
 
 #logo {
@@ -48,7 +53,6 @@ a:hover { color: #fff; background-color:#000; }
 	height: 60px;
 	width: 150px;
 	float: left;
-	border: 1px dotted #F00;
 	margin-right: 10px;
 }
 
@@ -56,12 +60,13 @@ a:hover { color: #fff; background-color:#000; }
 	clear: both;
 	width: 100%;
 	background: #cfe0f0;
-	padding: 5px 10px 5px 10px;
+	padding: 5px 0px 5px 0px;
 }
 
 #statusbar-left {
 	float: left;
 	width: 60%;
+	margin-left: 10px;
 }
 
 #searchbox {
@@ -76,10 +81,10 @@ a:hover { color: #fff; background-color:#000; }
 }
 
 #main-content {
+	margin-left: 10px;
 	padding-top: 10px;
 	clear: left;
-		
-	border: 2px dotted #F00;
+	float: left;	
 }
 
 #quote {
@@ -93,17 +98,31 @@ a:hover { color: #fff; background-color:#000; }
 	background: #fff; 
 	padding: 5px 10px 5px 10px; 
 	width: auto; 
+	border-bottom: 1px dotted #ddd;			
 }
 
 #quote_author {
 	background: #fff; 
 	padding: 1px 10px 2px 10px; 
 	width: auto; 
-	border-top: 1px dotted #ddd;			
 	text-align: right;
 	font-style: italic;
 }
 
+#quote_author_input {
+	width: auto; 
+	text-align: right;
+	font-style: italic;
+	float: left;
+	margin-top: 6px;
+}
+
+#quote_context_input {
+	width: auto; 
+	text-align: right;
+	font-style: italic;
+	margin-top: 6px;
+}
 
 
 #message_block_container {
@@ -157,6 +176,12 @@ br#clearfix {
 	padding: .5em;
 }
 
+#sidebar {
+	float: right;
+	width: 300px;
+	border: 1px dotted #F00;
+}
+
 #errorExplanation {
   width: 400px;
   border: 2px solid red;
@@ -195,6 +220,17 @@ br#clearfix {
   color: #000;
   font-size: 11px;
   text-align: left;
+}
+
+#footer_nav {
+	float: left;
+	width: 60%;
+}
+
+#copyright {
+	text-align: right;
+	float: right;
+	width: 30%;
 }
 
 #footer a {

@@ -28264,3 +28264,2905 @@ ODQwYmJiYmEyZWY5OTI=--46af15e1b8962d0c078294b98269295861560183
 Rendering template within layouts/application
 Rendering sessions/new
 Completed in 0.00424 (235 reqs/sec) | Rendering: 0.00202 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SiteController#terms (for 127.0.0.1 at 2008-07-06 21:27:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDdhYTA3NjE3MGU5MWIxN2ExODQwYmJiYmEyZWY5
+OTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e17e76df21357254a9baabf1ae9061a72f35cdc1
+  Parameters: {"action"=>"terms", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/terms
+Completed in 0.00383 (261 reqs/sec) | Rendering: 0.00131 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/terms]
+
+
+Processing SiteController#privacy (for 127.0.0.1 at 2008-07-06 21:27:52) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlMDdhYTA3NjE3MGU5MWIxN2Ex
+ODQwYmJiYmEyZWY5OTI=--46af15e1b8962d0c078294b98269295861560183
+  Parameters: {"action"=>"privacy", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/privacy
+Completed in 0.00369 (271 reqs/sec) | Rendering: 0.00130 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/privacy]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-06 21:28:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDdhYTA3NjE3MGU5MWIxN2ExODQwYmJiYmEyZWY5
+OTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e17e76df21357254a9baabf1ae9061a72f35cdc1
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00416 (240 reqs/sec) | Rendering: 0.00197 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-07-06 21:28:04) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlMDdhYTA3NjE3MGU5MWIxN2Ex
+ODQwYmJiYmEyZWY5OTI=--46af15e1b8962d0c078294b98269295861560183
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"3e51412a68c6df63ac2a308f74422f2b9211b42b", "action"=>"create", "controller"=>"sessions", "password"=>"peterpw1", "login"=>"pete"}
+  [4;35;1mUser Load (0.001513)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'pete') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (0.012282)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/
+Completed in 0.01961 (50 reqs/sec) | DB: 0.01379 (70%) | 302 Found [http://localhost/session]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:28:05) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp
+biBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlG--2e0252f3be3ec6202ef8c02bb56dfc634d75e8d3
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001003)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.003343)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001750)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:28:05') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00203)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00004)
+  [4;36;1mUser Columns (0.002983)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001200)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03156 (31 reqs/sec) | Rendering: 0.00971 (30%) | DB: 0.01028 (32%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:29:04) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9nZ2Vk
+IGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CFQ6DGNzcmZfaWQiJTA3YWEw
+NzYxNzBlOTFiMTdhMTg0MGJiYmJhMmVmOTky--8498b3ff55dc889cc7eeb15e05877ae6663efed9
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001011)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012267)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001732)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:29:04') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00204)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002889)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001390)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03986 (25 reqs/sec) | Rendering: 0.01154 (28%) | DB: 0.01929 (48%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:29:35) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001097)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012152)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001676)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:29:35') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00208)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002861)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001443)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03717 (26 reqs/sec) | Rendering: 0.00880 (23%) | DB: 0.01923 (51%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:29:40) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001046)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012228)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001731)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:29:40') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00207)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00005)
+  [4;35;1mUser Columns (0.002865)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001400)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03736 (26 reqs/sec) | Rendering: 0.00879 (23%) | DB: 0.01927 (51%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:29:51) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001196)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012577)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001768)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:29:51') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00200)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002837)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001276)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03745 (26 reqs/sec) | Rendering: 0.00878 (23%) | DB: 0.01965 (52%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:30:09) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001082)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012128)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001851)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:30:09') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00213)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002919)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001404)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.10745 (9 reqs/sec) | Rendering: 0.00911 (8%) | DB: 0.01938 (18%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:31:08) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001115)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012701)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001763)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:31:08') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00204)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.003098)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001477)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03818 (26 reqs/sec) | Rendering: 0.00894 (23%) | DB: 0.02015 (52%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#terms (for 127.0.0.1 at 2008-07-06 21:31:15) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"terms", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/terms
+  [4;36;1mUser Columns (0.012630)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001481)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.02155 (46 reqs/sec) | Rendering: 0.00486 (22%) | DB: 0.01411 (65%) | 200 OK [http://localhost/terms]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:31:35) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001087)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012176)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001771)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:31:35') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00211)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00005)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002996)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001409)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.10864 (9 reqs/sec) | Rendering: 0.08016 (73%) | DB: 0.01944 (17%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:32:55) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001116)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012100)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001810)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:32:55') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00203)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002924)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001398)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03730 (26 reqs/sec) | Rendering: 0.00875 (23%) | DB: 0.01935 (51%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:39:10) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001117)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012077)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001872)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:39:10') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00205)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002752)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001420)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04067 (24 reqs/sec) | Rendering: 0.01162 (28%) | DB: 0.01924 (47%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:39:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001101)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012696)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001755)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:39:27') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00219)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.003160)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001422)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.11439 (8 reqs/sec) | Rendering: 0.01206 (10%) | DB: 0.02013 (17%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:39:33) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001091)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012226)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001866)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:39:33') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00204)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002915)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001415)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04043 (24 reqs/sec) | Rendering: 0.01168 (28%) | DB: 0.01951 (48%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:39:43) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001116)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012570)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001810)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:39:43') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00209)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002930)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001414)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04069 (24 reqs/sec) | Rendering: 0.01156 (28%) | DB: 0.01984 (48%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:40:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001052)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012011)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001667)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:40:50') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00212)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002942)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001409)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03850 (25 reqs/sec) | Rendering: 0.00929 (24%) | DB: 0.01908 (49%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:41:01) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001046)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012236)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001732)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:41:01') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00205)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002737)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001396)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03999 (25 reqs/sec) | Rendering: 0.01170 (29%) | DB: 0.01915 (47%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:41:10) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001075)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.011933)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001614)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:41:10') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00204)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002920)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001408)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04032 (24 reqs/sec) | Rendering: 0.01227 (30%) | DB: 0.01895 (46%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:41:32) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001079)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012248)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001677)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:41:32') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00217)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002841)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001419)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03767 (26 reqs/sec) | Rendering: 0.00902 (23%) | DB: 0.01926 (51%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:42:00) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001118)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012295)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001790)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:42:00') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00205)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002974)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001412)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04047 (24 reqs/sec) | Rendering: 0.01159 (28%) | DB: 0.01959 (48%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:42:39) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001106)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012983)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.002193)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:42:39') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00203)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002942)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001397)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04141 (24 reqs/sec) | Rendering: 0.01163 (28%) | DB: 0.02062 (49%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:43:11) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001074)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012273)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001709)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:43:11') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00208)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002945)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001441)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04067 (24 reqs/sec) | Rendering: 0.01199 (29%) | DB: 0.01944 (47%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:43:52) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001028)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012166)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001748)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:43:52') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00213)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002917)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001403)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03741 (26 reqs/sec) | Rendering: 0.00904 (24%) | DB: 0.01926 (51%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:44:08) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001097)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012276)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001735)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:44:08') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00208)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002734)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001424)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04059 (24 reqs/sec) | Rendering: 0.01192 (29%) | DB: 0.01927 (47%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:44:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001076)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012331)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001745)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:44:25') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00207)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002932)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001394)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03764 (26 reqs/sec) | Rendering: 0.00890 (23%) | DB: 0.01948 (51%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:44:28) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001014)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012039)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001730)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:44:28') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00204)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00006)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002900)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001525)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03855 (25 reqs/sec) | Rendering: 0.00883 (22%) | DB: 0.01921 (49%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:44:42) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUwN2FhMDc2MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5Mg==--aa7e6bd992b7f9a807869a183f79009c75429223
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001090)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012031)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001820)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:44:42') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00209)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.002720)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001407)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.11134 (8 reqs/sec) | Rendering: 0.00907 (8%) | DB: 0.01907 (17%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-07-06 21:45:40) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiUwN2FhMDc2
+MTcwZTkxYjE3YTE4NDBiYmJiYTJlZjk5MiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--2bdc30671733a1464f68602fe6c74cc6ee2de7e0
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Columns (0.012494)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001461)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.000351)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000285)[0m   [0mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://localhost:3000/
+Completed in 0.02219 (45 reqs/sec) | DB: 0.01459 (65%) | 302 Found [http://localhost/logout]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:45:40) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n
+Z2VkIG91dC4GOgpAdXNlZHsGOwdG--88065692d68a503d0aa8c3f437765281049ff4e2
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001080)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.002923)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001698)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:45:40') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00201)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.02012 (49 reqs/sec) | Rendering: 0.00531 (26%) | DB: 0.00570 (28%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:47:15) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n
+Z2VkIG91dC4GOgpAdXNlZHsGOwdU--c8635fd9fb2e106c09a9a17b043fe3da15296054
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.000997)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012776)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001690)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:47:15') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00210)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.03350 (29 reqs/sec) | Rendering: 0.00806 (24%) | DB: 0.01546 (46%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:47:58) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ea8abcbce9154a326cf01786d963b30ce27d8e9f
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001083)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012293)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001966)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:47:58') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00204)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.03016 (33 reqs/sec) | Rendering: 0.00551 (18%) | DB: 0.01534 (50%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:48:30) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ea8abcbce9154a326cf01786d963b30ce27d8e9f
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001355)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012232)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001774)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:48:30') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00215)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.03298 (30 reqs/sec) | Rendering: 0.00818 (24%) | DB: 0.01536 (46%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:49:15) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ea8abcbce9154a326cf01786d963b30ce27d8e9f
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001126)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012475)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.070062)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:49:15') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00214)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.10165 (9 reqs/sec) | Rendering: 0.00864 (8%) | DB: 0.08366 (82%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:50:06) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ea8abcbce9154a326cf01786d963b30ce27d8e9f
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001017)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012255)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001739)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:50:06') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00201)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.02972 (33 reqs/sec) | Rendering: 0.00551 (18%) | DB: 0.01501 (50%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:50:17) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ea8abcbce9154a326cf01786d963b30ce27d8e9f
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001081)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.011906)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001714)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:50:17') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00205)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+Completed in 0.02946 (33 reqs/sec) | Rendering: 0.00564 (19%) | DB: 0.01470 (49%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:51:44) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ea8abcbce9154a326cf01786d963b30ce27d8e9f
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001097)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012022)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001860)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:51:44') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00226)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.10511 (9 reqs/sec) | Rendering: 0.00590 (5%) | DB: 0.01498 (14%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 21:52:01) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ea8abcbce9154a326cf01786d963b30ce27d8e9f
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001084)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012205)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001632)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 01:52:01') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00206)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.02970 (33 reqs/sec) | Rendering: 0.00572 (19%) | DB: 0.01492 (50%) | 200 OK [http://localhost/]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 21:52:58) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ea8abcbce9154a326cf01786d963b30ce27d8e9f
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;35;1mSQL (0.001025)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012144)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/quotes
+Rendering quotes/new
+Completed in 0.12176 (8 reqs/sec) | Rendering: 0.09905 (81%) | DB: 0.01317 (10%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 21:53:28) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;35;1mSQL (0.001078)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012376)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+Completed in 0.03002 (33 reqs/sec) | Rendering: 0.00683 (22%) | DB: 0.01345 (44%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 21:54:22) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;35;1mSQL (0.001098)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012724)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+ERROR: compiling _run_erb_47app47views47quotes47new46html46erb RAISED compile error
+/Users/Pete/Documents/workspace/myquotable/app/views/quotes/new.html.erb:1: syntax error, unexpected '>'
+/Users/Pete/Documents/workspace/myquotable/app/views/quotes/new.html.erb:3: syntax error, unexpected '<', expecting kEND
+<% end ; _erbout.concat "\n"
+ ^
+/Users/Pete/Documents/workspace/myquotable/app/views/quotes/new.html.erb:44: syntax error, unexpected $end, expecting kEND
+Function body: def _run_erb_47app47views47quotes47new46html46erb(local_assigns)
+_erbout = '';  content_for :pagename do>
+  New quote
+<% end ; _erbout.concat "\n"
+_erbout.concat "  \n"
+_erbout.concat "\n"
+ form_for(@quote) do |f| ; _erbout.concat "\n"
+_erbout.concat "  "; _erbout.concat(( f.error_messages ).to_s); _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :quote ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_area :quote ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :author ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_area :author ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :quoted_by ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_area :quoted_by ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :quoted_at ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.date_select :quoted_at ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :copyright ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_area :copyright ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :quote_context ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_area :quote_context ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label :author_title ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_area :author_title ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.submit "Create" ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+ end ; _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat(( link_to 'Back', quotes_path ).to_s); _erbout.concat "\n"
+_erbout
+end
+Backtrace: /Users/Pete/Documents/workspace/myquotable/app/views/quotes/new.html.erb:44:in `compile_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/Pete/Documents/workspace/myquotable/app/controllers/quotes_controller.rb:30:in `new'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/Pete/Documents/workspace/myquotable/app/views/quotes/new.html.erb:1: syntax error, unexpected '>'
+/Users/Pete/Documents/workspace/myquotable/app/views/quotes/new.html.erb:3: syntax error, unexpected '<', expecting kEND
+<% end ; _erbout.concat "\n"
+ ^
+/Users/Pete/Documents/workspace/myquotable/app/views/quotes/new.html.erb:44: syntax error, unexpected $end, expecting kEND) on line #1 of quotes/new.html.erb:
+1: <% content_for :pagename do>
+2:   New quote
+3: <% end %>
+4:   
+
+    app/views/quotes/new.html.erb:44:in `compile_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/quotes_controller.rb:30:in `new'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 21:54:34) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;35;1mSQL (0.001079)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012377)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+Completed in 0.03204 (31 reqs/sec) | Rendering: 0.00888 (27%) | DB: 0.01346 (41%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:54:43) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00418 (239 reqs/sec) | Rendering: 0.00174 (41%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:56:45) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00367 (272 reqs/sec) | Rendering: 0.00121 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:56:51) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00124 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:57:22) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00367 (272 reqs/sec) | Rendering: 0.00122 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:57:34) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00381 (262 reqs/sec) | Rendering: 0.00137 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:57:39) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.07615 (13 reqs/sec) | Rendering: 0.07372 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:57:43) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00367 (272 reqs/sec) | Rendering: 0.00121 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:58:16) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00361 (277 reqs/sec) | Rendering: 0.00120 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:58:59) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00642 (155 reqs/sec) | Rendering: 0.00401 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:59:22) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00403 (247 reqs/sec) | Rendering: 0.00129 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 21:59:44) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00366 (273 reqs/sec) | Rendering: 0.00121 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:00:11) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00643 (155 reqs/sec) | Rendering: 0.00401 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:00:28) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00377 (264 reqs/sec) | Rendering: 0.00134 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:00:45) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00363 (275 reqs/sec) | Rendering: 0.00122 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:00:54) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00360 (277 reqs/sec) | Rendering: 0.00122 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:01:04) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00365 (273 reqs/sec) | Rendering: 0.00124 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:01:24) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00369 (271 reqs/sec) | Rendering: 0.00125 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:01:30) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00124 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:01:37) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00370 (269 reqs/sec) | Rendering: 0.00133 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:01:43) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00364 (274 reqs/sec) | Rendering: 0.00122 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:01:51) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00374 (267 reqs/sec) | Rendering: 0.00131 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:01:58) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00640 (156 reqs/sec) | Rendering: 0.00394 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:02:15) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00403 (248 reqs/sec) | Rendering: 0.00123 (30%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:02:51) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00644 (155 reqs/sec) | Rendering: 0.00398 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:03:06) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00652 (153 reqs/sec) | Rendering: 0.00409 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:03:18) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00633 (158 reqs/sec) | Rendering: 0.00396 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:03:41) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00371 (269 reqs/sec) | Rendering: 0.00132 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:03:45) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00382 (261 reqs/sec) | Rendering: 0.00139 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-07-06 22:03:45) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"1215382605"=>nil}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:04:04) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00652 (153 reqs/sec) | Rendering: 0.00413 (63%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:04:19) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00365 (274 reqs/sec) | Rendering: 0.00123 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:04:45) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00660 (151 reqs/sec) | Rendering: 0.00411 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:05:50) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00639 (156 reqs/sec) | Rendering: 0.00395 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:05:54) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00370 (270 reqs/sec) | Rendering: 0.00126 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:05:56) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00124 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:05:59) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00380 (263 reqs/sec) | Rendering: 0.00128 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:06:02) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00379 (263 reqs/sec) | Rendering: 0.00125 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:06:15) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00358 (279 reqs/sec) | Rendering: 0.00119 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:06:36) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00636 (157 reqs/sec) | Rendering: 0.00395 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:06:43) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00663 (150 reqs/sec) | Rendering: 0.00399 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:06:52) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00642 (155 reqs/sec) | Rendering: 0.00397 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:07:34) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00383 (260 reqs/sec) | Rendering: 0.00142 (37%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:08:34) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00428 (233 reqs/sec) | Rendering: 0.00139 (32%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:08:37) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00367 (272 reqs/sec) | Rendering: 0.00124 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:08:54) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00680 (147 reqs/sec) | Rendering: 0.00437 (64%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:09:07) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00376 (266 reqs/sec) | Rendering: 0.00136 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:09:32) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00393 (254 reqs/sec) | Rendering: 0.00130 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:09:48) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00643 (155 reqs/sec) | Rendering: 0.00401 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2008-07-06 22:09:53) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"about", "controller"=>"site"}
+Rendering template within layouts/application
+Rendering site/about
+Completed in 0.00391 (255 reqs/sec) | Rendering: 0.00151 (38%) | DB: 0.00000 (0%) | 200 OK [http://localhost/about]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-06 22:09:57) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00405 (247 reqs/sec) | Rendering: 0.00188 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 22:10:02) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001085)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012444)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001730)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 02:10:02') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00299)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.03166 (31 reqs/sec) | Rendering: 0.00650 (20%) | DB: 0.01526 (48%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 22:13:28) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001065)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012120)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001753)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 02:13:28') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00206)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.03325 (30 reqs/sec) | Rendering: 0.00836 (25%) | DB: 0.01494 (44%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-06 22:13:30) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6
+Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDc1YjU2
+ZTI1NDgwOTVlYjVhNjRmNDdjMzE0YmMwODE=--cd5a88392075a5640c9af9589a7b99bf88d68a04
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00425 (235 reqs/sec) | Rendering: 0.00196 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-07-06 22:13:32) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDc1YjU2ZTI1NDgwOTVlYjVh
+NjRmNDdjMzE0YmMwODEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--db6a79354d16c94ad4812cf6592503b29c4756fe
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"9b6f8f9b591670bc42265beff5df9c419f910e87", "action"=>"create", "controller"=>"sessions", "password"=>"peterpw1", "login"=>"pete"}
+  [4;35;1mUser Load (0.002264)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'pete') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (0.012141)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/
+Completed in 0.02286 (43 reqs/sec) | DB: 0.01441 (63%) | 302 Found [http://localhost/session]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 22:13:32) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9nZ2Vk
+IGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CEY6DGNzcmZfaWQiJWQ3NWI1
+NmUyNTQ4MDk1ZWI1YTY0ZjQ3YzMxNGJjMDgx--94723f79556b4f53a400d12157f89284632249c7
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001012)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.004048)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001819)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 02:13:32') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00212)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00004)
+Rendered quotes/_quote (0.00003)
+  [4;36;1mUser Columns (0.003068)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001421)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03226 (30 reqs/sec) | Rendering: 0.00923 (28%) | DB: 0.01137 (35%) | 200 OK [http://localhost/]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:13:33) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp
+biBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--1f23179158b0f474a3f1ca6edd8ef46f1afd5c59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001022)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012095)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002729)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001435)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03705 (26 reqs/sec) | Rendering: 0.01033 (27%) | DB: 0.01728 (46%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:16:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001109)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012228)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x265b63c>) on line #5 of quotes/new.html.erb:
+2:   New quote
+3: <% end %>
+4: 
+5: <%= f.error_messages %>
+6:   
+7: <% form_for(@quote) do |f| %>
+8:   <div id="quote">
+
+    app/views/quotes/new.html.erb:5:in `_run_erb_47app47views47quotes47new46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/quotes_controller.rb:30:in `new'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:17:24) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001205)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012459)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x25fa10c>) on line #5 of quotes/new.html.erb:
+2:   New quote
+3: <% end %>
+4: 
+5: <%= f.error_messages %>
+6:   
+7: <% form_for(@quote) do |f| %>
+8:   <div id="quote">
+
+    app/views/quotes/new.html.erb:5:in `_run_erb_47app47views47quotes47new46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/quotes_controller.rb:30:in `new'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:17:39) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001061)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.226526)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.004037)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001475)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.25236 (3 reqs/sec) | Rendering: 0.01000 (3%) | DB: 0.23310 (92%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:17:51) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001091)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012418)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002854)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001406)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03677 (27 reqs/sec) | Rendering: 0.00974 (26%) | DB: 0.01777 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:18:10) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001078)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.087233)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003044)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001906)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.11384 (8 reqs/sec) | Rendering: 0.01064 (9%) | DB: 0.09326 (81%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:18:18) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001084)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012380)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002814)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001428)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03689 (27 reqs/sec) | Rendering: 0.01002 (27%) | DB: 0.01771 (47%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#create (for 127.0.0.1 at 2008-07-06 22:18:53) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"9b6f8f9b591670bc42265beff5df9c419f910e87", "action"=>"create", "quote"=>{"author"=>"Peter Jackson", "quote_context"=>"Booyah!", "quote"=>"This is a quote entered by the site. "}, "controller"=>"quotes"}
+  [4;36;1mSQL (0.001113)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012665)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+  [4;36;1mSQL (0.000438)[0m   [0;1mBEGIN[0m
+  [4;35;1mQuote Create (0.000598)[0m   [0mINSERT INTO `quotes` (`updated_at`, `quoted_at`, `private`, `author`, `author_title`, `quote_context`, `quote`, `quoted_by`, `copyright`, `user_id`, `created_at`) VALUES('2008-07-07 02:18:53', NULL, NULL, 'Peter Jackson', NULL, 'Booyah!', 'This is a quote entered by the site. ', NULL, NULL, NULL, '2008-07-07 02:18:53')[0m
+  [4;36;1mSQL (0.000894)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/quotes/1054583385
+Completed in 0.02984 (33 reqs/sec) | DB: 0.01571 (52%) | 302 Found [http://localhost/quotes]
+
+
+Processing QuotesController#show (for 127.0.0.1 at 2008-07-06 22:18:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJFF1b3RlIHdh
+cyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4GOgpAdXNlZHsGOwlG--7d216563443637f36a902cbf1cf5b44cb484c624
+  Parameters: {"action"=>"show", "id"=>"1054583385", "controller"=>"quotes"}
+  [4;35;1mSQL (0.000951)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.002914)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+  [4;35;1mQuote Load (0.001438)[0m   [0mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583385) [0m
+Rendering template within layouts/application
+Rendering quotes/show
+  [4;36;1mUser Columns (0.003055)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001436)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.02960 (33 reqs/sec) | Rendering: 0.00882 (29%) | DB: 0.00979 (33%) | 200 OK [http://localhost/quotes/1054583385]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 22:18:57) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIkUXVvdGUg
+d2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7CFQ6DGNzcmZf
+aWQiJWQ3NWI1NmUyNTQ4MDk1ZWI1YTY0ZjQ3YzMxNGJjMDgx--f41b3cbab2afd86babbb24df9eccefc2b93814df
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001082)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.011997)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001814)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 02:18:57') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00214)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002845)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001385)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03831 (26 reqs/sec) | Rendering: 0.00929 (24%) | DB: 0.01912 (49%) | 200 OK [http://localhost/]
+
+
+Processing QuotesController#edit (for 127.0.0.1 at 2008-07-06 22:19:11) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"edit", "id"=>"1054583385", "controller"=>"quotes"}
+  [4;35;1mSQL (0.001099)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012426)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+  [4;35;1mQuote Load (0.001421)[0m   [0mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583385) [0m
+Rendering template within layouts/application
+Rendering quotes/edit
+  [4;36;1mUser Columns (0.002948)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001367)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04077 (24 reqs/sec) | Rendering: 0.01230 (30%) | DB: 0.01926 (47%) | 200 OK [http://localhost/quotes/1054583385/edit]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:19:20) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001068)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.011956)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003085)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001426)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03733 (26 reqs/sec) | Rendering: 0.00959 (25%) | DB: 0.01754 (46%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:19:49) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001078)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012296)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003112)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001430)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03711 (26 reqs/sec) | Rendering: 0.00973 (26%) | DB: 0.01792 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:19:57) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001090)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012043)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002763)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001423)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03639 (27 reqs/sec) | Rendering: 0.00990 (27%) | DB: 0.01732 (47%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:20:00) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.000954)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012201)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003032)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001437)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03755 (26 reqs/sec) | Rendering: 0.01009 (26%) | DB: 0.01762 (46%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:20:40) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001099)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012434)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003051)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001506)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03765 (26 reqs/sec) | Rendering: 0.00999 (26%) | DB: 0.01809 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:21:03) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001117)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.013306)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002935)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001419)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03783 (26 reqs/sec) | Rendering: 0.00972 (25%) | DB: 0.01878 (49%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:21:11) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001084)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012271)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003185)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001430)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03759 (26 reqs/sec) | Rendering: 0.01002 (26%) | DB: 0.01797 (47%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:21:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001103)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012720)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002942)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001390)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03695 (27 reqs/sec) | Rendering: 0.00975 (26%) | DB: 0.01815 (49%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:21:51) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001036)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012326)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002839)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001406)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03737 (26 reqs/sec) | Rendering: 0.00972 (25%) | DB: 0.01761 (47%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:22:14) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001138)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.013042)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002843)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001333)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03960 (25 reqs/sec) | Rendering: 0.01038 (26%) | DB: 0.01836 (46%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:22:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001137)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012185)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002828)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001500)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03687 (27 reqs/sec) | Rendering: 0.01002 (27%) | DB: 0.01765 (47%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:22:33) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001336)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012049)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002938)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001467)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.10633 (9 reqs/sec) | Rendering: 0.01065 (10%) | DB: 0.01779 (16%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:23:12) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001087)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012595)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003047)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001398)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03777 (26 reqs/sec) | Rendering: 0.01031 (27%) | DB: 0.01813 (47%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:23:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001042)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012379)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002649)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001461)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03607 (27 reqs/sec) | Rendering: 0.00825 (22%) | DB: 0.01753 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:24:04) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001022)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.011921)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003033)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001377)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03581 (27 reqs/sec) | Rendering: 0.00852 (23%) | DB: 0.01735 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:24:35) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001088)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012162)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003049)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001413)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03552 (28 reqs/sec) | Rendering: 0.00854 (24%) | DB: 0.01771 (49%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:24:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001084)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012684)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002972)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001424)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03604 (27 reqs/sec) | Rendering: 0.00864 (23%) | DB: 0.01816 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:25:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001092)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012527)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003128)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001420)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03760 (26 reqs/sec) | Rendering: 0.01005 (26%) | DB: 0.01817 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:25:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001109)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012200)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002884)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001423)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03710 (26 reqs/sec) | Rendering: 0.01029 (27%) | DB: 0.01762 (47%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:26:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001029)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012375)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002986)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001816)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03768 (26 reqs/sec) | Rendering: 0.01003 (26%) | DB: 0.01821 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:26:31) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001083)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012218)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002942)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001442)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03847 (25 reqs/sec) | Rendering: 0.00988 (25%) | DB: 0.01769 (45%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:28:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001124)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012351)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003163)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001426)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03612 (27 reqs/sec) | Rendering: 0.00833 (23%) | DB: 0.01806 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:28:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001100)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012503)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002960)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001446)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.10773 (9 reqs/sec) | Rendering: 0.00837 (7%) | DB: 0.01801 (16%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:29:21) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001184)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012263)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002927)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001476)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03529 (28 reqs/sec) | Rendering: 0.00814 (23%) | DB: 0.01785 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:29:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001109)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012195)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003071)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001423)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03501 (28 reqs/sec) | Rendering: 0.00801 (22%) | DB: 0.01780 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:30:32) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001100)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012171)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003132)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001432)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04202 (23 reqs/sec) | Rendering: 0.01353 (32%) | DB: 0.01784 (42%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:31:02) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001048)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012272)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003088)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001468)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04012 (24 reqs/sec) | Rendering: 0.01249 (31%) | DB: 0.01788 (44%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:31:18) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001096)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.084014)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003170)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001435)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.10886 (9 reqs/sec) | Rendering: 0.00846 (7%) | DB: 0.08972 (82%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:31:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001249)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012880)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002926)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001571)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03764 (26 reqs/sec) | Rendering: 0.00908 (24%) | DB: 0.01863 (49%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:31:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.000970)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012383)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002981)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001454)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03634 (27 reqs/sec) | Rendering: 0.00825 (22%) | DB: 0.01779 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:31:46) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001032)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012786)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002989)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001471)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03627 (27 reqs/sec) | Rendering: 0.00867 (23%) | DB: 0.01828 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:31:59) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001084)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012461)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003016)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001422)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03551 (28 reqs/sec) | Rendering: 0.00816 (22%) | DB: 0.01798 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:32:49) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001077)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012541)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003025)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001428)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03754 (26 reqs/sec) | Rendering: 0.01034 (27%) | DB: 0.01807 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:32:52) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001048)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012388)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003185)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001436)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.11254 (8 reqs/sec) | Rendering: 0.01055 (9%) | DB: 0.01806 (16%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:33:04) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001055)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.011982)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002979)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001516)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03760 (26 reqs/sec) | Rendering: 0.01056 (28%) | DB: 0.01753 (46%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:33:37) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001091)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012844)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003106)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001413)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03800 (26 reqs/sec) | Rendering: 0.01016 (26%) | DB: 0.01845 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:33:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001165)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012650)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003084)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001753)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.04049 (24 reqs/sec) | Rendering: 0.01090 (26%) | DB: 0.01865 (46%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:34:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001120)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012526)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003079)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001580)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03669 (27 reqs/sec) | Rendering: 0.00888 (24%) | DB: 0.01830 (49%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:34:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001086)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012049)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002933)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001406)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03603 (27 reqs/sec) | Rendering: 0.00881 (24%) | DB: 0.01747 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:34:35) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001036)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012598)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003030)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001446)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03597 (27 reqs/sec) | Rendering: 0.00823 (22%) | DB: 0.01811 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 22:35:10) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90bzAiCmZsYXNoSUM6J0FjdGlvbkNv
+bnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA6DGNzcmZf
+aWQiJWNhZjU1ZDlkODY2YjIxNDUyOTg1YTliNGE3MjcxZGE0--9511b61f596d3a8c5c86ca62dfdaeeed3c513109
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001042)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012364)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001759)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 02:35:10') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00241)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Completed in 0.03048 (32 reqs/sec) | Rendering: 0.00625 (20%) | DB: 0.01517 (49%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-06 22:35:14) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90bzA6DGNzcmZfaWQiJWNhZjU1ZDlk
+ODY2YjIxNDUyOTg1YTliNGE3MjcxZGE0IgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--8c9ed229807a8de4ad85f7c7460e3a36d9c8fc3f
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00433 (231 reqs/sec) | Rendering: 0.00214 (49%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-07-06 22:35:20) [POST]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90bzAiCmZsYXNoSUM6J0FjdGlvbkNv
+bnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA6DGNzcmZf
+aWQiJWNhZjU1ZDlkODY2YjIxNDUyOTg1YTliNGE3MjcxZGE0--9511b61f596d3a8c5c86ca62dfdaeeed3c513109
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"e4c7ab5213f0d2f702d76205212e51b19bcbebf0", "action"=>"create", "controller"=>"sessions", "password"=>"peterpw1", "login"=>"Pete"}
+  [4;35;1mUser Load (0.001526)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'Pete') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (0.012788)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/
+Completed in 0.02044 (48 reqs/sec) | DB: 0.01431 (70%) | 302 Found [http://localhost/session]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 22:35:20) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVjYWY1NWQ5
+ZDg2NmIyMTQ1Mjk4NWE5YjRhNzI3MWRhNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp
+biBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlG--05a4f10e6c7f6f28d56e436f6d6bc21c3439c3bd
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.001034)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.002689)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001781)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 02:35:20') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00209)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00009)
+  [4;36;1mUser Columns (0.003073)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001392)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.02947 (33 reqs/sec) | Rendering: 0.00931 (31%) | DB: 0.00997 (33%) | 200 OK [http://localhost/]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:35:23) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9nZ2Vk
+IGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CFQ6DGNzcmZfaWQiJWNhZjU1
+ZDlkODY2YjIxNDUyOTg1YTliNGE3MjcxZGE0--09fc66644f760726c91aa60e97d3f37b15018f87
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001102)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012095)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002942)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001426)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03492 (28 reqs/sec) | Rendering: 0.00820 (23%) | DB: 0.01757 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:35:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVjYWY1NWQ5
+ZDg2NmIyMTQ1Mjk4NWE5YjRhNzI3MWRhNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--e83c37e2ece4e957276ed7acce699625d34cb31d
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001037)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012330)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002770)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001570)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03671 (27 reqs/sec) | Rendering: 0.00919 (25%) | DB: 0.01771 (48%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:36:08) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVjYWY1NWQ5ZDg2NmIyMTQ1Mjk4NWE5YjRhNzI3MWRhNA==--1331e9d0052c4f26291e22be7c4f1bc42e9b5a34
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001046)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.011973)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003108)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001443)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03691 (27 reqs/sec) | Rendering: 0.00978 (26%) | DB: 0.01757 (47%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:36:33) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVjYWY1NWQ5
+ZDg2NmIyMTQ1Mjk4NWE5YjRhNzI3MWRhNCIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--e83c37e2ece4e957276ed7acce699625d34cb31d
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001120)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012694)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002999)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001476)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.10464 (9 reqs/sec) | Rendering: 0.07703 (73%) | DB: 0.01829 (17%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:36:46) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.000940)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012509)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002851)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001436)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03594 (27 reqs/sec) | Rendering: 0.00835 (23%) | DB: 0.01774 (49%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:37:12) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVjYWY1NWQ5ZDg2NmIyMTQ1Mjk4NWE5YjRhNzI3MWRhNA==--1331e9d0052c4f26291e22be7c4f1bc42e9b5a34
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001453)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012569)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003040)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001579)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03766 (26 reqs/sec) | Rendering: 0.00892 (23%) | DB: 0.01864 (49%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:37:55) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001083)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012399)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002940)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001526)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03586 (27 reqs/sec) | Rendering: 0.00843 (23%) | DB: 0.01795 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:38:10) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.000919)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012457)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002828)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001436)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03524 (28 reqs/sec) | Rendering: 0.00838 (23%) | DB: 0.01764 (50%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:38:44) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001018)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012143)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003091)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001428)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03779 (26 reqs/sec) | Rendering: 0.01030 (27%) | DB: 0.01768 (46%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:39:07) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001069)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012259)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.002983)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001437)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03771 (26 reqs/sec) | Rendering: 0.01067 (28%) | DB: 0.01775 (47%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#new (for 127.0.0.1 at 2008-07-06 22:39:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"new", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001287)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012497)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering quotes/new
+  [4;36;1mUser Columns (0.003225)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001461)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03610 (27 reqs/sec) | Rendering: 0.00836 (23%) | DB: 0.01847 (51%) | 200 OK [http://localhost/quotes/new]
+
+
+Processing QuotesController#create (for 127.0.0.1 at 2008-07-06 22:40:08) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"commit"=>"Save Quote", "authenticity_token"=>"9b6f8f9b591670bc42265beff5df9c419f910e87", "action"=>"create", "quote"=>{"author"=>"Benjamin Franklin", "quote_context"=>"", "quote"=>""}, "controller"=>"quotes"}
+  [4;36;1mSQL (0.001077)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012148)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+  [4;36;1mSQL (0.000488)[0m   [0;1mBEGIN[0m
+  [4;35;1mQuote Create (0.000620)[0m   [0mINSERT INTO `quotes` (`updated_at`, `quoted_at`, `private`, `author`, `author_title`, `quote_context`, `quote`, `quoted_by`, `copyright`, `user_id`, `created_at`) VALUES('2008-07-07 02:40:08', NULL, NULL, 'Benjamin Franklin', NULL, '', '', NULL, NULL, NULL, '2008-07-07 02:40:08')[0m
+  [4;36;1mSQL (0.000728)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/quotes/1054583386
+Completed in 0.10695 (9 reqs/sec) | DB: 0.01506 (14%) | 302 Found [http://localhost/quotes]
+
+
+Processing QuotesController#show (for 127.0.0.1 at 2008-07-06 22:40:08) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJFF1b3RlIHdh
+cyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4GOgpAdXNlZHsGOwlG--7d216563443637f36a902cbf1cf5b44cb484c624
+  Parameters: {"action"=>"show", "id"=>"1054583386", "controller"=>"quotes"}
+  [4;35;1mSQL (0.001094)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.002936)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+  [4;35;1mQuote Load (0.001493)[0m   [0mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583386) [0m
+Rendering template within layouts/application
+Rendering quotes/show
+  [4;36;1mUser Columns (0.002757)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001427)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.02651 (37 reqs/sec) | Rendering: 0.00692 (26%) | DB: 0.00971 (36%) | 200 OK [http://localhost/quotes/1054583386]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-06 22:40:13) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIkUXVvdGUg
+d2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7CFQ6DGNzcmZf
+aWQiJWQ3NWI1NmUyNTQ4MDk1ZWI1YTY0ZjQ3YzMxNGJjMDgx--f41b3cbab2afd86babbb24df9eccefc2b93814df
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.001090)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.011958)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mQuote Load (0.001836)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-06 02:40:13') AND (((private is NULL) OR (private = 'F') OR (private = 0)))) [0m
+Rendered quotes/_quote (0.00212)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+Rendered quotes/_quote (0.00003)
+  [4;35;1mUser Columns (0.002996)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001588)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.03845 (26 reqs/sec) | Rendering: 0.00976 (25%) | DB: 0.01947 (50%) | 200 OK [http://localhost/]
+
+
+Processing QuotesController#show (for 127.0.0.1 at 2008-07-06 22:41:08) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiVkNzViNTZl
+MjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MSIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--d1c1f657817acfdbc797ed3e05003c80c4a3a1ba
+  Parameters: {"action"=>"show", "id"=>"1054583386", "controller"=>"quotes"}
+  [4;35;1mSQL (0.001066)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.012689)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+  [4;35;1mQuote Load (0.003098)[0m   [0mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583386) [0m
+Rendering template within layouts/application
+Rendering quotes/show
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #1 of quotes/show.html.erb:
+1: <% for @quote in @quotes %>
+2: 	<%= render :partial => "quotes/quote" %>
+3: <% end %>
+4: 
+
+    app/views/quotes/show.html.erb:1:in `_run_erb_47app47views47quotes47show46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/quotes_controller.rb:19:in `show'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing QuotesController#show (for 127.0.0.1 at 2008-07-06 22:41:21) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVkNzViNTZlMjU0ODA5NWViNWE2NGY0N2MzMTRiYzA4MQ==--6cd83bc78762993a2d7ed9d3efc73a5dbbcccf59
+  Parameters: {"action"=>"show", "id"=>"1054583386", "controller"=>"quotes"}
+  [4;36;1mSQL (0.001123)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012489)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+  [4;36;1mQuote Load (0.001460)[0m   [0;1mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583386) [0m
+Rendering template within layouts/application
+Rendering quotes/show
+Rendered quotes/_quote (0.00209)
+  [4;35;1mUser Columns (0.002945)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001452)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 0.11432 (8 reqs/sec) | Rendering: 0.00886 (7%) | DB: 0.01947 (17%) | 200 OK [http://localhost/quotes/1054583386]
