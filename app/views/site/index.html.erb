@@ -2,12 +2,18 @@
  Home
 <% end %>
 
+<% content_for :statusbar do %>
+	Home -> Most Recent Member Quotes -- view 
+	<%= link_to "popular", root_path%>, 
+	<%= link_to "yours", user_path(current_user)%>
+<% end %>
+
 <div id="quotes_container">
 
-	<%= link_to 'Recent', root_path %> |
-	<%= link_to 'Popular', root_path %> |
-	<%= link_to 'Friends', root_path %> |
-	<%= link_to 'Sent to You', root_path %>
+	<%# link_to 'Recent', root_path %> 
+	<%# link_to 'Popular', root_path %> 
+	<%# link_to 'Friends', root_path %> 
+	<%# link_to 'Sent to You', root_path %>
 
 	<% for @quote in @quotes %>
 		<%= render :partial => "quotes/quote" %>

@@ -35,7 +35,8 @@ four:
     quoted_at: 2008-07-04
     copyright: Peter Jackson
     quote_context: almost daily
-    private: true
+    private: false
+    user: aaron
 
 five:
     user: pete

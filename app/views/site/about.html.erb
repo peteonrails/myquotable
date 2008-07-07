@@ -1,5 +1,67 @@
 <% content_for :pagename do %>
  About
 <% end %>
+<% content_for :statusbar do %>
+	Home -> About -- view 
+	<%= link_to "Most Recent Member Quotes", root_path%>,
+	<%= link_to "popular", root_path%>, 
+	<%= link_to "yours", user_path(current_user)%>
+<% end %>
 
-About Page
+<div id="message_block_container">
+<div id="message_block_title">
+	About MyQuotable
+</div>
+
+<div id="message_block">
+<h3>
+	Why MyQuotable?
+</h3>
+<p>
+	There are a ton of "Quote Sites" online already. But we believe they all are awful. Here is why:
+<ul>
+	<li>They rarely allow user-generated content
+	</li>
+	<li>They are covered in advertising
+	</li>
+	<li>Few sites provide the ability to rate, tag, organize, or share your quotes.
+	</li>
+	<li>While some have "Quote of the day" widgets, none integrate with ALL of the places you'd want to have quotes delivered:
+		<ul>
+			<li>RSS
+			</li>
+			<li>Facebook
+			</li>
+			<li>LinkedIn
+			</li>
+			<li>iGoogle
+			</li>
+			<li>Skype
+			</li>
+			<li>Yahoo IM
+			</li>
+		</ul>
+	</li>
+</ul>
+Our goal is to be able to deliver your customizable, taggable quote feeds to anywhere that MoodBlast can deliver an update, without advertising clutter.
+
+</p>
+
+
+<h3>Getting Started</h3>
+	<ul>
+		<li>Step One: Sign up</li>
+		<li>Step Two: Start posting and tagging your quotes!</li>
+		<li>Step Three: Set up your feeds and client applications.</li>
+		<li>Step Four: Invite your friends.</li>
+	</ul>
+<h3>
+	Alpha Status
+</h3>
+<p>
+	This service is still in alpha status. It is not officially launched. We will make every effort to preserve your user-generated content before we enter beta, but it is not guaranteed. We'll warn you before we move to Beta, and we will perform a full database backup before we migrate.
+</p>
+
+
+</div>
+</div>

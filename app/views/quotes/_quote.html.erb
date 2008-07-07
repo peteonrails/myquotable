@@ -5,4 +5,31 @@
 	<div id="quote_author">
 		<%=h @quote.author %> <%=h @quote.quote_context %> 	
 	</div>
+	
+	<div id="quote_extended">
+	  <b>Quoted by:</b>
+	  <%=h @quote.quoted_by %>
+	  <br />	
+
+	  <b>Quoted at:</b>
+	  <%=h @quote.quoted_at %>
+	  <br />	
+
+	  <b>Copyright:</b>
+	  <%=h @quote.copyright %>
+	  <br />	
+
+	  <b>Author title:</b>
+	  <%=h @quote.author_title %>
+	  <br />	
+	
+	  <b>Created:</b>
+	  <%=h @quote.created_at %>
+	  <br />	
+	  <b>Updated:</b>
+	  <%=h @quote.updated_at %>
+	  <br />	
+	</div>
+
+	<%= render :partial => "quotes/quote_toolbar"%>
 </div>

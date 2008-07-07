@@ -1,40 +1,10 @@
+<% content_for :pagename do %>
+	Viewing Quote
+<% end %>
+
 <%= render :partial => "quote" %>
 
-<p>
-  <b>Quote:</b>
-  <%=h @quote.quote %>
-</p>
+<br />	
 
-<p>
-  <b>Author:</b>
-  <%=h @quote.author %>
-</p>
-
-<p>
-  <b>Quoted by:</b>
-  <%=h @quote.quoted_by %>
-</p>
-
-<p>
-  <b>Quoted at:</b>
-  <%=h @quote.quoted_at %>
-</p>
-
-<p>
-  <b>Copyright:</b>
-  <%=h @quote.copyright %>
-</p>
-
-<p>
-  <b>Quote context:</b>
-  <%=h @quote.quote_context %>
-</p>
-
-<p>
-  <b>Author title:</b>
-  <%=h @quote.author_title %>
-</p>
-
-
-<%= link_to 'Edit', edit_quote_path(@quote) %> |
-<%= link_to 'Back', quotes_path %>
+<%= link_to 'Edit', edit_user_quote_path(@user, @quote) %> |
+<%= link_to 'Back', user_quotes_path %>

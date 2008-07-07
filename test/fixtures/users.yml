@@ -1,5 +1,4 @@
 pete:
-  id: 1
   login: Pete
   email: pete@peteonrails.com
   salt: eb841dde11cab68fa5f9c775435718cc1d3c0b44
@@ -9,7 +8,6 @@ pete:
   activated_at: <%= 5.days.ago.to_s :db %> 
   state: active
 aaron:
-  id: 2
   login: aaron
   email: aaron@example.com
   salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd

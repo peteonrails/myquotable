@@ -18,16 +18,18 @@
 		<div id="header-left">
 		  <div id="logo"></div>
         <h1>MyQuotable: Share, Tag, Organize</h1>
-        <%= link_to 'Home', root_path %> | 
-        <%= link_to 'Your Quotes', root_path %> |
-  			<%= link_to("Post", new_quote_path) if logged_in? %>
+        <%= link_to 'Home', root_path %>
+
+		<% if logged_in? %> 
+  			| <%= link_to 'Your Quotes', user_path(current_user) %> 
+			| <%= link_to("Post a Quote", new_user_quote_path(current_user)) if logged_in? %>
+		<% end %>
 		</div>
 		
 		<div id="header-right">
 			<%= "logged in as #{current_user.login} |" if logged_in? %>  
 			<%= logged_in? ? link_to("Log out", logout_path) : link_to('Log In / Signup', login_path) %> |
 			<%= link_to 'How it Works', about_path %>
-			 	
 		</div>
 	</div>
 	
@@ -36,7 +38,16 @@
 	    <%= yield(:statusbar) %>
 	  </div>
 	  <div id="searchbox">
-	    <form><input type="text" value="Search" /> <select><option>All Quotes</option><option>My Quotes</option></select></form>
+	    <form>
+			<input type="text" value="Search doesn't work yet." /> 
+			<select>
+				<option>All Quotes</option>
+				<option>My Quotes</option>
+				<option>Authors</option>
+				<option>Quoters</option>
+				<option>The Web</option>
+			</select>
+		</form>
 	  </div>	  
     <br id="clearfix" />
 	</div>
@@ -44,12 +55,16 @@
 	<div id="main-content">
 		<%= yield %>
 	</div>
-	
-	<div id="sidebar">
-	  This is a mock sidebar specified in layout/application.html.erb. 
-	  
-		<%= yield(:sidebar) %>
-	</div>
+
+	<% if logged_in? %>
+		<div id="sidebar">
+	  		This is a placeholder sidebar.
+	  		<h3>Actions</h3>
+	  		<h3>Friends</h3>
+	  		<h3>Tags</h3>
+	  		<%= yield(:sidebar) %>
+		</div>
+	<% end %>
 </div>
 
 <br />

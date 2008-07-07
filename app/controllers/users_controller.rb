@@ -4,12 +4,19 @@ class UsersController < ApplicationController
   
   # Protect these actions behind an admin login
   # before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
-  before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge]
-  
+  before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge, :show]
+
+  before_filter :login_required, :only => [:index]
 
   # render new.rhtml
   def new
   end
+
+  # GET /users/:id
+  def show
+    @quotes = @user.quotes
+  end
+  
 
   def create
     cookies.delete :auth_token

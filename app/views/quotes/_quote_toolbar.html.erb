@@ -1,0 +1,14 @@
+<div id="quote_toolbar">
+	<span style="float: left;">
+	by <%= link_to @quote.user.login, user_path(@quote.user) %> on <%= @quote.created_at.to_s(:short) %>
+	&nbsp;
+	<% if (@quote.user == current_user) %>
+    	<%= link_to 'edit', edit_user_quote_path(@user, @quote) %> / 
+		<%= link_to('delete', user_quote_path(@user, @quote), :confirm => 'Are you sure?', :method => :delete) %>
+	<% end %>
+	</span>
+	
+
+	Vote: Up / Down 
+	
+</div>

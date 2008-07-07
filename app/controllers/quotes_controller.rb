@@ -1,9 +1,14 @@
 class QuotesController < ApplicationController
 
-  # GET /quotes
-  # GET /quotes.xml
+  before_filter :find_user
+  before_filter :login_required, :only => [:new, :edit, :destroy, :create, :update]
+  before_filter :must_own_quote, :only => [:edit, :destroy, :update]
+  
+
+  # GET /users/:id/quotes
+  # GET /users/:id/quotes.xml
   def index
-    @quotes = Quote.find(:all)
+    @quotes = Quote.public.descending
 
     respond_to do |format|
       format.html # index.html.erb
@@ -35,18 +40,19 @@ class QuotesController < ApplicationController
 
   # GET /quotes/1/edit
   def edit
-    @quote = Quote.find(params[:id])
+    @quote ||= Quote.find(params[:id])
   end
 
   # POST /quotes
   # POST /quotes.xml
   def create
     @quote = Quote.new(params[:quote])
+    @quote.user = current_user
 
     respond_to do |format|
       if @quote.save
-        flash[:notice] = 'Quote was successfully created.'
-        format.html { redirect_to(@quote) }
+        flash[:notice] = 'Quote was successfully saved.'
+        format.html { redirect_to([@user, @quote]) }
         format.xml  { render :xml => @quote, :status => :created, :location => @quote }
       else
         format.html { render :action => "new" }
@@ -63,7 +69,7 @@ class QuotesController < ApplicationController
     respond_to do |format|
       if @quote.update_attributes(params[:quote])
         flash[:notice] = 'Quote was successfully updated.'
-        format.html { redirect_to(@quote) }
+        format.html { redirect_to([@user, @quote]) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -79,8 +85,31 @@ class QuotesController < ApplicationController
     @quote.destroy
 
     respond_to do |format|
-      format.html { redirect_to(quotes_url) }
+      format.html { redirect_to(user_quotes_url) }
       format.xml  { head :ok }
     end
   end
+  
+  private
+  def find_user 
+    @user = User.find(params[:user_id])
+  end
+  
+  
+  def must_own_quote
+    @quote ||= Quote.find(params[:id])
+    @quote.user == current_user || ownership_violation
+  end
+  
+  def ownership_violation
+    respond_to do |format|
+      flash[:notice] = 'You cannot edit or delete quotes that you do not own!'
+      format.html do
+        redirect_to user_path(current_user)
+      end
+    end
+  end
+  
+  
+  
 end

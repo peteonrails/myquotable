@@ -1,32 +1,22 @@
-<h1>Listing quotes</h1>
-
-<table>
-  <tr>
-    <th>Quote</th>
-    <th>Author</th>
-    <th>Quoted by</th>
-    <th>Quoted at</th>
-    <th>Copyright</th>
-    <th>Quote context</th>
-    <th>Author title</th>
-  </tr>
-
-<% for quote in @quotes %>
-  <tr>
-    <td><%=h quote.quote %></td>
-    <td><%=h quote.author %></td>
-    <td><%=h quote.quoted_by %></td>
-    <td><%=h quote.quoted_at %></td>
-    <td><%=h quote.copyright %></td>
-    <td><%=h quote.quote_context %></td>
-    <td><%=h quote.author_title %></td>
-    <td><%= link_to 'Show', quote %></td>
-    <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-    <td><%= link_to 'Destroy', quote, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<% content_for :pagename do %>
+ Home
 <% end %>
-</table>
 
-<br />
+<% content_for :statusbar do %>
+	<%= @user.login %> -> Your quotes -> all (<%= @user.quotes.count %>)  -- view
+	<%= link_to "Most Recent Member Quotes", root_path %>,
+	<%= link_to "popular", root_path%>
+<% end %>
 
-<%= link_to 'New quote', new_quote_path %>
+<div id="quotes_container">
+
+	<%# link_to 'Recent', root_path %> 
+	<%# link_to 'Popular', root_path %> 
+	<%# link_to 'Friends', root_path %> 
+	<%# link_to 'Sent to You', root_path %>
+
+	<% for @quote in @quotes %>
+		<%= render :partial => "quotes/quote" %>
+	<% end %>
+
+</div>

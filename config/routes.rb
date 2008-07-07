@@ -1,10 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :quotes
-
-
-  map.resources :users, :member => { :suspend   => :put,
-                                     :unsuspend => :put,
-                                     :purge     => :delete }
+#  map.resources :quotes
+  
+  map.resources :users, :has_many => :quotes, :member => { :suspend => :put, :unsuspend => :put, :purge => :delete }
   map.resource :session
 
   # The priority is based upon order of creation: first created -> highest priority.

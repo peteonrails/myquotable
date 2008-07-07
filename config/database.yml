@@ -1,7 +1,7 @@
 development:
   adapter: mysql
   database: mq_dev
-  host: 169.254.0.2
+  host: localhost
   username: mq_dev
   password: mq_dev
   timeout: 5000
