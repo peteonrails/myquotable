@@ -11,6 +11,6 @@ production:
   port: 26
   domain: myquotable.com
   authentication: login
-  username: admin
+  username: admin+myquotable.com
   password: Rx6RIX3aXDmI
   tls: true
