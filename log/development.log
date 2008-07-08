@@ -45620,3 +45620,490 @@ Rendered quotes/_quote (0.00077)
 Rendered quotes/_quote_toolbar (0.00028)
 Rendered quotes/_quote (0.00077)
 Completed in 0.03293 (30 reqs/sec) | Rendering: 0.01548 (46%) | DB: 0.00968 (29%) | 200 OK [http://localhost/]
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-07-08 00:39:31) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlODUwNThjZDIyNzIwNjFhM2ZhMzVlOTY0OGVkN2I2
+MDIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhtUaGFua3MgZm9yIHNpZ25pbmcgdXAhBjoKQHVzZWR7
+BjsHVDoMdXNlcl9pZGkEydPoEjoOcmV0dXJuX3RvMA==--285421c5fc51fcdb613cd9cbd803f9e2a3958bc9
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000182)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.136352)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001744)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248457) LIMIT 1[0m
+  [4;35;1mSQL (0.000666)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://localhost:3000/
+Completed in 0.15070 (6 reqs/sec) | DB: 0.13916 (92%) | 302 Found [http://localhost/logout]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-08 00:39:31) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9nZ2VkIG91dC4GOgpA
+dXNlZHsGOwZGOg5yZXR1cm5fdG8w--f599f7384e32e5bd380440269aaa69ccd982eee5
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.000596)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.002406)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001440)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-01 04:39:31') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;36;1mUser Columns (0.002489)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001910)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00779)
+Rendered quotes/_quote (0.04275)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00039)
+Rendered quotes/_quote (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00036)
+Rendered quotes/_quote (0.00069)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00035)
+Rendered quotes/_quote (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00036)
+Rendered quotes/_quote (0.00091)
+  [4;36;1mUser Load (0.000891)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+Rendered quotes/_quote_toolbar (0.00131)
+Rendered quotes/_quote (0.00186)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00037)
+Rendered quotes/_quote (0.00089)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00037)
+Rendered quotes/_quote (0.00094)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00037)
+Rendered quotes/_quote (0.00090)
+Completed in 0.14880 (6 reqs/sec) | Rendering: 0.13070 (87%) | DB: 0.00973 (6%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-08 00:39:32) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9nZ2VkIG91dC4GOgpA
+dXNlZHsGOwZUOg5yZXR1cm5fdG8w--16303a3d7c17f4bbcf1328f3226df342b81bf9ed
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00469 (213 reqs/sec) | Rendering: 0.00276 (58%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-07-08 00:39:35) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlMjFmMDUzZGVkODEzNDEyMmNkOThiNzczZGRlOWVl
+ZTQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--37282162fba0ea989d843994c1033ff644371153
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00521 (192 reqs/sec) | Rendering: 0.00321 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 00:39:49) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlMjFmMDUzZGVkODEzNDEyMmNkOThiNzczZGRlOWVl
+ZTQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--37282162fba0ea989d843994c1033ff644371153
+  Parameters: {"user"=>{"password_confirmation"=>"peterpw1", "login"=>"sean", "password"=>"peterpw1", "email"=>"pete@peteonrails.com"}, "commit"=>"Sign up", "authenticity_token"=>"e5584d90db297b501f058134a8d38e54e7242ca9", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Columns (0.002425)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.001713)[0m   [0mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'sean') [0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'pete@peteonrails.com') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.01394 (71 reqs/sec) | Rendering: 0.00278 (19%) | DB: 0.00452 (32%) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 00:39:56) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlMjFmMDUzZGVkODEzNDEyMmNkOThiNzczZGRlOWVl
+ZTQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--37282162fba0ea989d843994c1033ff644371153
+  Parameters: {"user"=>{"password_confirmation"=>"peterpw1", "login"=>"sean", "password"=>"peterpw1", "email"=>"pete@acts-as-mobile.com"}, "commit"=>"Sign up", "authenticity_token"=>"e5584d90db297b501f058134a8d38e54e7242ca9", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUser Columns (0.002565)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000409)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'sean') [0m
+  [4;35;1mSQL (0.000251)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'pete@acts-as-mobile.com') [0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.000350)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('8b773e7f06a59bc0e53f421a685a32a4fe156382', '2008-07-08 04:39:56', NULL, '2c127eac1f47ea5e2e12c103a343de4cfe71d6aa', NULL, NULL, '65bf31bc6096042e3e5199b5263bb0179c35fcee', NULL, 'sean', 'pete@acts-as-mobile.com', '2008-07-08 04:39:56', 'pending')[0m
+Sent mail to pete@acts-as-mobile.com
+
+Date: Tue, 8 Jul 2008 00:39:56 -0400
+From: admin@myquotable.com
+To: pete@acts-as-mobile.com
+Subject: MyQuotable: Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: sean
+  Password: peterpw1
+
+Visit this url to activate your account:
+
+  http://www.myquotable.com/activate/65bf31bc6096042e3e5199b5263bb0179c35fcee
+  [4;36;1mSQL (0.010055)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 1.71878 (0 reqs/sec) | DB: 0.01378 (0%) | 302 Found [http://localhost/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-08 00:39:58) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMjFmMDUzZGVkODEzNDEyMmNkOThiNzczZGRlOWVl
+ZTQ6DHVzZXJfaWRpBMrT6BIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6
+OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIhtUaGFua3MgZm9yIHNpZ25p
+bmcgdXAhBjoKQHVzZWR7BjsIRjoOcmV0dXJuX3RvMA==--11736e8c3e759fc883c082eb413adf0477a9c11f
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.000583)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.002400)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mUser Columns (0.002551)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001617)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248458) LIMIT 1[0m
+  [4;35;1mQuote Load (0.001286)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-01 04:39:58') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.000845)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00303)
+Rendered quotes/_quote (0.00518)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00036)
+Rendered quotes/_quote (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00031)
+Rendered quotes/_quote (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00029)
+Rendered quotes/_quote (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00028)
+Rendered quotes/_quote (0.00078)
+  [4;35;1mUser Load (0.000936)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+Rendered quotes/_quote_toolbar (0.00128)
+Rendered quotes/_quote (0.00178)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00029)
+Rendered quotes/_quote (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00030)
+Rendered quotes/_quote (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00028)
+Rendered quotes/_quote (0.00078)
+Completed in 0.03424 (29 reqs/sec) | Rendering: 0.01587 (46%) | DB: 0.01022 (29%) | 200 OK [http://localhost/]
+** acts_as_taggable_on: initialized properly.
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-07-08 00:42:59) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlMjFmMDUzZGVkODEzNDEyMmNkOThiNzczZGRlOWVl
+ZTQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhtUaGFua3MgZm9yIHNpZ25pbmcgdXAhBjoKQHVzZWR7
+BjsHVDoMdXNlcl9pZGkEytPoEjoOcmV0dXJuX3RvMA==--af700cdff8c84f8f45ac21b4292a962e88859907
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000180)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.014174)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001329)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248458) LIMIT 1[0m
+  [4;35;1mSQL (0.000164)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000148)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://localhost:3000/
+Completed in 0.02507 (39 reqs/sec) | DB: 0.01599 (63%) | 302 Found [http://localhost/logout]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-08 00:42:59) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9nZ2VkIG91dC4GOgpA
+dXNlZHsGOwZGOg5yZXR1cm5fdG8w--f599f7384e32e5bd380440269aaa69ccd982eee5
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.000646)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.002292)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001503)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-01 04:42:59') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;36;1mUser Columns (0.002745)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000969)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00716)
+Rendered quotes/_quote (0.03923)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00041)
+Rendered quotes/_quote (0.00081)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00034)
+Rendered quotes/_quote (0.00067)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00036)
+Rendered quotes/_quote (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00038)
+Rendered quotes/_quote (0.00097)
+  [4;36;1mUser Load (0.000948)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+Rendered quotes/_quote_toolbar (0.00147)
+Rendered quotes/_quote (0.00204)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00041)
+Rendered quotes/_quote (0.00096)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00038)
+Rendered quotes/_quote (0.00090)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00037)
+Rendered quotes/_quote (0.00089)
+Completed in 0.13102 (7 reqs/sec) | Rendering: 0.11352 (86%) | DB: 0.00910 (6%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-08 00:43:01) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9nZ2VkIG91dC4GOgpA
+dXNlZHsGOwZUOg5yZXR1cm5fdG8w--16303a3d7c17f4bbcf1328f3226df342b81bf9ed
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00468 (213 reqs/sec) | Rendering: 0.00275 (58%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-07-08 00:43:04) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlNjc2YzY1MmQwZTQ3NDM0YmE3MmM5OGYxMzkxOTI3
+MmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--1b39207172a6856c44ca757e396e15f0661f42f0
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00498 (200 reqs/sec) | Rendering: 0.00304 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 00:43:10) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlNjc2YzY1MmQwZTQ3NDM0YmE3MmM5OGYxMzkxOTI3
+MmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--1b39207172a6856c44ca757e396e15f0661f42f0
+  Parameters: {"user"=>{"password_confirmation"=>"peterpw1", "login"=>"pj", "password"=>"peterpw1", "email"=>"pjackson@kajeet.com"}, "commit"=>"Sign up", "authenticity_token"=>"1056b6a43e58d788e236c5cc4b6d0d9cfe432232", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Columns (0.002507)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.000369)[0m   [0mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'pj') [0m
+  [4;36;1mSQL (0.000239)[0m   [0;1mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'pjackson@kajeet.com') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.01098 (91 reqs/sec) | Rendering: 0.00228 (20%) | DB: 0.00312 (28%) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 00:43:16) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlNjc2YzY1MmQwZTQ3NDM0YmE3MmM5OGYxMzkxOTI3
+MmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--1b39207172a6856c44ca757e396e15f0661f42f0
+  Parameters: {"user"=>{"password_confirmation"=>"peterpw1", "login"=>"pjackson", "password"=>"peterpw1", "email"=>"pjackson@kajeet.com"}, "commit"=>"Sign up", "authenticity_token"=>"1056b6a43e58d788e236c5cc4b6d0d9cfe432232", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUser Columns (0.002530)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000473)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'pjackson') [0m
+  [4;35;1mSQL (0.000246)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'pjackson@kajeet.com') [0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.000288)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('6193c401ae384ce732b80a5b5e8b0b5c51e68a7d', '2008-07-08 04:43:16', NULL, '9485a917b547f8c964ef2719dec93d82ac3b8eef', NULL, NULL, 'c453d45af6025e3d8c8df95a43c521ec7c0fc59e', NULL, 'pjackson', 'pjackson@kajeet.com', '2008-07-08 04:43:16', 'pending')[0m
+Sent mail to pjackson@kajeet.com
+
+Date: Tue, 8 Jul 2008 00:43:16 -0400
+From: admin@myquotable.com
+To: pjackson@kajeet.com
+Subject: MyQuotable: Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: pjackson
+  Password: peterpw1
+
+Visit this url to activate your account:
+
+  http://www.myquotable.com/activate/c453d45af6025e3d8c8df95a43c521ec7c0fc59e
+  [4;36;1mSQL (0.010047)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 1.70241 (0 reqs/sec) | DB: 0.01374 (0%) | 302 Found [http://localhost/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-08 00:43:17) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjc2YzY1MmQwZTQ3NDM0YmE3MmM5OGYxMzkxOTI3
+MmQ6DHVzZXJfaWRpBMvT6BIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6
+OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIhtUaGFua3MgZm9yIHNpZ25p
+bmcgdXAhBjoKQHVzZWR7BjsIRjoOcmV0dXJuX3RvMA==--28735bc61d91373d5813b4d4c1523b70febe3be4
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.000595)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.002293)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mUser Columns (0.002422)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002822)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248459) LIMIT 1[0m
+  [4;35;1mQuote Load (0.001320)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-01 04:43:17') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.000836)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00304)
+Rendered quotes/_quote (0.00514)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00037)
+Rendered quotes/_quote (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00048)
+Rendered quotes/_quote (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00055)
+Rendered quotes/_quote (0.00147)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00032)
+Rendered quotes/_quote (0.00087)
+  [4;35;1mUser Load (0.001085)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+Rendered quotes/_quote_toolbar (0.00154)
+Rendered quotes/_quote (0.00333)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00034)
+Rendered quotes/_quote (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00031)
+Rendered quotes/_quote (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00030)
+Rendered quotes/_quote (0.00082)
+Completed in 0.03830 (26 reqs/sec) | Rendering: 0.01892 (49%) | DB: 0.01137 (29%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-07-08 00:43:51) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNjc2YzY1MmQwZTQ3NDM0YmE3MmM5OGYxMzkxOTI3
+MmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhtUaGFua3MgZm9yIHNpZ25pbmcgdXAhBjoKQHVzZWR7
+BjsHVDoMdXNlcl9pZGkEy9PoEjoOcmV0dXJuX3RvMA==--b91911f0a96fbbacc0ae96f63a882d3e6617f64a
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;35;1mUser Columns (0.002560)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000883)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248459) LIMIT 1[0m
+  [4;35;1mSQL (0.000161)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000148)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://localhost:3000/
+Completed in 0.01003 (99 reqs/sec) | DB: 0.00375 (37%) | 302 Found [http://localhost/logout]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-08 00:43:51) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9nZ2VkIG91dC4GOgpA
+dXNlZHsGOwZGOg5yZXR1cm5fdG8w--f599f7384e32e5bd380440269aaa69ccd982eee5
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.000671)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.002403)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001510)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-01 04:43:51') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;36;1mUser Columns (0.004202)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001059)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00870)
+Rendered quotes/_quote (0.01111)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00039)
+Rendered quotes/_quote (0.00079)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00035)
+Rendered quotes/_quote (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00037)
+Rendered quotes/_quote (0.00099)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00037)
+Rendered quotes/_quote (0.00090)
+  [4;36;1mUser Load (0.001099)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+Rendered quotes/_quote_toolbar (0.00160)
+Rendered quotes/_quote (0.00214)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00038)
+Rendered quotes/_quote (0.00094)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00035)
+Rendered quotes/_quote (0.00086)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00035)
+Rendered quotes/_quote (0.00086)
+Completed in 0.10205 (9 reqs/sec) | Rendering: 0.08327 (81%) | DB: 0.01094 (10%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-08 00:43:54) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9nZ2VkIG91dC4GOgpA
+dXNlZHsGOwZUOg5yZXR1cm5fdG8w--16303a3d7c17f4bbcf1328f3226df342b81bf9ed
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00359 (278 reqs/sec) | Rendering: 0.00172 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-07-08 00:43:58) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZTA5NmI3YzFiOGE2N2I5N2NmMTAwMWY1ZGU1MmU0
+YWEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--823cca76131d8861fac6db7e9b03cb61e05062dc
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"9e8104349b9a374a18d8394e753a8f73a440e206", "action"=>"create", "controller"=>"sessions", "password"=>"peterpw1", "login"=>"pjackson"}
+  [4;36;1mUser Load (0.000938)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'pjackson') AND (users.state = 'active') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00506 (197 reqs/sec) | Rendering: 0.00159 (31%) | DB: 0.00094 (18%) | 200 OK [http://localhost/session]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 00:44:19) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlZTA5NmI3YzFiOGE2N2I5N2NmMTAwMWY1ZGU1MmU0
+YWE6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOg5yZXR1cm5fdG8w--5ad5fab828e135fa5cefbc65fdd6fbdd311dd955
+  Parameters: {"activation_code"=>"c453d45af6025e3d8c8df95a43c521ec7c0fc59e", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.013702)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001345)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'c453d45af6025e3d8c8df95a43c521ec7c0fc59e') LIMIT 1[0m
+  [4;35;1mSQL (0.000205)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.000394)[0m   [0;1mUPDATE `users` SET `activated_at` = '2008-07-08 04:44:19', `activation_code` = NULL, `state` = 'active', `updated_at` = '2008-07-08 04:44:19' WHERE `id` = 317248459[0m
+Sent mail to pjackson@kajeet.com
+
+Date: Tue, 8 Jul 2008 00:44:19 -0400
+From: admin@myquotable.com
+To: pjackson@kajeet.com
+Subject: MyQuotable: Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+pjackson, your account has been activated.  You may now start adding quotes!
+
+  http://www.myquotable.com/
+  [4;35;1mSQL (0.009996)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 1.66974 (0 reqs/sec) | DB: 0.02564 (1%) | 302 Found [http://localhost/activate/c453d45af6025e3d8c8df95a43c521ec7c0fc59e]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-08 00:44:21) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlZTA5NmI3YzFiOGE2N2I5N2NmMTAwMWY1ZGU1MmU0
+YWEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhVTaWdudXAgY29tcGxldGUhBjoKQHVzZWR7BjsHRjoM
+dXNlcl9pZGkEy9PoEjoOcmV0dXJuX3RvMA==--2e19e8876a43a615fbabd95fbe6f5a21c7eddfd9
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.000597)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.002365)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mUser Columns (0.003404)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001106)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248459) LIMIT 1[0m
+  [4;36;1mQuote Load (0.001282)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-07-01 04:44:21') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.000833)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00300)
+Rendered quotes/_quote (0.00507)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00030)
+Rendered quotes/_quote (0.00065)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00032)
+Rendered quotes/_quote (0.00067)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00029)
+Rendered quotes/_quote (0.00083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00028)
+Rendered quotes/_quote (0.00078)
+  [4;36;1mUser Load (0.000858)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+Rendered quotes/_quote_toolbar (0.00119)
+Rendered quotes/_quote (0.00169)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00029)
+Rendered quotes/_quote (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00028)
+Rendered quotes/_quote (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+Rendered quotes/_quote_toolbar (0.00028)
+Rendered quotes/_quote (0.00078)
+Completed in 0.03418 (29 reqs/sec) | Rendering: 0.01568 (45%) | DB: 0.01044 (30%) | 200 OK [http://localhost/]

@@ -7,8 +7,8 @@ development:
   password: Rx6RIX3aXDmI
   
 production:
-  server: localhost
-  port: 25
+  server: mail.myquotable.com
+  port: 26
   domain: myquotable.com
   authentication: login
   username: admin

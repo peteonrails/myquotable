@@ -3,27 +3,23 @@ class UsersController < ApplicationController
   include AuthenticatedSystem
   
   # Protect these actions behind an admin login
-  # before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
+  before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
   before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge, :show]
 
   before_filter :login_required, :only => [:index]
 
-  # render new.rhtml
+  # render new.html.erb
   def new
   end
 
   # GET /users/:id
   def show
-    @quotes = @user.quotes
+
   end
   
 
   def create
     cookies.delete :auth_token
-    # protects against session fixation attacks, wreaks havoc with 
-    # request forgery protection.
-    # uncomment at your own risk
-    # reset_session
     @user = User.new(params[:user])
     @user.register! if @user.valid?
     if @user.errors.empty?
