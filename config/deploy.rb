@@ -1,25 +1,26 @@
 set :user, 'pete'
 set :server, 'myquotable.com'
+
 set :application, "myquotable"
 set :repository,  "pete@xuxa.local:/var/git/myquotable.git/"
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
 # via the :deploy_to variable:
-set :deploy_to, "/home/#{user}/#{application}"
+set :deploy_to, "/home/pete/apps/#{application}"
 
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
 set :scm, :git
+set :deploy_via, :copy
+
 set :use_sudo, false
 set :group_writable, false
 set :rails_env, "production"
 
-ssh_options[:paranoid] = false
-
-role :app, server
-role :web, server
-role :db,  server, :primary => true
+role :app, "myquotable.com"
+role :web, "myquotable.com"
+role :db,  "myquotable.com", :primary => true
 
 task :restart, :roles => :app do
 
