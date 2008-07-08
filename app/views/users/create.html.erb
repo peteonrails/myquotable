@@ -1,0 +1,18 @@
+<% content_for :pagename do %>
+	Signing Up
+<% end %>
+<% content_for :statusbar do %>
+	<%= @user.login %> -> Thank you for signing up!
+<% end %>
+
+<div id="message_block_container">
+	<div id="message_block_title">
+		Next Step: You only have to do this once!
+	</div>
+	<div id="message_block">
+		<ul>
+			<li style="font-size: +2;"> We have sent a message to <%=h @user.email %> with an activation code. </li>
+			<li style="font-size: +2;"> Please check your email and click the link to activate your account. </li>
+		</ul>
+	</div>
+</div>

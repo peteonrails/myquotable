@@ -23,13 +23,27 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     @user.register! if @user.valid?
     if @user.errors.empty?
-      self.current_user = @user
-      redirect_back_or_default('/')
+      self.current_user.forget_me if logged_in?
+      cookies.delete :auth_token
+      reset_session
       flash[:notice] = "Thanks for signing up!"
     else
       render :action => 'new'
     end
   end
+
+#  def create
+#    cookies.delete :auth_token
+#    @user = User.new(params[:user])
+#    @user.register! if @user.valid?
+#    if @user.errors.empty?
+#      self.current_user = @user
+#      redirect_back_or_default('/')
+#      flash[:notice] = "Thanks for signing up!"
+#    else
+#      render :action => 'new'
+#    end
+#  end
 
   def activate
     self.current_user = params[:activation_code].blank? ? false : User.find_by_activation_code(params[:activation_code])
