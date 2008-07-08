@@ -2,7 +2,7 @@
 	Signing Up
 <% end %>
 <% content_for :statusbar do %>
-	<%= @user.login %> -> Thank you for signing up!
+	<%= @user.login %> <%= flash[:notice] if flash[:notice] %> 
 <% end %>
 
 <div id="message_block_container">
@@ -10,9 +10,12 @@
 		Next Step: You only have to do this once!
 	</div>
 	<div id="message_block">
-		<ul>
-			<li style="font-size: +2;"> We have sent a message to <%=h @user.email %> with an activation code. </li>
-			<li style="font-size: +2;"> Please check your email and click the link to activate your account. </li>
-		</ul>
+	 	We have sent a message to <%=h @user.email %> with an activation code. <br />
+		Please check your email and click the link to activate your account.
+		
+		<br />
+		<br />
+		If you are having trouble clicking the link in your email, you can 
+		<%= link_to 'Enter Your Activation Code Here', activate_path %>.
 	</div>
 </div>

@@ -47421,3 +47421,1888 @@ ZHsGOwZG--c99672d68ff383e080fe019cd42dbcc1707c838c
 Rendering template within layouts/application
 Rendering sessions/new
 Completed in 0.00362 (275 reqs/sec) | Rendering: 0.00174 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-07-08 01:53:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhtUaGFua3MgZm9yIHNpZ25pbmcgdXAhBjoKQHVzZWR7
+BjsHVA==--dac51c9417fc15c52db71039be205fbd320434db
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/activate" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 01:54:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--103dedd84ea0a8e6c710199809f28493c73e0f60
+  Parameters: {"activation_code"=>"1", "action"=>"activate", "controller"=>"users"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000190)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.016212)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002801)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+ERROR: compiling _run_erb_47app47views47users47activate46html46erb RAISED compile error
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:1: syntax error, unexpected ')'
+_erbout = ''; _erbout.concat(( form_tag activate_path do ).to_s); _erbout.concat "\n"
+                                                          ^
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:7: syntax error, unexpected kEND, expecting ')'
+Function body: def _run_erb_47app47views47users47activate46html46erb(local_assigns)
+_erbout = ''; _erbout.concat(( form_tag activate_path do ).to_s); _erbout.concat "\n"
+_erbout.concat "\t"; _erbout.concat(( label_tag "activation_code", 'Activation Code' ).to_s); _erbout.concat " \n"
+_erbout.concat "\t"; _erbout.concat(( text_field_tag activation_code ).to_s); _erbout.concat "\n"
+_erbout.concat "\t<br />\n"
+_erbout.concat "\t"; _erbout.concat(( submit_tag 'Activate' ).to_s); _erbout.concat "\n"
+ end ; _erbout
+end
+Backtrace: /Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:7:in `compile_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:1: syntax error, unexpected ')'
+_erbout = ''; _erbout.concat(( form_tag activate_path do ).to_s); _erbout.concat "\n"
+                                                          ^
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:7: syntax error, unexpected kEND, expecting ')') on line #1 of users/activate.html.erb:
+1: <%= form_tag activate_path do %>
+2: 	<%= label_tag "activation_code", 'Activation Code' %> 
+3: 	<%= text_field_tag activation_code %>
+4: 	<br />
+
+    app/views/users/activate.html.erb:7:in `compile_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 01:54:59) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"activation_code"=>"1", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.014137)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002457)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+ERROR: compiling _run_erb_47app47views47users47activate46html46erb RAISED compile error
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:1: syntax error, unexpected ')'
+_erbout = ''; _erbout.concat(( form_tag(activate_path) do ).to_s); _erbout.concat "\n"
+                                                           ^
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:7: syntax error, unexpected kEND, expecting ')'
+Function body: def _run_erb_47app47views47users47activate46html46erb(local_assigns)
+_erbout = ''; _erbout.concat(( form_tag(activate_path) do ).to_s); _erbout.concat "\n"
+_erbout.concat "\t"; _erbout.concat(( label_tag "activation_code", 'Activation Code' ).to_s); _erbout.concat " \n"
+_erbout.concat "\t"; _erbout.concat(( text_field_tag activation_code ).to_s); _erbout.concat "\n"
+_erbout.concat "\t<br />\n"
+_erbout.concat "\t"; _erbout.concat(( submit_tag 'Activate' ).to_s); _erbout.concat "\n"
+ end ; _erbout
+end
+Backtrace: /Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:7:in `compile_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:1: syntax error, unexpected ')'
+_erbout = ''; _erbout.concat(( form_tag(activate_path) do ).to_s); _erbout.concat "\n"
+                                                           ^
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:7: syntax error, unexpected kEND, expecting ')') on line #1 of users/activate.html.erb:
+1: <%= form_tag(activate_path) do %>
+2: 	<%= label_tag "activation_code", 'Activation Code' %> 
+3: 	<%= text_field_tag activation_code %>
+4: 	<br />
+
+    app/views/users/activate.html.erb:7:in `compile_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 01:56:33) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DHVzZXJfaWQw--08fc215f8addb9431f1533b099ae193e538a7e62
+  Parameters: {"activation_code"=>"1", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.012920)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001256)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+
+
+ActionView::TemplateError (undefined local variable or method `activation_code' for #<ActionView::Base:0x22715e4>) on line #3 of users/activate.html.erb:
+1: <% form_tag(activate_path) do %>
+2: 	<% label_tag "activation_code", 'Activation Code' %> 
+3: 	<% text_field_tag activation_code %>
+4: 	<br />
+5: 	<% submit_tag 'Activate' %>
+6: <% end %>
+    app/views/users/activate.html.erb:3:in `_run_erb_47app47views47users47activate46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/capture_helper.rb:141:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/capture_helper.rb:141:in `capture_erb_with_buffer'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/capture_helper.rb:44:in `capture'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_tag_helper.rb:444:in `form_tag_in_block'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_tag_helper.rb:39:in `form_tag'
+    app/views/users/activate.html.erb:1:in `_run_erb_47app47views47users47activate46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 01:56:52) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"activation_code"=>"1", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.012823)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001259)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+ERROR: compiling _run_erb_47app47views47users47activate46html46erb RAISED compile error
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:5: syntax error, unexpected tCONSTANT, expecting kEND
+_erbout.concat "\t";  submit_tag 'Activate' ; _erbout.concat "\n"
+                                          ^
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:5: unterminated string meets end of file
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:5: syntax error, unexpected $end, expecting kEND
+Function body: def _run_erb_47app47views47users47activate46html46erb(local_assigns)
+_erbout = '';  form_tag(activate_path) do ; _erbout.concat "\n"
+_erbout.concat "\t";  label_tag "activation_code", 'Activation Code' ; _erbout.concat " \n"
+_erbout.concat "\t";  text_field_tag 'activation_code'' ; _erbout.concat "\n"
+_erbout.concat "\t<br />\n"
+_erbout.concat "\t";  submit_tag 'Activate' ; _erbout.concat "\n"
+ end ; _erbout
+end
+Backtrace: /Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:5:in `compile_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:5: syntax error, unexpected tCONSTANT, expecting kEND
+_erbout.concat "\t";  submit_tag 'Activate' ; _erbout.concat "\n"
+                                          ^
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:5: unterminated string meets end of file
+/Users/Pete/Documents/workspace/myquotable/app/views/users/activate.html.erb:5: syntax error, unexpected $end, expecting kEND) on line #5 of users/activate.html.erb:
+2: 	<% label_tag "activation_code", 'Activation Code' %> 
+3: 	<% text_field_tag 'activation_code'' %>
+4: 	<br />
+5: 	<% submit_tag 'Activate' %>
+6: <% end %>
+    app/views/users/activate.html.erb:5:in `compile_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 01:57:04) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DHVzZXJfaWQw--08fc215f8addb9431f1533b099ae193e538a7e62
+  Parameters: {"activation_code"=>"1", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.014901)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001264)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.02772 (36 reqs/sec) | Rendering: 0.00790 (28%) | DB: 0.01617 (58%) | 200 OK [http://localhost/activate/1]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 01:57:39) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"activation_code"=>"1", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.012712)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001243)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.02059 (48 reqs/sec) | Rendering: 0.00312 (15%) | DB: 0.01396 (67%) | 200 OK [http://localhost/activate/1]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 01:57:46) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DHVzZXJfaWQw--08fc215f8addb9431f1533b099ae193e538a7e62
+  Parameters: {"activation_code"=>"1", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.012816)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.003322)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.02309 (43 reqs/sec) | Rendering: 0.00304 (13%) | DB: 0.01614 (69%) | 200 OK [http://localhost/activate/1]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:06:34) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"commit"=>"Activate", "activation_code"=>"1", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002567)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000853)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00843 (118 reqs/sec) | Rendering: 0.00183 (21%) | DB: 0.00342 (40%) | 200 OK [http://localhost/activate/1]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:11:38) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoKZXJyb3IiclNvcnJ5LCB3ZSBjb3VsZG4ndCBmaW5kIHRoYXQgYWN0
+aXZhdGlvbiBjb2RlLiBQbGVhc2UgY3V0IGFuZCBwYXN0ZSB0aGUgYWN0aXZh
+dGlvbiBjb2RlIGZyb20geW91ciBlbWFpbCBiZWxvdy4GOgpAdXNlZHsGOwdG
+Ogx1c2VyX2lkMA==--65bfe176313774819681a11905693d37e7da2f6e
+  Parameters: {"commit"=>"Activate", "activation_code"=>"1", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.003409)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001839)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01427 (70 reqs/sec) | Rendering: 0.00519 (36%) | DB: 0.00525 (36%) | 200 OK [http://localhost/activate/1]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:11:43) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6CmVycm9yInJTb3JyeSwgd2UgY291bGRuJ3QgZmlu
+ZCB0aGF0IGFjdGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUg
+dGhlIGFjdGl2YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoK
+QHVzZWR7BjsIRg==--c48921ab52202449544667766f9757d4f1f18f10
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.06710 (14 reqs/sec) | Rendering: 0.06500 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:11:45) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoKZXJyb3IiclNvcnJ5LCB3ZSBjb3VsZG4ndCBmaW5kIHRoYXQgYWN0
+aXZhdGlvbiBjb2RlLiBQbGVhc2UgY3V0IGFuZCBwYXN0ZSB0aGUgYWN0aXZh
+dGlvbiBjb2RlIGZyb20geW91ciBlbWFpbCBiZWxvdy4GOgpAdXNlZHsGOwdU
+Ogx1c2VyX2lkMA==--88c1793218f2ac4d71cc6dbb9b3aa35bd9f4402f
+  Parameters: {"commit"=>"Activate", "activation_code"=>"wefw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002367)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000852)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'wefw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00788 (126 reqs/sec) | Rendering: 0.00148 (18%) | DB: 0.00322 (40%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:12:49) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6CmVycm9yInJTb3JyeSwgd2UgY291bGRuJ3QgZmlu
+ZCB0aGF0IGFjdGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUg
+dGhlIGFjdGl2YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoK
+QHVzZWR7BjsIRg==--c48921ab52202449544667766f9757d4f1f18f10
+  Parameters: {"commit"=>"Activate", "activation_code"=>"wefw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.007315)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001938)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'wefw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01596 (62 reqs/sec) | Rendering: 0.00272 (17%) | DB: 0.00925 (57%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:12:59) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoKZXJyb3IiclNvcnJ5LCB3ZSBjb3VsZG4ndCBmaW5kIHRoYXQgYWN0
+aXZhdGlvbiBjb2RlLiBQbGVhc2UgY3V0IGFuZCBwYXN0ZSB0aGUgYWN0aXZh
+dGlvbiBjb2RlIGZyb20geW91ciBlbWFpbCBiZWxvdy4GOgpAdXNlZHsGOwdG
+Ogx1c2VyX2lkMA==--65bfe176313774819681a11905693d37e7da2f6e
+  Parameters: {"commit"=>"Activate", "activation_code"=>"23e23e", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002548)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000870)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '23e23e') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00900 (111 reqs/sec) | Rendering: 0.00161 (17%) | DB: 0.00342 (37%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:13:04) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6CmVycm9yInJTb3JyeSwgd2UgY291bGRuJ3QgZmlu
+ZCB0aGF0IGFjdGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUg
+dGhlIGFjdGl2YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoK
+QHVzZWR7BjsIRg==--c48921ab52202449544667766f9757d4f1f18f10
+  Parameters: {"commit"=>"Activate", "activation_code"=>"wefewwe", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.068875)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001012)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'wefewwe') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.07509 (13 reqs/sec) | Rendering: 0.00186 (2%) | DB: 0.06989 (93%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:14:13) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoKZXJyb3IiclNvcnJ5LCB3ZSBjb3VsZG4ndCBmaW5kIHRoYXQgYWN0
+aXZhdGlvbiBjb2RlLiBQbGVhc2UgY3V0IGFuZCBwYXN0ZSB0aGUgYWN0aXZh
+dGlvbiBjb2RlIGZyb20geW91ciBlbWFpbCBiZWxvdy4GOgpAdXNlZHsGOwdG
+Ogx1c2VyX2lkMA==--65bfe176313774819681a11905693d37e7da2f6e
+  Parameters: {"commit"=>"Activate", "activation_code"=>"wefewwe", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002789)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000906)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'wefewwe') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01013 (98 reqs/sec) | Rendering: 0.00278 (27%) | DB: 0.00370 (36%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:14:47) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6CmVycm9yInJTb3JyeSwgd2UgY291bGRuJ3QgZmlu
+ZCB0aGF0IGFjdGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUg
+dGhlIGFjdGl2YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoK
+QHVzZWR7BjsIRg==--c48921ab52202449544667766f9757d4f1f18f10
+  Parameters: {"commit"=>"Activate", "activation_code"=>"wefewwe", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.003238)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002002)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'wefewwe') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01163 (85 reqs/sec) | Rendering: 0.00276 (23%) | DB: 0.00524 (45%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:15:50) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoKZXJyb3IiclNvcnJ5LCB3ZSBjb3VsZG4ndCBmaW5kIHRoYXQgYWN0
+aXZhdGlvbiBjb2RlLiBQbGVhc2UgY3V0IGFuZCBwYXN0ZSB0aGUgYWN0aXZh
+dGlvbiBjb2RlIGZyb20geW91ciBlbWFpbCBiZWxvdy4GOgpAdXNlZHsGOwdG
+Ogx1c2VyX2lkMA==--65bfe176313774819681a11905693d37e7da2f6e
+  Parameters: {"commit"=>"Activate", "activation_code"=>"wefewwe", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002475)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001739)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'wefewwe') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01077 (92 reqs/sec) | Rendering: 0.00279 (25%) | DB: 0.00421 (39%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:15:54) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewc6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LjoK
+ZXJyb3IiclNvcnJ5LCB3ZSBjb3VsZG4ndCBmaW5kIHRoYXQgYWN0aXZhdGlv
+biBjb2RlLiBQbGVhc2UgY3V0IGFuZCBwYXN0ZSB0aGUgYWN0aXZhdGlvbiBj
+b2RlIGZyb20geW91ciBlbWFpbCBiZWxvdy4GOgpAdXNlZHsHOwhGOwlU--c4129b19852ad60710ed29b7c2454fc2364c2874
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00398 (251 reqs/sec) | Rendering: 0.00186 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:16:22) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+VDoMdXNlcl9pZDA=--6793b8ca8e710b803281011b491697ec210f6ee6
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00372 (268 reqs/sec) | Rendering: 0.00169 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:16:36) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00463 (216 reqs/sec) | Rendering: 0.00263 (56%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:16:40) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DHVzZXJfaWQw--08fc215f8addb9431f1533b099ae193e538a7e62
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002541)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000853)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00814 (122 reqs/sec) | Rendering: 0.00157 (19%) | DB: 0.00339 (41%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:17:09) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002571)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000870)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00944 (105 reqs/sec) | Rendering: 0.00264 (27%) | DB: 0.00344 (36%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:17:20) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+RjoMdXNlcl9pZDA=--7c2024cefe0e85b9d5662c7da7bd35a160d7ffb5
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002588)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001854)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01179 (84 reqs/sec) | Rendering: 0.00269 (22%) | DB: 0.00444 (37%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:18:27) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002788)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002317)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01034 (96 reqs/sec) | Rendering: 0.00185 (17%) | DB: 0.00511 (49%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:18:38) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+RjoMdXNlcl9pZDA=--7c2024cefe0e85b9d5662c7da7bd35a160d7ffb5
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002675)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001849)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01115 (89 reqs/sec) | Rendering: 0.00186 (16%) | DB: 0.00452 (40%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:18:45) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002518)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000987)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00847 (118 reqs/sec) | Rendering: 0.00167 (19%) | DB: 0.00351 (41%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:19:32) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+RjoMdXNlcl9pZDA=--7c2024cefe0e85b9d5662c7da7bd35a160d7ffb5
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.014335)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000938)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.02091 (47 reqs/sec) | Rendering: 0.00175 (8%) | DB: 0.01527 (73%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:19:47) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.004562)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.003567)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01453 (68 reqs/sec) | Rendering: 0.00285 (19%) | DB: 0.00813 (55%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:21:19) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+RjoMdXNlcl9pZDA=--7c2024cefe0e85b9d5662c7da7bd35a160d7ffb5
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002659)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000880)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.08167 (12 reqs/sec) | Rendering: 0.00268 (3%) | DB: 0.00354 (4%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:22:29) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.008669)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.003082)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01816 (55 reqs/sec) | Rendering: 0.00278 (15%) | DB: 0.01175 (64%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:23:05) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+RjoMdXNlcl9pZDA=--7c2024cefe0e85b9d5662c7da7bd35a160d7ffb5
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.011129)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002117)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01964 (50 reqs/sec) | Rendering: 0.00276 (14%) | DB: 0.01325 (67%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:23:42) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.004544)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002045)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01305 (76 reqs/sec) | Rendering: 0.00300 (23%) | DB: 0.00659 (50%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:24:01) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+RjoMdXNlcl9pZDA=--7c2024cefe0e85b9d5662c7da7bd35a160d7ffb5
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002523)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000878)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00951 (105 reqs/sec) | Rendering: 0.00286 (30%) | DB: 0.00340 (35%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:24:26) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.011945)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002175)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.02110 (47 reqs/sec) | Rendering: 0.00310 (14%) | DB: 0.01412 (66%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:24:55) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+RjoMdXNlcl9pZDA=--7c2024cefe0e85b9d5662c7da7bd35a160d7ffb5
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.011866)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001801)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.02047 (48 reqs/sec) | Rendering: 0.00205 (9%) | DB: 0.01367 (66%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:25:09) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.008464)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001979)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01593 (62 reqs/sec) | Rendering: 0.00184 (11%) | DB: 0.01044 (65%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:25:17) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+RjoMdXNlcl9pZDA=--7c2024cefe0e85b9d5662c7da7bd35a160d7ffb5
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002577)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000897)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00823 (121 reqs/sec) | Rendering: 0.00160 (19%) | DB: 0.00347 (42%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:25:28) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.012085)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001061)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.01898 (52 reqs/sec) | Rendering: 0.00183 (9%) | DB: 0.01315 (69%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:26:03) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+RjoMdXNlcl9pZDA=--7c2024cefe0e85b9d5662c7da7bd35a160d7ffb5
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ereqw", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.011866)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.002198)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ereqw') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.02111 (47 reqs/sec) | Rendering: 0.00307 (14%) | DB: 0.01406 (66%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:26:10) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00401 (249 reqs/sec) | Rendering: 0.00190 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:26:17) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInJTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgdGhlIGFjdGl2
+YXRpb24gY29kZSBmcm9tIHlvdXIgZW1haWwgYmVsb3cuBjoKQHVzZWR7BjsH
+VDoMdXNlcl9pZDA=--6793b8ca8e710b803281011b491697ec210f6ee6
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00376 (265 reqs/sec) | Rendering: 0.00172 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:26:20) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00379 (263 reqs/sec) | Rendering: 0.00168 (44%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:26:22) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DHVzZXJfaWQw--08fc215f8addb9431f1533b099ae193e538a7e62
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ef", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002548)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000834)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ef') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00820 (121 reqs/sec) | Rendering: 0.00163 (19%) | DB: 0.00338 (41%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:27:04) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJyU29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHRoZSBhY3RpdmF0aW9uIGNvZGUgZnJvbSB5b3VyIGVtYWlsIGJlbG93LgY6
+CkB1c2VkewY7CEY=--d2cf79dd8f23b187efa64762bef598d5a9ef9991
+  Parameters: {"commit"=>"Activate", "activation_code"=>"ef", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002607)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000872)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'ef') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00852 (117 reqs/sec) | Rendering: 0.00170 (19%) | DB: 0.00348 (40%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:27:09) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInRTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgeW91ciBhY3Rp
+dmF0aW9uIGNvZGUgaW50byB0aGUgc3BhY2UgYXQgbGVmdC4GOgpAdXNlZHsG
+OwdGOgx1c2VyX2lkMA==--922afecd09bb79d08c7dfbc7b9c641f057700bfc
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00378 (264 reqs/sec) | Rendering: 0.00171 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:27:11) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJ0U29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHlvdXIgYWN0aXZhdGlvbiBjb2RlIGludG8gdGhlIHNwYWNlIGF0IGxlZnQu
+BjoKQHVzZWR7BjsIVA==--c0adbabd4b7f22a60a5ffc24bcf8a1a9cd2c8b54
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00375 (266 reqs/sec) | Rendering: 0.00171 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:27:18) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DHVzZXJfaWQw--08fc215f8addb9431f1533b099ae193e538a7e62
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00382 (261 reqs/sec) | Rendering: 0.00168 (43%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:27:20) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"commit"=>"Activate", "activation_code"=>"we", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002611)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000881)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'we') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00862 (115 reqs/sec) | Rendering: 0.00174 (20%) | DB: 0.00349 (40%) | 200 OK [http://localhost/activate]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-08 02:28:21) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInRTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgeW91ciBhY3Rp
+dmF0aW9uIGNvZGUgaW50byB0aGUgc3BhY2UgYXQgbGVmdC4GOgpAdXNlZHsG
+OwdGOgx1c2VyX2lkMA==--922afecd09bb79d08c7dfbc7b9c641f057700bfc
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00472 (212 reqs/sec) | Rendering: 0.00274 (58%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-08 02:28:21) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInRTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgeW91ciBhY3Rp
+dmF0aW9uIGNvZGUgaW50byB0aGUgc3BhY2UgYXQgbGVmdC4GOgpAdXNlZHsG
+OwdGOgx1c2VyX2lkMA==--922afecd09bb79d08c7dfbc7b9c641f057700bfc
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00362 (276 reqs/sec) | Rendering: 0.00169 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-07-08 02:28:29) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJ0U29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHlvdXIgYWN0aXZhdGlvbiBjb2RlIGludG8gdGhlIHNwYWNlIGF0IGxlZnQu
+BjoKQHVzZWR7BjsIVA==--c0adbabd4b7f22a60a5ffc24bcf8a1a9cd2c8b54
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00520 (192 reqs/sec) | Rendering: 0.00313 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:28:42) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DHVzZXJfaWQw--08fc215f8addb9431f1533b099ae193e538a7e62
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00398 (251 reqs/sec) | Rendering: 0.00186 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:28:48) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"commit"=>"Activate", "activation_code"=>"dfgdrg", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002609)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000857)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'dfgdrg') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00830 (120 reqs/sec) | Rendering: 0.00160 (19%) | DB: 0.00347 (41%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:00) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInRTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgeW91ciBhY3Rp
+dmF0aW9uIGNvZGUgaW50byB0aGUgc3BhY2UgYXQgbGVmdC4GOgpAdXNlZHsG
+OwdGOgx1c2VyX2lkMA==--922afecd09bb79d08c7dfbc7b9c641f057700bfc
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00382 (261 reqs/sec) | Rendering: 0.00170 (44%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:01) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJ0U29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHlvdXIgYWN0aXZhdGlvbiBjb2RlIGludG8gdGhlIHNwYWNlIGF0IGxlZnQu
+BjoKQHVzZWR7BjsIVA==--c0adbabd4b7f22a60a5ffc24bcf8a1a9cd2c8b54
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00382 (262 reqs/sec) | Rendering: 0.00173 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:02) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DHVzZXJfaWQw--08fc215f8addb9431f1533b099ae193e538a7e62
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00398 (251 reqs/sec) | Rendering: 0.00182 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:07) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"commit"=>"Activate", "activation_code"=>"wert", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002548)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000859)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'wert') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00824 (121 reqs/sec) | Rendering: 0.00160 (19%) | DB: 0.00341 (41%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:07) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInRTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgeW91ciBhY3Rp
+dmF0aW9uIGNvZGUgaW50byB0aGUgc3BhY2UgYXQgbGVmdC4GOgpAdXNlZHsG
+OwdGOgx1c2VyX2lkMA==--922afecd09bb79d08c7dfbc7b9c641f057700bfc
+  Parameters: {"commit"=>"Activate", "activation_code"=>"wert", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002545)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000867)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'wert') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00820 (121 reqs/sec) | Rendering: 0.00161 (19%) | DB: 0.00341 (41%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:07) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJ0U29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHlvdXIgYWN0aXZhdGlvbiBjb2RlIGludG8gdGhlIHNwYWNlIGF0IGxlZnQu
+BjoKQHVzZWR7BjsIRg==--30a2387f60915bd7ed0a49e8678a655897e0c66d
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00383 (261 reqs/sec) | Rendering: 0.00176 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:08) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInRTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgeW91ciBhY3Rp
+dmF0aW9uIGNvZGUgaW50byB0aGUgc3BhY2UgYXQgbGVmdC4GOgpAdXNlZHsG
+OwdUOgx1c2VyX2lkMA==--0d0fa20391351e44c2cf46933d10c2cbaae8c676
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00398 (251 reqs/sec) | Rendering: 0.00182 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:11) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"commit"=>"Activate", "activation_code"=>"dsfv", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002554)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000834)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'dsfv') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00828 (120 reqs/sec) | Rendering: 0.00164 (19%) | DB: 0.00339 (40%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:11) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInRTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgeW91ciBhY3Rp
+dmF0aW9uIGNvZGUgaW50byB0aGUgc3BhY2UgYXQgbGVmdC4GOgpAdXNlZHsG
+OwdGOgx1c2VyX2lkMA==--922afecd09bb79d08c7dfbc7b9c641f057700bfc
+  Parameters: {"commit"=>"Activate", "activation_code"=>"dsfv", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002613)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000827)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = 'dsfv') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00824 (121 reqs/sec) | Rendering: 0.00160 (19%) | DB: 0.00344 (41%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:12) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6C25vdGljZSJ0U29ycnksIHdlIGNvdWxkbid0IGZp
+bmQgdGhhdCBhY3RpdmF0aW9uIGNvZGUuIFBsZWFzZSBjdXQgYW5kIHBhc3Rl
+IHlvdXIgYWN0aXZhdGlvbiBjb2RlIGludG8gdGhlIHNwYWNlIGF0IGxlZnQu
+BjoKQHVzZWR7BjsIRg==--30a2387f60915bd7ed0a49e8678a655897e0c66d
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00383 (260 reqs/sec) | Rendering: 0.00177 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:29:12) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlInRTb3JyeSwgd2UgY291bGRuJ3QgZmluZCB0aGF0IGFj
+dGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUgeW91ciBhY3Rp
+dmF0aW9uIGNvZGUgaW50byB0aGUgc3BhY2UgYXQgbGVmdC4GOgpAdXNlZHsG
+OwdUOgx1c2VyX2lkMA==--0d0fa20391351e44c2cf46933d10c2cbaae8c676
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00399 (250 reqs/sec) | Rendering: 0.00182 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-07-08 02:29:20) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00376 (265 reqs/sec) | Rendering: 0.00179 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-07-08 02:29:23) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DHVzZXJfaWQw--08fc215f8addb9431f1533b099ae193e538a7e62
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00390 (256 reqs/sec) | Rendering: 0.00188 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 02:29:37) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZjVjMjY0MTg5ZDNjYmJiNjgyZDVjMDUxY2EyNjkw
+ZjU6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--cbadbda120f9e29ac9023b0e4ea7f39f0345e088
+  Parameters: {"user"=>{"password_confirmation"=>"peter", "login"=>"vbcvbcvbqa", "password"=>"peter", "email"=>"lklkjl@peteonrails.com"}, "commit"=>"Sign up", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUser Columns (0.002435)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.002485)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'vbcvbcvbqa') [0m
+  [4;35;1mSQL (0.000406)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'lklkjl@peteonrails.com') [0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.000402)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('ec352aa6809698f72ad22a8e3526375e2693a39f', '2008-07-08 06:29:37', NULL, '2c6e513bf3760751e4ed51465263e3d9df317a62', NULL, NULL, '7a952154a948a211008559a7af60d6473585e0c5', NULL, 'vbcvbcvbqa', 'lklkjl@peteonrails.com', '2008-07-08 06:29:37', 'pending')[0m
+Sent mail to lklkjl@peteonrails.com
+
+Date: Tue, 8 Jul 2008 02:29:37 -0400
+From: admin@myquotable.com
+To: lklkjl@peteonrails.com
+Subject: MyQuotable: Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: vbcvbcvbqa
+  Password: peter
+
+Visit this url to activate your account:
+
+  http://www.myquotable.com/activate/7a952154a948a211008559a7af60d6473585e0c5
+  [4;36;1mSQL (0.012361)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendering template within layouts/application
+Rendering users/create
+Completed in 1.88184 (0 reqs/sec) | Rendering: 0.00329 (0%) | DB: 0.01824 (0%) | 200 OK [http://localhost/users]
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 02:33:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiG1RoYW5rcyBmb3Igc2lnbmluZyB1cCEGOgpAdXNl
+ZHsGOwZG--c99672d68ff383e080fe019cd42dbcc1707c838c
+  Parameters: {"user"=>{"password_confirmation"=>"peter", "login"=>"vbcvbcvbqa", "password"=>"peter", "email"=>"lklkjl@peteonrails.com"}, "commit"=>"Sign up", "authenticity_token"=>"be7740414b5daed519d8c04ee1d5dac3f67fca8d", "action"=>"create", "controller"=>"users"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000216)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/request_forgery_protection.rb:86:in `verify_authenticity_token'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:173:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:173:in `evaluate_method'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:161:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:430:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:592:in `run_before_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:578:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (unprocessable_entity)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-07-08 02:33:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjE2NzBkZjA0MzBkYTUxZjI1ZTEyMzA0NTJiZTE1
+ZGEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhtUaGFua3MgZm9yIHNpZ25pbmcgdXAhBjoKQHVzZWR7
+BjsHVA==--5b04d9689f28d7b6361d984e346da5fd575ade12
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00857 (116 reqs/sec) | Rendering: 0.00652 (76%) | DB: 0.00022 (2%) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 02:33:28) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjE2NzBkZjA0MzBkYTUxZjI1ZTEyMzA0NTJiZTE1
+ZGEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--9d48da7970735c71d07f05161e5ec1c3a1ebd5df
+  Parameters: {"user"=>{"password_confirmation"=>"peterpw1", "login"=>"dfgffdg", "password"=>"peterpw1", "email"=>"dfgdfgfdg@peteonrails.com"}, "commit"=>"Sign up", "authenticity_token"=>"4a32483d9f24a4048c7456a0c3853a22c24a26d9", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUser Columns (0.002650)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.001327)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'dfgffdg') [0m
+  [4;35;1mSQL (0.000311)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'dfgdfgfdg@peteonrails.com') [0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.000325)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('dc12c4180a1c34db8114d2314c322b475a255556', '2008-07-08 06:33:28', NULL, '1844dc961fcadc97b7ff15ce8b842349890d2bbe', NULL, NULL, '3029a4eecf66540f351a3513dff838d9ba3f2db5', NULL, 'dfgffdg', 'dfgdfgfdg@peteonrails.com', '2008-07-08 06:33:28', 'pending')[0m
+Sent mail to dfgdfgfdg@peteonrails.com
+
+Date: Tue, 8 Jul 2008 02:33:28 -0400
+From: admin@myquotable.com
+To: dfgdfgfdg@peteonrails.com
+Subject: MyQuotable: Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: dfgffdg
+  Password: peterpw1
+  Activation Code: 3029a4eecf66540f351a3513dff838d9ba3f2db5
+
+Visit this url to activate your account:
+
+  http://www.myquotable.com/activate/3029a4eecf66540f351a3513dff838d9ba3f2db5
+  [4;36;1mSQL (0.010121)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendering template within layouts/application
+Rendering users/create
+Completed in 1.64744 (0 reqs/sec) | Rendering: 0.00361 (0%) | DB: 0.01488 (0%) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:33:39) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiG1RoYW5rcyBmb3Igc2lnbmluZyB1cCEGOgpAdXNl
+ZHsGOwZG--c99672d68ff383e080fe019cd42dbcc1707c838c
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00492 (203 reqs/sec) | Rendering: 0.00290 (58%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:35:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODhmYjgyNzdkMmFhYjZhMDM1YjFkOTQyNjgzODM5
+ZGQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhtUaGFua3MgZm9yIHNpZ25pbmcgdXAhBjoKQHVzZWR7
+BjsHVA==--90f058c26eff57a025753dd22454f0db30c5900e
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00484 (206 reqs/sec) | Rendering: 0.00283 (58%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 02:36:06) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODhmYjgyNzdkMmFhYjZhMDM1YjFkOTQyNjgzODM5
+ZGQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c36243a4565ee3b9d5232c80365c361320c035e9
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"dfgffdg", "password"=>"", "email"=>"dfgdfgfdg@peteonrails.com"}, "commit"=>"Sign up", "authenticity_token"=>"4a32483d9f24a4048c7456a0c3853a22c24a26d9", "action"=>"create", "controller"=>"users"}
+
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/request_forgery_protection.rb:86:in `verify_authenticity_token'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:173:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:173:in `evaluate_method'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:161:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:430:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:592:in `run_before_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:578:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (unprocessable_entity)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-07-08 02:36:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODhmYjgyNzdkMmFhYjZhMDM1YjFkOTQyNjgzODM5
+ZGQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c36243a4565ee3b9d5232c80365c361320c035e9
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00393 (254 reqs/sec) | Rendering: 0.00191 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 02:36:11) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODhmYjgyNzdkMmFhYjZhMDM1YjFkOTQyNjgzODM5
+ZGQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c36243a4565ee3b9d5232c80365c361320c035e9
+  Parameters: {"user"=>{"password_confirmation"=>"", "login"=>"dfgffdg", "password"=>"", "email"=>"dfgdfgfdg@peteonrails.com"}, "commit"=>"Sign up", "authenticity_token"=>"7b8ed58a53fdfa6fe6a80fa939c99fa0346971a5", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUser Columns (0.013892)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.001736)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'dfgffdg') [0m
+  [4;35;1mSQL (0.000554)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'dfgdfgfdg@peteonrails.com') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.02714 (36 reqs/sec) | Rendering: 0.00332 (12%) | DB: 0.01618 (59%) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 02:36:23) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODhmYjgyNzdkMmFhYjZhMDM1YjFkOTQyNjgzODM5
+ZGQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c36243a4565ee3b9d5232c80365c361320c035e9
+  Parameters: {"user"=>{"password_confirmation"=>"123", "login"=>"dfgffdg123", "password"=>"123", "email"=>"dfgdfgfdg@peteonrails.com3"}, "commit"=>"Sign up", "authenticity_token"=>"7b8ed58a53fdfa6fe6a80fa939c99fa0346971a5", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Columns (0.002933)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.001390)[0m   [0mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'dfgffdg123') [0m
+  [4;36;1mSQL (0.000507)[0m   [0;1mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'dfgdfgfdg@peteonrails.com3') [0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.01365 (73 reqs/sec) | Rendering: 0.00244 (17%) | DB: 0.00483 (35%) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-07-08 02:36:30) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODhmYjgyNzdkMmFhYjZhMDM1YjFkOTQyNjgzODM5
+ZGQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c36243a4565ee3b9d5232c80365c361320c035e9
+  Parameters: {"user"=>{"password_confirmation"=>"123e", "login"=>"dfgffdg123", "password"=>"123e", "email"=>"dfgdfgfdg@peteonrails.com3"}, "commit"=>"Sign up", "authenticity_token"=>"7b8ed58a53fdfa6fe6a80fa939c99fa0346971a5", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUser Columns (0.002602)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.001450)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'dfgffdg123') [0m
+  [4;35;1mSQL (0.000320)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'dfgdfgfdg@peteonrails.com3') [0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.000292)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `deleted_at`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`, `state`) VALUES('a44695c541fd3899801aed809515d7c8b4491313', '2008-07-08 06:36:30', NULL, 'f764fca5bf067e284cb79562e2b3fda27eb6639d', NULL, NULL, '5bf01ab399563ca3fc0bf31933dc332d62deffc2', NULL, 'dfgffdg123', 'dfgdfgfdg@peteonrails.com3', '2008-07-08 06:36:30', 'pending')[0m
+Sent mail to dfgdfgfdg@peteonrails.com3
+
+Date: Tue, 8 Jul 2008 02:36:30 -0400
+From: admin@myquotable.com
+To: dfgdfgfdg@peteonrails.com3
+Subject: MyQuotable: Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: dfgffdg123
+  Password: 123e
+  Activation Code: 5bf01ab399563ca3fc0bf31933dc332d62deffc2
+
+Visit this url to activate your account:
+
+  http://www.myquotable.com/activate/5bf01ab399563ca3fc0bf31933dc332d62deffc2
+  [4;36;1mSQL (0.010070)[0m   [0;1mCOMMIT[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendering template within layouts/application
+Rendering users/create
+Completed in 1.65200 (0 reqs/sec) | Rendering: 0.00356 (0%) | DB: 0.01489 (0%) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:36:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiG1RoYW5rcyBmb3Igc2lnbmluZyB1cCEGOgpAdXNl
+ZHsGOwZG--c99672d68ff383e080fe019cd42dbcc1707c838c
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00390 (256 reqs/sec) | Rendering: 0.00179 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:36:48) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDE0OTE4NWNhNDM5YTcwNjZhMTQ3MTM5NGIyNWYx
+NzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhtUaGFua3MgZm9yIHNpZ25pbmcgdXAhBjoKQHVzZWR7
+BjsHVA==--8d10f005a3bff2edcc5d8a853e2469d137807ac2
+  Parameters: {"commit"=>"Activate", "activation_code"=>"123", "authenticity_token"=>"3fff3d416d13712b3bf79fceba85fc8ec33be076", "action"=>"activate", "controller"=>"users"}
+  [4;35;1mUser Columns (0.002536)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000858)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '123') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00824 (121 reqs/sec) | Rendering: 0.00159 (19%) | DB: 0.00339 (41%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:36:58) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZDE0OTE4NWNhNDM5YTcwNjZhMTQ3MTM5NGIyNWYx
+NzI6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewY6CmVycm9yInRTb3JyeSwgd2UgY291bGRuJ3QgZmlu
+ZCB0aGF0IGFjdGl2YXRpb24gY29kZS4gUGxlYXNlIGN1dCBhbmQgcGFzdGUg
+eW91ciBhY3RpdmF0aW9uIGNvZGUgaW50byB0aGUgc3BhY2UgYXQgbGVmdC4G
+OgpAdXNlZHsGOwhG--44dfe387953621191156ff4dcd921e32786521c6
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"3fff3d416d13712b3bf79fceba85fc8ec33be076", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00377 (265 reqs/sec) | Rendering: 0.00170 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]
+
+
+Processing UsersController#activate (for 127.0.0.1 at 2008-07-08 02:36:59) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZDE0OTE4NWNhNDM5YTcwNjZhMTQ3MTM5NGIyNWYx
+NzIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoKZXJyb3IidFNvcnJ5LCB3ZSBjb3VsZG4ndCBmaW5kIHRoYXQgYWN0
+aXZhdGlvbiBjb2RlLiBQbGVhc2UgY3V0IGFuZCBwYXN0ZSB5b3VyIGFjdGl2
+YXRpb24gY29kZSBpbnRvIHRoZSBzcGFjZSBhdCBsZWZ0LgY6CkB1c2VkewY7
+B1Q6DHVzZXJfaWQw--78f30841d52c4aeaf42161a1d1b8a7704a248550
+  Parameters: {"commit"=>"Activate", "activation_code"=>"", "authenticity_token"=>"3fff3d416d13712b3bf79fceba85fc8ec33be076", "action"=>"activate", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/activate
+Completed in 0.00376 (265 reqs/sec) | Rendering: 0.00168 (44%) | DB: 0.00000 (0%) | 200 OK [http://localhost/activate]

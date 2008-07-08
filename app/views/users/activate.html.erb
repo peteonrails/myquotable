@@ -1,0 +1,33 @@
+<% content_for :pagename do %>
+	Activate
+<% end %>
+<% content_for :statusbar do %>
+	Activate
+<% end %>
+
+<div id="message_block_container">
+<div id="message_block_title">
+	Activate Your Account
+</div>
+<div id="message_block">
+	
+	<div id="message_block_left">
+	<% form_tag(activate_path) do %>
+		<%= label_tag "activation_code", 'Activation Code' %> 
+		<br />
+		<%= text_field_tag 'activation_code' %>
+		<%= submit_tag 'Activate' %>
+	<% end %>
+	</div>
+
+	<div id="message_block_right">
+	<% if flash[:error] %> 
+		<div id="errorExplanation">
+			<h2>Error Activating Account</h2>
+			<p><%= flash[:error]%></p>
+		</div>
+	<% end %>
+	</div>
+	<br id="clearfix" />
+</div>
+</div>

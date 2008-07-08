@@ -173,13 +173,12 @@ a:hover { color: #fff; background-color:#000; }
 
 #message_block_left {
 	float: left;
-	width: 200px;
+	width: 270px;
 }
 
 #message_block_right {
 	float: right;
 	width: 500px;
-	margin-top: 30px;
 }
 
 br#clearfix {

@@ -16,7 +16,8 @@ ActionController::Routing::Routes.draw do |map|
   map.login  '/login',  :controller => 'sessions', :action => 'new'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.signup '/signup', :controller => 'users',    :action => 'new'
-  map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate'
+  map.activate_code '/activate/:activation_code', :controller => 'users', :action => 'activate'
+  map.activate '/activate', :controller => 'users', :action => 'activate'
  
   # Map the actions that are website-only and not restful
   map.root :controller => "site"
