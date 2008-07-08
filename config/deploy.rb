@@ -11,20 +11,19 @@ set :deploy_via, :copy
 
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
-set :scm, :git
+#set :scm, :git
 set :use_sudo, false
 set :group_writable, false
 set :rails_env, "production"
 
-
 ssh_options[:paranoid] = false
-
 
 role :app, server
 role :web, server
 role :db,  server, :primary => true
 
 task :restart, :roles => :app do
+
 end
 
 task :after_update_code, :roles => [:web, :db, :app] do
@@ -35,10 +34,10 @@ namespace :deploy do
   after "deploy:update", "deploy:railsplayground:fix_permissions", "deploy:railsplayground:kill_dispatch_fcgi"
     
   desc <<-DESC
-    Site5 version of restart task.
+    RailsPlayground version of restart task.
   DESC
   task :restart do
-    site5::kill_dispatch_fcgi
+    railsplayground::kill_dispatch_fcgi
   end
   
   namespace :railsplayground do
@@ -50,7 +49,7 @@ namespace :deploy do
       run "pkill -9 -u #{user} -f dispatch.fcgi"
     end
     
-    desc "Fix g-w issues with Site5"
+    desc "Fix g-w issues with RailsPlayground"
     task :fix_permissions do
       run "cd #{current_path}; chmod -R g-w *"
     end
