@@ -21,6 +21,6 @@ production:
   adapter: mysql
   database: pete_mq
   username: pete_mq
-  password: FIXME
+  password: lxIle9wRXkD5
   host: localhost
   timeout: 5000
