@@ -1,7 +1,7 @@
 set :user, 'pete'
 set :server, 'myquotable.com'
 set :application, "myquotable"
-set :repository,  "/Users/Pete/Documents/workspace/myquotable/.git/" #change this to be the remote repo on xuxa
+set :repository,  "pete@xuxa.local:/var/git/myquotable.git"
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
