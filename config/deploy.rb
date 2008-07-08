@@ -31,14 +31,19 @@ task :after_update_code, :roles => [:web, :db, :app] do
 end
 
 namespace :deploy do
-  after "deploy:update", "deploy:railsplayground:fix_permissions", "deploy:railsplayground:kill_dispatch_fcgi"
+  after "deploy:update", "deploy:railsplayground:fix_permissions", "deploy:railsplayground:set_production" ,"deploy:railsplayground:kill_dispatch_fcgi"
     
   desc "RailsPlayground version of restart task."
   task :restart do
     railsplayground::kill_dispatch_fcgi
   end
-  
+ 
   namespace :railsplayground do
+    
+    desc "Uncomment the RAILS_ENV setting"
+    task :set_production do
+      run "sed -i.cap.orig -e 's/^# ENV/ENV/' #{release_path}/config/environment.rb"
+    end
     
     desc "Kills Ruby instances on RailsPlayground"
     task :kill_dispatch_fcgi do
