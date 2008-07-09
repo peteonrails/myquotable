@@ -2,7 +2,7 @@ set :user, 'pete'
 set :server, 'myquotable.com'
 
 set :application, "myquotable"
-set :repository,  "pete@xuxa.local:/var/git/myquotable.git/"
+set :repository,  "git@github.com:peteonrails/myquotable.git"
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
