@@ -31,6 +31,7 @@ class QuotesController < ApplicationController
   # GET /users/:id/quotes/new.xml
   def new
     @quote = Quote.new
+    @quote.quoted_by = "#{current_user.first_name} #{current_user.last_name}"
 
     respond_to do |format|
       format.html # new.html.erb
