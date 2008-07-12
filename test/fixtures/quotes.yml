@@ -8,7 +8,7 @@ one:
   copyright: Peter Jackson
   quote_context: while working on this site.
   author_title: Developer of this site.
-  user: pete
+  user: aaron
   
 two:
   quote: Really? WTF is that about?
@@ -26,7 +26,7 @@ three:
     quoted_by: Peter Jackson
     quoted_at: 2008-07-04
     quote_context: in every episode of the A Team.
-    user: pete
+    user: fred
     
 four:
     quote: That's what SHE said!
@@ -62,6 +62,6 @@ seven:
     author: James Stockdale
     quoted_by: Peter Jackson
     quoted_at: 2008-07-04
-    user: pete
+    user: aaron
         
     

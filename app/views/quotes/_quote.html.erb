@@ -1,34 +1,44 @@
-<div id="quote">
-	<div id="quote_text">
+<div id="quote" class="quote<%= "_private" if @quote.private -%>">
+	<div id="quote_text_<%= @quote.id %>" class="quote_text">
 		"<%=h @quote.quote %>"
 	</div>
-	<div id="quote_author">
-		<%=h @quote.author %> <%=h @quote.quote_context %> 	
+	<div id="quote_author_<%= @quote.id %>" class="quote_author">
+		&#8211;&#8211; <%=h @quote.author %> <%=h @quote.quote_context %> 	
 	</div>
 	
-	<div id="quote_extended">
-	  <b>Quoted by:</b>
-	  <%=h @quote.quoted_by %>
-	  <br />	
-
-	  <b>Quoted at:</b>
-	  <%=h @quote.quoted_at %>
-	  <br />	
-
-	  <b>Copyright:</b>
-	  <%=h @quote.copyright %>
-	  <br />	
-
-	  <b>Author title:</b>
-	  <%=h @quote.author_title %>
-	  <br />	
+	<div id="quote_extended_<%= @quote.id %>" class="quote_extended" style="display: none;">	
+	  <ul>
 	
-	  <b>Created:</b>
-	  <%=h @quote.created_at %>
-	  <br />	
-	  <b>Updated:</b>
-	  <%=h @quote.updated_at %>
-	  <br />	
+	  <% if @quote.quoted_by || @quote.quoted_at || @quote.copyright %>
+		<li> Quoted
+	  <% end %>
+
+	  <% if @quote.quoted_by %>	
+		by <%=h @quote.quoted_by %>
+	  <% end %>
+
+	  <% if @quote.quoted_at %>	
+	     on <%=h @quote.quoted_at %>
+	  <% end %>
+
+	  <% if @quote.copyright %>	
+	  	&copy; <%=h @quote.copyright %>
+	  <% end %>
+
+	  <% if @quote.quoted_by || @quote.quoted_at %>
+		</li>
+	  <% end %>
+
+		
+
+	  <% if @quote.author_title %>	
+	  	<li>The person being quoted is described by the submitter as  "<%=h @quote.author_title %>"</li>	
+	  <% end %>
+	
+	  <li>Submitted on <%=h @quote.created_at.to_s(:long_ordinal) %>, 
+		  last updated on <%=h @quote.updated_at.to_s(:long_ordinal) %></li>
+
+	  </ul>	
 	</div>
 
 	<%= render :partial => "quotes/quote_toolbar"%>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080710211729) do
+ActiveRecord::Schema.define(:version => 20080711034942) do
 
   create_table "quotes", :force => true do |t|
     t.text     "quote"
@@ -61,11 +61,13 @@ ActiveRecord::Schema.define(:version => 20080710211729) do
     t.boolean  "vote",                        :default => false
     t.string   "voteable_type", :limit => 15, :default => "",    :null => false
     t.integer  "voteable_id",   :limit => 11, :default => 0,     :null => false
-    t.integer  "user_id",       :limit => 11, :default => 0,     :null => false
+    t.integer  "voter_id",      :limit => 11, :default => 0,     :null => false
+    t.string   "voter_type",    :limit => 15, :default => "",    :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "votes", ["user_id"], :name => "fk_votes_user"
+  add_index "votes", ["voter_id", "voter_type"], :name => "fk_voters"
+  add_index "votes", ["voteable_id", "voteable_type"], :name => "fk_voteables"
 
 end

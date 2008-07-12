@@ -28,6 +28,7 @@ Rails::Initializer.run do |config|
 
 # Commenting this out until Rails 2.1.1 fixes the initializer bug
 #  config.gem "mbleigh-acts-as-taggable-on", :source => "http://gems.github.com", :lib => "acts-as-taggable-on"
+#  config.gem "peteonrails-vote_fu", :source => "http://gems.github.com", :lib => "vote_fu"
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.

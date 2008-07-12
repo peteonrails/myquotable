@@ -1,8 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
-#  map.resources :quotes
   
-  map.resources :users, :has_many => :quotes, :member => { :suspend => :put, :unsuspend => :put, :purge => :delete }
-  map.resource :session
+  map.resources :users, :member => { :suspend => :put, :unsuspend => :put, :purge => :delete } do |user|
+    user.resources :votes
+    user.resources :quotes do |quote|
+      quote.resources :votes
+    end
+  end
+  
+  map.resource  :session
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -13,20 +18,28 @@ ActionController::Routing::Routes.draw do |map|
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   # This route can be invoked with purchase_url(:id => product.id)
-  map.login  '/login',  :controller => 'sessions', :action => 'new'
-  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  map.signup '/signup', :controller => 'users',    :action => 'new'
+  map.login  '/login',      :controller => 'sessions', :action => 'new'
+  map.logout '/logout',     :controller => 'sessions', :action => 'destroy'
+  map.signup '/signup',     :controller => 'users',    :action => 'new'
+  map.activate '/activate', :controller => 'users',    :action => 'activate'
   map.activate_code '/activate/:activation_code', :controller => 'users', :action => 'activate'
-  map.activate '/activate', :controller => 'users', :action => 'activate'
  
   # Map the actions that are website-only and not restful
-  map.root :controller => "site"
-  map.about   '/about',   :controller => "site", :action => "about"
-  map.contact '/contact', :controller => "site", :action => "contact"
-  map.terms   '/terms',   :controller => "site", :action => "terms"
-  map.privacy '/privacy', :controller => "site", :action => "privacy"
-  map.api     '/api',     :controller => "site", :action => "api"
+  map.with_options :controller => "site" do |site|
+    site.root 
+    site.about   '/about',   :action => "about"
+    site.contact '/contact', :action => "contact"
+    site.terms   '/terms',   :action => "terms"
+    site.privacy '/privacy', :action => "privacy"
+    site.api     '/api',     :action => "api"
+  end
   
+  # Voting is not RESTful. We do not want to do that through an API
+  # Do not allow voting via GET or spiders will vote. 
+  map.vote '/vote/:quote_id/:vote_type', :controller => "vote", :action => "create", :method => :post
+
+
+
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
 

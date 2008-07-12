@@ -2,36 +2,36 @@
   <%= f.error_messages %>
 
 
-  <div id="quote">
-  	<div id="quote_text">
+  <div id="quote" class="quote">
+  	<div id="quote_text" class="quote_text">
       <%= f.label :quote_someone! %><br />
       <%= f.text_area :quote, :cols => "60", :rows => "5" %>
   	</div>
-  	<div id="quote_author">
+  	<div id="quote_author" class="quote_author">
   	  <div id="quote_author_input">
-        <%= f.text_field :author, :size => "15"%><br />
+        <%= f.text_field :author, :size => "20"%><br />
   	    <%= f.label :author %>
   	  </div>
 
       <div id="quote_context_input">
-        <%= f.text_field :quote_context, :size => "20" %><br />
+        <%= f.text_field :quote_context, :size => "35" %><br />
         <%= f.label :context %>
       </div>
       
   	</div>
-  </div>
 
-    <%# f.label :quoted_at %>
-    <%# f.date_select :quoted_at %>
-
-    <%# f.label :copyright %>
-    <%# f.text_area :copyright %>
-
-    <%# f.label :quoted_by %>
-    <%# f.text_area :quoted_by %>
-
-    <%# f.label :author_title %>
-    <%# f.text_area :author_title %>
+	<div id="quote_extended_" class="quote_extended_form" style="display: none;">
+	<br />
+	<ul>
+		<li><%= f.label :author_title %> <%= f.text_field :author_title %> </li>
+    	<li><%= f.label :quoted_at %> <%= f.date_select :quoted_at %></li>
+		<li><%= f.label :quoted_by %> <%= f.text_field :quoted_by %> </li>
+    	<li><%= f.label :copyright %> <%= f.text_field :copyright %> </li>
+	</ul>
+	</div>
+	
+	<%= render :partial => "quote_toolbar"%>
+</div>
 
     <%= f.submit "Save Quote" %> or <%= link_to 'Go Back', user_quotes_path %>
     
