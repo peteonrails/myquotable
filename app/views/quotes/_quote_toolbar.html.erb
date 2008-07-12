@@ -15,8 +15,8 @@
 
 	<div id="votes_<%= @quote.id %>">
 		Votes: <%= @quote.votes_for - @quote.votes_against %>
-		<%= link_to 'Up', user_quote_votes_path(@quote.user, @quote), :method => :post, :vote => :true %> 
+		<%= link_to 'Up', user_quote_votes_path(@quote.user, @quote, :vote => :true), :method => :post %> 
 		/ 
-		<%= link_to 'Down', user_quote_votes_path(@quote.user, @quote), :method => :post, :vote => :false %> 
+		<%= link_to 'Down', user_quote_votes_path(@quote.user, @quote, :vote => :false), :method => :post %> 
 	</div>
 </div>
