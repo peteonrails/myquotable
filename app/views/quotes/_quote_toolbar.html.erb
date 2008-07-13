@@ -1,22 +1,31 @@
 <div id="quote_toolbar_<%= @quote.id %>" class="quote_toolbar">
-	<span style="float: left;">
-	<% unless @quote.new_record? %>
-		by <%= link_to @quote.user.login, user_path(@quote.user) %> on <%= @quote.created_at.to_s(:short) %>
-		&nbsp;
-	<% end %>
+	<div id="quote_tools_<%= @quote.id %>" class="quote_tools" >
+		<% unless @quote.new_record? %>
+			by <%= link_to @quote.user.login, user_path(@quote.user) %> on <%= @quote.created_at.to_s(:short) %>
+			&nbsp;
+		<% end %>
 	
-	<%= link_to_function "details", toggle_div("quote_extended_#{@quote.id}")%>
+		<%= link_to_function "details", toggle_div("quote_extended_#{@quote.id}")%>
 	
-	<% if (@quote.user == current_user) %>
-    	/ <%= link_to 'edit', edit_user_quote_path(@quote.user, @quote) %> 
-		/ <%= link_to('delete', user_quote_path(@quote.user, @quote), :confirm => 'Are you sure?', :method => :delete) %>
-	<% end %>
-	</span>
+		<% if (@quote.user == current_user) %>
+    		/ <%= link_to 'edit', edit_user_quote_path(@quote.user, @quote) %> 
+			/ <%= link_to('delete', user_quote_path(@quote.user, @quote), :confirm => 'Are you sure?', :method => :delete) %>
+		<% end %>
+	</div>
 
-	<div id="votes_<%= @quote.id %>">
+	<div id="votes_<%= @quote.id %>" class="quote_votes">
+		
+		<% unless @quote.user == current_user %>
+			<%= link_to "Up", user_quote_votes_path(@quote.user, @quote, :vote => :true), :method => :post %> 
+			/
+			<%= link_to "Down", user_quote_votes_path(@quote.user, @quote, :vote => :false), :method => :post %> 
+		<% end %>
+
 		Votes: <%= @quote.votes_for - @quote.votes_against %>
-		<%= link_to 'Up', user_quote_votes_path(@quote.user, @quote, :vote => :true), :method => :post %> 
-		/ 
-		<%= link_to 'Down', user_quote_votes_path(@quote.user, @quote, :vote => :false), :method => :post %> 
+	</div>
+	
+<br class="clearfix"/>
+	<div id="quote_tags_<%= @quote.id %>" class="quote_tags">
+		Tags:
 	</div>
 </div>
