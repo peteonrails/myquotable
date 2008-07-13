@@ -14,14 +14,7 @@
 	</div>
 
 	<div id="votes_<%= @quote.id %>" class="quote_votes">
-		
-		<% unless @quote.user == current_user %>
-			<%= link_to "Up", user_quote_votes_path(@quote.user, @quote, :vote => :true), :method => :post %> 
-			/
-			<%= link_to "Down", user_quote_votes_path(@quote.user, @quote, :vote => :false), :method => :post %> 
-		<% end %>
-
-		Votes: <%= @quote.votes_for - @quote.votes_against %>
+		<%= render :partial => "votes/quote_vote", :locals => {:quote => @quote} %>
 	</div>
 	
 <br class="clearfix"/>
