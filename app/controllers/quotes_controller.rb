@@ -3,8 +3,6 @@ class QuotesController < ApplicationController
   before_filter :find_user
   before_filter :login_required, :only => [:new, :edit, :destroy, :create, :update]
   before_filter :must_own_quote, :only => [:edit, :destroy, :update]
-  
-  before_filter :join_tag_list, :only => [:create, :update]
 
   # GET /users/:id/quotes
   # GET /users/:id/quotes.xml
@@ -43,7 +41,6 @@ class QuotesController < ApplicationController
   # GET /users/:id/quotes/1/edit
   def edit 
     @quote ||= Quote.find(params[:id])
-    unroll_tag_list
   end
 
   # POST /users/:id/quotes
@@ -51,7 +48,7 @@ class QuotesController < ApplicationController
   def create
     @quote = Quote.new(params[:quote])
     @quote.user = current_user
-    claim_tags
+    assign_tags_to_user
     
     respond_to do |format|
       if @quote.save
@@ -69,7 +66,7 @@ class QuotesController < ApplicationController
   # PUT /users/:id/quotes/1.xml
   def update
     @quote = Quote.find(params[:id])
-    claim_tags
+    assign_tags_to_user
     
     respond_to do |format|
       if @quote.update_attributes(params[:quote])
@@ -100,18 +97,8 @@ class QuotesController < ApplicationController
     @user = User.find(params[:user_id])
   end
   
-  def claim_tags
+  def assign_tags_to_user
     current_user.tag(@quote, :with => params[:quote][:tag_list], :on => :tags)
-  end
-  
-  def join_tag_list
-    # Split the tags on spaces and join into comma spearated format
-    params[:quote][:tag_list] = params[:quote][:tag_list].split(" ").join(",")
-  end
-
-  def unroll_tag_list
-    # Split the tags on commas and join into a single space separated string
-    @quote.tag_list = @quote.tag_list.join(" ")    
   end
   
   def must_own_quote
