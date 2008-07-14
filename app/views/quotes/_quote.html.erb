@@ -9,29 +9,29 @@
 	<div id="quote_extended_<%= @quote.id %>" class="quote_extended" style="display: none;">	
 	  <ul>
 	
-	  <% if @quote.quoted_by || @quote.quoted_at || @quote.copyright %>
+	  <% if @quote.quoted_by != "" || @quote.quoted_at != "" || @quote.copyright != "" %>
 		<li> Quoted
 	  <% end %>
 
-	  <% if @quote.quoted_by %>	
+	  <% if @quote.quoted_by != "" %>	
 		by <%=h @quote.quoted_by %>
 	  <% end %>
 
-	  <% if @quote.quoted_at %>	
+	  <% if @quote.quoted_at != "" %>	
 	     on <%=h @quote.quoted_at %>
 	  <% end %>
 
-	  <% if @quote.copyright %>	
+	  <% if @quote.copyright != "" %>	
 	  	&copy; <%=h @quote.copyright %>
 	  <% end %>
 
-	  <% if @quote.quoted_by || @quote.quoted_at %>
+	  <% if @quote.quoted_by != "" || @quote.quoted_at != "" || @quote.copyright != "" %>
 		</li>
 	  <% end %>
 
 		
 
-	  <% if @quote.author_title %>	
+	  <% if @quote.author_title != "" %>	
 	  	<li>The person being quoted is described by the submitter as  "<%=h @quote.author_title %>"</li>	
 	  <% end %>
 	

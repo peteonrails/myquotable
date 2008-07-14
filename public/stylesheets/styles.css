@@ -125,6 +125,12 @@ a:hover { color: #fff; background-color:#000; }
     line-height: 20px;
 }
 
+.quote_toolbar input {
+	width: 90%;
+	height: 13px;
+}
+
+
 .quote_tools {
 	float: left;
 	text-align: left;

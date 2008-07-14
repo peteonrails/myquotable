@@ -30,7 +30,7 @@
 	</ul>
 	</div>
 	
-	<%= render :partial => "quote_toolbar"%>
+	<%= render :partial => "quote_toolbar", :locals => { :f => f }%>
 </div>
 
     <%= f.submit "Save Quote" %> or <%= link_to 'Go Back', user_quotes_path %>

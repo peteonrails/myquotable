@@ -20,6 +20,12 @@
     <br class="clearfix"/>
 
 	<div id="quote_tags_<%= @quote.id %>" class="quote_tags">
-		Tags:
+		Tags: 
+		<% if f %>
+		 	<%= f.text_field :tag_list %> 
+		<% else %>
+			<%= @quote.tags.join(' ') %>
+		<% end %>
+		
 	</div>
 </div>
