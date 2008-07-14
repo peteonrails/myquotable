@@ -1,2 +1,574 @@
 ** acts_as_taggable_on: initialized properly.
 ** vote_fu: initialized properly.
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-14 00:13:39) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNzQxNGQ2YWUzZTVmM2FhMmMxMjI3Y2UxNTdiNzI0
+OTU6DHVzZXJfaWRpBNnqlAkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6
+OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIiRRdW90ZSB3YXMgc3VjY2Vz
+c2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIVDoOcmV0dXJuX3RvMA==--7bd78321ad1d8f8e68f58716c7dfc045dfdb1edc
+  Parameters: {"action"=>"index", "controller"=>"site"}
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000193)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000542)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.016776)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mUser Columns (0.002615)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000997)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) LIMIT 1[0m
+  [4;35;1mQuote Load (0.001229)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-06-30 04:13:39') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.001062)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;35;1mVote Columns (0.002203)[0m   [0mSHOW FIELDS FROM `votes`[0m
+  [4;36;1mSQL (0.000447)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000304)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00412)
+
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x229e15c>) on line #24 of quotes/_quote_toolbar.html.erb:
+21: 
+22: 	<div id="quote_tags_<%= @quote.id %>" class="quote_tags">
+23: 		Tags: 
+24: 		<% if f %>
+25: 		 	<%= f.text_field :tag_list %> 
+26: 		<% else %>
+27: 			<%= @quote.tags.join(' ') %>
+
+    app/views/quotes/_quote_toolbar.html.erb:24:in `_run_erb_47app47views47quotes47_quote_toolbar46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:20:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:19:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:110:in `render_partial'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:273:in `render'
+    app/views/quotes/_quote.html.erb:44:in `_run_erb_47app47views47quotes47_quote46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:20:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:19:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:110:in `render_partial'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:273:in `render'
+    app/views/site/index.html.erb:19:in `_run_erb_47app47views47site47index46html46erb'
+    (__DELEGATION__):2:in `each'
+    (__DELEGATION__):2:in `__send__'
+    (__DELEGATION__):2:in `each'
+    app/views/site/index.html.erb:18:in `_run_erb_47app47views47site47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/site_controller.rb:7:in `index'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-14 00:20:12) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNzQxNGQ2YWUzZTVmM2FhMmMxMjI3Y2UxNTdiNzI0
+OTU6DHVzZXJfaWRpBNnqlAk6DnJldHVybl90bzAiCmZsYXNoSUM6J0FjdGlv
+bkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--04804424b710f2a05c6bc9178bc53c25e07da95f
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.000673)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.012718)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mUser Columns (0.004144)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.004094)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) LIMIT 1[0m
+  [4;36;1mQuote Load (0.002157)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-06-30 04:20:12') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.001391)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mSQL (0.000507)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000301)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00152)
+
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x2429210>) on line #24 of quotes/_quote_toolbar.html.erb:
+21: 
+22: 	<div id="quote_tags_<%= @quote.id %>" class="quote_tags">
+23: 		Tags: 
+24: 		<% if f.defined? %>
+25: 		 	<%= f.text_field :tag_list %> 
+26: 		<% else %>
+27: 			<%= @quote.tags.join(' ') %>
+
+    app/views/quotes/_quote_toolbar.html.erb:24:in `_run_erb_47app47views47quotes47_quote_toolbar46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:20:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:19:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:110:in `render_partial'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:273:in `render'
+    app/views/quotes/_quote.html.erb:44:in `_run_erb_47app47views47quotes47_quote46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:20:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partial_template.rb:19:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/partials.rb:110:in `render_partial'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:273:in `render'
+    app/views/site/index.html.erb:19:in `_run_erb_47app47views47site47index46html46erb'
+    (__DELEGATION__):2:in `each'
+    (__DELEGATION__):2:in `__send__'
+    (__DELEGATION__):2:in `each'
+    app/views/site/index.html.erb:18:in `_run_erb_47app47views47site47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/site_controller.rb:7:in `index'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-14 00:23:59) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNzQxNGQ2YWUzZTVmM2FhMmMxMjI3Y2UxNTdiNzI0
+OTU6DHVzZXJfaWRpBNnqlAkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6
+OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--be884e1d54beed9685d93458bc895ce40285fb7a
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;36;1mSQL (0.000624)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.014314)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;36;1mUser Columns (0.004357)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001436)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) LIMIT 1[0m
+  [4;36;1mQuote Load (0.001786)[0m   [0;1mSELECT * FROM `quotes` WHERE ((created_at > '2008-06-30 04:23:59') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.001378)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mSQL (0.000498)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000305)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00150)
+  [4;36;1mTagging Columns (0.002101)[0m   [0;1mSHOW FIELDS FROM `taggings`[0m
+  [4;35;1mTag Load (0.000541)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583397) AND ((context = 'tags'))) [0m
+  [4;36;1mTag Columns (0.001304)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+Rendered quotes/_quote_toolbar (0.01602)
+Rendered quotes/_quote (0.02162)
+  [4;35;1mUser Load (0.001390)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;36;1mSQL (0.000445)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voter_id = 160754393 AND voter_type = 'User' AND voteable_id = 953125641 AND voteable_type = 'Quote') [0m
+  [4;35;1mSQL (0.000332)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 953125641 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;36;1mSQL (0.000306)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 953125641 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00202)
+  [4;35;1mTag Load (0.000364)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 953125641) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00843)
+Rendered quotes/_quote (0.00931)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;35;1mSQL (0.000401)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 996332877 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;36;1mSQL (0.000287)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 996332877 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00131)
+  [4;35;1mTag Load (0.000349)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 996332877) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00563)
+Rendered quotes/_quote (0.00643)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;35;1mSQL (0.000473)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voter_id = 160754393 AND voter_type = 'User' AND voteable_id = 1054583384 AND voteable_type = 'Quote') [0m
+  [4;36;1mSQL (0.000374)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583384 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000305)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583384 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00224)
+  [4;36;1mTag Load (0.000354)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583384) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00626)
+Rendered quotes/_quote (0.00703)
+  [4;35;1mUser Load (0.000911)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1068423631) [0m
+  [4;36;1mSQL (0.000391)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voter_id = 160754393 AND voter_type = 'User' AND voteable_id = 442820205 AND voteable_type = 'Quote') [0m
+  [4;35;1mSQL (0.000318)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 442820205 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;36;1mSQL (0.000294)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 442820205 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00192)
+  [4;35;1mTag Load (0.000346)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 442820205) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00699)
+Rendered quotes/_quote (0.00779)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;35;1mSQL (0.000376)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voter_id = 160754393 AND voter_type = 'User' AND voteable_id = 430326217 AND voteable_type = 'Quote') [0m
+  [4;36;1mSQL (0.000315)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 430326217 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000284)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 430326217 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00228)
+  [4;36;1mTag Load (0.000358)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 430326217) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00645)
+Rendered quotes/_quote (0.00726)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mSQL (0.000525)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 986866124 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000318)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 986866124 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00164)
+  [4;36;1mTag Load (0.000358)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 986866124) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00610)
+Rendered quotes/_quote (0.00687)
+Completed in 0.11030 (9 reqs/sec) | Rendering: 0.05991 (54%) | DB: 0.05141 (46%) | 200 OK [http://localhost/]
+
+
+Processing QuotesController#edit (for 127.0.0.1 at 2008-07-14 00:24:03) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNzQxNGQ2YWUzZTVmM2FhMmMxMjI3Y2UxNTdiNzI0
+OTU6DHVzZXJfaWRpBNnqlAk6DnJldHVybl90bzAiCmZsYXNoSUM6J0FjdGlv
+bkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--04804424b710f2a05c6bc9178bc53c25e07da95f
+  Parameters: {"action"=>"edit", "id"=>"1054583397", "controller"=>"quotes", "user_id"=>"160754393"}
+  [4;35;1mUser Columns (0.013515)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001308)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;35;1mUser Load (0.001244)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) LIMIT 1[0m
+  [4;36;1mSQL (0.000579)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.002374)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+  [4;36;1mQuote Load (0.000955)[0m   [0;1mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583397) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mTag Load (0.000602)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583397) AND (context = 'tags')) [0m
+Rendering template within layouts/application
+Rendering quotes/edit
+Rendered quotes/_quote_toolbar_form (0.00365)
+Rendered quotes/_quote_form (0.01030)
+Completed in 0.05687 (17 reqs/sec) | Rendering: 0.01636 (28%) | DB: 0.02058 (36%) | 200 OK [http://localhost/users/160754393/quotes/1054583397/edit]
+
+
+Processing QuotesController#edit (for 127.0.0.1 at 2008-07-14 00:24:12) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNzQxNGQ2YWUzZTVmM2FhMmMxMjI3Y2UxNTdiNzI0
+OTU6DHVzZXJfaWRpBNnqlAkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6
+OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--be884e1d54beed9685d93458bc895ce40285fb7a
+  Parameters: {"action"=>"edit", "id"=>"1054583397", "controller"=>"quotes", "user_id"=>"160754393"}
+  [4;35;1mUser Columns (0.014358)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001939)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;35;1mUser Load (0.001433)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) LIMIT 1[0m
+  [4;36;1mSQL (0.000649)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.002446)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+  [4;36;1mQuote Load (0.001866)[0m   [0;1mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583397) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mTag Load (0.000579)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583397) AND (context = 'tags')) [0m
+Rendering template within layouts/application
+Rendering quotes/edit
+Rendered quotes/_quote_toolbar_form (0.00359)
+Rendered quotes/_quote_form (0.00876)
+Completed in 0.04927 (20 reqs/sec) | Rendering: 0.01256 (25%) | DB: 0.02327 (47%) | 200 OK [http://localhost/users/160754393/quotes/1054583397/edit]
+
+
+Processing QuotesController#update (for 127.0.0.1 at 2008-07-14 00:24:31) [PUT]
+  Session ID: BAh7CToMY3NyZl9pZCIlNzQxNGQ2YWUzZTVmM2FhMmMxMjI3Y2UxNTdiNzI0
+OTU6DHVzZXJfaWRpBNnqlAk6DnJldHVybl90bzAiCmZsYXNoSUM6J0FjdGlv
+bkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--04804424b710f2a05c6bc9178bc53c25e07da95f
+  Parameters: {"commit"=>"Save Quote", "authenticity_token"=>"ea98755b896ec936d45e7866612750f47228a7f6", "_method"=>"put", "action"=>"update", "id"=>"1054583397", "quote"=>{"author"=>"Peter Jackson", "author_title"=>"", "quote_context"=>"while working on this site.", "quote"=>"This quote is funny. ", "quoted_by"=>"Peter Jackson", "copyright"=>"", "tag_list"=>"funny amusing silly ironic tagged lots more words than can fit on a single quote and still be one line you know?", "quoted_at(1i)"=>"2008", "quoted_at(2i)"=>"7", "quoted_at(3i)"=>"13"}, "controller"=>"quotes", "user_id"=>"160754393"}
+  [4;35;1mUser Columns (0.002796)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001005)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;35;1mUser Load (0.000916)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) LIMIT 1[0m
+  [4;36;1mSQL (0.000559)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mQuote Columns (0.002437)[0m   [0mSHOW FIELDS FROM `quotes`[0m
+  [4;36;1mQuote Load (0.001889)[0m   [0;1mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583397) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583397) [0m
+  [4;35;1mSQL (0.000201)[0m   [0mBEGIN[0m
+  [4;36;1mTag Load (0.000687)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583397) AND (context = 'tags')) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583397) AND (context = 'tags')) [0m
+  [4;36;1mTag Load (0.000308)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'more') LIMIT 1[0m
+  [4;35;1mSQL (0.000259)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'more') [0m
+  [4;36;1mTag Create (0.000212)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('more')[0m
+  [4;35;1mTagging Create (0.000233)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 12, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000307)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'words') LIMIT 1[0m
+  [4;35;1mSQL (0.000246)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'words') [0m
+  [4;36;1mTag Create (0.000166)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('words')[0m
+  [4;35;1mTagging Create (0.000200)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 13, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000288)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'than') LIMIT 1[0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'than') [0m
+  [4;36;1mTag Create (0.000252)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('than')[0m
+  [4;35;1mTagging Create (0.000261)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 14, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000327)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'can') LIMIT 1[0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'can') [0m
+  [4;36;1mTag Create (0.000213)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('can')[0m
+  [4;35;1mTagging Create (0.000444)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 15, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000365)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'fit') LIMIT 1[0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'fit') [0m
+  [4;36;1mTag Create (0.000197)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('fit')[0m
+  [4;35;1mTagging Create (0.000206)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 16, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000332)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'on') LIMIT 1[0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'on') [0m
+  [4;36;1mTag Create (0.000167)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('on')[0m
+  [4;35;1mTagging Create (0.000237)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 17, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000294)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'a') LIMIT 1[0m
+  [4;35;1mSQL (0.000243)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'a') [0m
+  [4;36;1mTag Create (0.000197)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('a')[0m
+  [4;35;1mTagging Create (0.000224)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 18, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000294)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'single') LIMIT 1[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'single') [0m
+  [4;36;1mTag Create (0.000152)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('single')[0m
+  [4;35;1mTagging Create (0.000276)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 19, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000323)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'quote') LIMIT 1[0m
+  [4;35;1mSQL (0.000245)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'quote') [0m
+  [4;36;1mTag Create (0.000181)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('quote')[0m
+  [4;35;1mTagging Create (0.000196)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 20, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000293)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'and') LIMIT 1[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'and') [0m
+  [4;36;1mTag Create (0.000162)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('and')[0m
+  [4;35;1mTagging Create (0.000201)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 21, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000328)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'still') LIMIT 1[0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'still') [0m
+  [4;36;1mTag Create (0.000175)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('still')[0m
+  [4;35;1mTagging Create (0.000354)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 22, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000311)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'be') LIMIT 1[0m
+  [4;35;1mSQL (0.000247)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'be') [0m
+  [4;36;1mTag Create (0.000165)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('be')[0m
+  [4;35;1mTagging Create (0.000203)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 23, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000302)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'one') LIMIT 1[0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'one') [0m
+  [4;36;1mTag Create (0.000152)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('one')[0m
+  [4;35;1mTagging Create (0.000342)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 24, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000525)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'line') LIMIT 1[0m
+  [4;35;1mSQL (0.000316)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'line') [0m
+  [4;36;1mTag Create (0.000219)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('line')[0m
+  [4;35;1mTagging Create (0.000252)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 25, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000324)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'you') LIMIT 1[0m
+  [4;35;1mSQL (0.000253)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'you') [0m
+  [4;36;1mTag Create (0.000164)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('you')[0m
+  [4;35;1mTagging Create (0.000193)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 26, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mTag Load (0.000288)[0m   [0;1mSELECT * FROM `tags` WHERE (name LIKE 'know?') LIMIT 1[0m
+  [4;35;1mSQL (0.000250)[0m   [0mSELECT `name` FROM `tags` WHERE (`tags`.name = 'know?') [0m
+  [4;36;1mTag Create (0.000177)[0m   [0;1mINSERT INTO `tags` (`name`) VALUES('know?')[0m
+  [4;35;1mTagging Create (0.000263)[0m   [0mINSERT INTO `taggings` (`tagger_id`, `tag_id`, `taggable_type`, `taggable_id`, `context`, `tagger_type`, `created_at`) VALUES(NULL, 27, 'Quote', 1054583397, 'tags', NULL, '2008-07-14 04:24:31')[0m
+  [4;36;1mSQL (0.042760)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/160754393/quotes/1054583397
+Completed in 0.13486 (7 reqs/sec) | DB: 0.06964 (51%) | 302 Found [http://localhost/users/160754393/quotes/1054583397]
+
+
+Processing QuotesController#show (for 127.0.0.1 at 2008-07-14 00:24:31) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNzQxNGQ2YWUzZTVmM2FhMmMxMjI3Y2UxNTdiNzI0
+OTU6DHVzZXJfaWRpBNnqlAkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6
+OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIiRRdW90ZSB3YXMgc3VjY2Vz
+c2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIRjoOcmV0dXJuX3RvMA==--8521c116fb395f647c7d66fb51ef52e8bd6f5b18
+  Parameters: {"action"=>"show", "id"=>"1054583397", "controller"=>"quotes", "user_id"=>"160754393"}
+  [4;35;1mUser Columns (0.002647)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000928)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;35;1mSQL (0.000533)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.002319)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+  [4;35;1mQuote Load (0.000878)[0m   [0mSELECT * FROM `quotes` WHERE (`quotes`.`id` = 1054583397) [0m
+Rendering template within layouts/application
+Rendering quotes/show
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;35;1mUser Load (0.001035)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) LIMIT 1[0m
+  [4;36;1mSQL (0.000371)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000301)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00126)
+  [4;36;1mTag Load (0.000870)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583397) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.01104)
+Rendered quotes/_quote (0.01362)
+Completed in 0.03292 (30 reqs/sec) | Rendering: 0.01316 (39%) | DB: 0.00988 (30%) | 200 OK [http://localhost/users/160754393/quotes/1054583397]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-14 00:24:44) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlNzQxNGQ2YWUzZTVmM2FhMmMxMjI3Y2UxNTdiNzI0
+OTU6DHVzZXJfaWRpBNnqlAk6DnJldHVybl90bzAiCmZsYXNoSUM6J0FjdGlv
+bkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIiRRdW90
+ZSB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsJVA==--d56ee4ffccae384555f5328463e8c0025779e33c
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.000627)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.013110)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mUser Columns (0.002517)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000983)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) LIMIT 1[0m
+  [4;35;1mQuote Load (0.001387)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-06-30 04:24:44') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.001014)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;35;1mSQL (0.000448)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;36;1mSQL (0.000291)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583397 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00137)
+  [4;35;1mTag Load (0.000828)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583397) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.01017)
+Rendered quotes/_quote (0.01293)
+  [4;36;1mUser Load (0.000904)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;35;1mSQL (0.000428)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voter_id = 160754393 AND voter_type = 'User' AND voteable_id = 953125641 AND voteable_type = 'Quote') [0m
+  [4;36;1mSQL (0.000344)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 953125641 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000301)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 953125641 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00199)
+  [4;36;1mTag Load (0.000356)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 953125641) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00746)
+Rendered quotes/_quote (0.00825)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mSQL (0.000410)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 996332877 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000288)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 996332877 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00130)
+  [4;36;1mTag Load (0.000351)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 996332877) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00563)
+Rendered quotes/_quote (0.00644)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;36;1mSQL (0.000420)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voter_id = 160754393 AND voter_type = 'User' AND voteable_id = 1054583384 AND voteable_type = 'Quote') [0m
+  [4;35;1mSQL (0.000378)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583384 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;36;1mSQL (0.000326)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583384 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00224)
+  [4;35;1mTag Load (0.000457)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583384) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00645)
+Rendered quotes/_quote (0.00722)
+  [4;36;1mUser Load (0.000907)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1068423631) [0m
+  [4;35;1mSQL (0.000391)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voter_id = 160754393 AND voter_type = 'User' AND voteable_id = 442820205 AND voteable_type = 'Quote') [0m
+  [4;36;1mSQL (0.000319)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 442820205 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000290)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 442820205 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00190)
+  [4;36;1mTag Load (0.000356)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 442820205) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00729)
+Rendered quotes/_quote (0.00810)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;36;1mSQL (0.000365)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voter_id = 160754393 AND voter_type = 'User' AND voteable_id = 430326217 AND voteable_type = 'Quote') [0m
+  [4;35;1mSQL (0.000313)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 430326217 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;36;1mSQL (0.000326)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 430326217 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00229)
+  [4;35;1mTag Load (0.000443)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 430326217) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00706)
+Rendered quotes/_quote (0.00783)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;35;1mSQL (0.000557)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 986866124 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;36;1mSQL (0.000352)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 986866124 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00174)
+  [4;35;1mTag Load (0.000370)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 986866124) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00645)
+Rendered quotes/_quote (0.00725)
+Completed in 0.09237 (10 reqs/sec) | Rendering: 0.05069 (54%) | DB: 0.03116 (33%) | 200 OK [http://localhost/]

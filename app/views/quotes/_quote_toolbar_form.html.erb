@@ -1,7 +1,5 @@
 <div id="quote_toolbar_<%= @quote.id %>" class="quote_toolbar">
 	<div id="quote_tools_<%= @quote.id %>" class="quote_tools" >
-		by <%= link_to @quote.user.login, user_path(@quote.user) %> on <%= @quote.created_at.to_s(:short) %>
-		&nbsp;
 	
 		<%= link_to_function "details", toggle_div("quote_extended_#{@quote.id}")%>
 	
@@ -12,12 +10,12 @@
 	</div>
 
 	<div id="votes_<%= @quote.id %>" class="quote_votes">
-		<%= render :partial => "votes/quote_vote", :locals => {:quote => @quote} %>
+
 	</div>
 	
     <br class="clearfix"/>
 
 	<div id="quote_tags_<%= @quote.id %>" class="quote_tags">
-		Tags: <%= @quote.tags.join(' ') %>
+		Tags: <%= f.text_field :tag_list %> 		
 	</div>
 </div>
