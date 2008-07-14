@@ -9,4 +9,5 @@ class Quote < ActiveRecord::Base
   named_scope :recent, lambda { |*args| {:conditions => ["created_at > ?", (args.first || 2.weeks.ago).to_s(:db)]} }
   named_scope :descending, :order => "created_at DESC"
 
+  
 end

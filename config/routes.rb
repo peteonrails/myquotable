@@ -27,18 +27,13 @@ ActionController::Routing::Routes.draw do |map|
   # Map the actions that are website-only and not restful
   map.with_options :controller => "site" do |site|
     site.root 
+    site.popular '/popular', :action => "popular"
     site.about   '/about',   :action => "about"
     site.contact '/contact', :action => "contact"
     site.terms   '/terms',   :action => "terms"
     site.privacy '/privacy', :action => "privacy"
     site.api     '/api',     :action => "api"
   end
-  
-  # Voting is not RESTful. We do not want to do that through an API
-  # Do not allow voting via GET or spiders will vote. 
-  map.vote '/vote/:quote_id/:vote_type', :controller => "vote", :action => "create", :method => :post
-
-
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
