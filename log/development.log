@@ -4476,3 +4476,115 @@ Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
 Rendering template within layouts/application
 Rendering users/new
 Completed in 0.03234 (30 reqs/sec) | Rendering: 0.00250 (7%) | DB: 0.02159 (66%) | 200 OK [http://localhost/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-14 02:17:33) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZWNmMmIwZjg5ODUwOTc4NGUxYzM5NzA0YTEyYWJh
+YjciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA6DnJldHVybl90bzA=--224d338f83d4dfebffcaae7b6d445f74d597c355
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.000614)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.013283)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001368)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-06-30 06:17:33') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;36;1mUser Columns (0.002676)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001022)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;36;1mSQL (0.000500)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 953125641 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000302)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 953125641 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00172)
+  [4;36;1mTag Load (0.000409)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 953125641) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.01447)
+Rendered quotes/_quote (0.01725)
+  [4;35;1mUser Load (0.000971)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mSQL (0.000448)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 996332877 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000296)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 996332877 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00161)
+  [4;36;1mTag Load (0.000473)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 996332877) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00759)
+Rendered quotes/_quote (0.00846)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;36;1mSQL (0.000445)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583384 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000296)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583384 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00160)
+  [4;36;1mTag Load (0.000356)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583384) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00609)
+Rendered quotes/_quote (0.00693)
+  [4;35;1mUser Load (0.000923)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1068423631) [0m
+  [4;36;1mSQL (0.000433)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 442820205 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000332)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 442820205 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00162)
+  [4;36;1mTag Load (0.000407)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 442820205) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00703)
+Rendered quotes/_quote (0.00785)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;36;1mSQL (0.000432)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 430326217 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000299)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 430326217 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00155)
+  [4;36;1mTag Load (0.000352)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 430326217) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00603)
+Rendered quotes/_quote (0.00686)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mSQL (0.000423)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 986866124 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000294)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 986866124 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00153)
+  [4;36;1mTag Load (0.000363)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 986866124) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00590)
+Rendered quotes/_quote (0.00671)
+Completed in 0.15472 (6 reqs/sec) | Rendering: 0.11563 (74%) | DB: 0.02772 (17%) | 200 OK [http://localhost/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2008-07-14 02:20:38) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZWNmMmIwZjg5ODUwOTc4NGUxYzM5NzA0YTEyYWJh
+Yjc6DnJldHVybl90bzAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs
+YXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--e50a882a57135dcaacf6c52d1c59ba5790b69fbe
+  Parameters: {"action"=>"index", "controller"=>"site"}
+  [4;35;1mSQL (0.000634)[0m   [0mSHOW TABLES[0m
+  [4;36;1mQuote Columns (0.015222)[0m   [0;1mSHOW FIELDS FROM `quotes`[0m
+Rendering template within layouts/application
+Rendering site/index
+  [4;35;1mQuote Load (0.001588)[0m   [0mSELECT * FROM `quotes` WHERE ((created_at > '2008-06-30 06:20:38') AND ((private is NULL) OR (private = 'F') OR (private = 0))) ORDER BY created_at DESC[0m
+  [4;36;1mUser Columns (0.002665)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000947)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;36;1mSQL (0.000581)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 953125641 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000303)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 953125641 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00182)
+  [4;36;1mTag Load (0.000418)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 953125641) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.01336)
+Rendered quotes/_quote (0.01667)
+  [4;35;1mUser Load (0.000931)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mSQL (0.000477)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 996332877 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000373)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 996332877 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00177)
+  [4;36;1mTag Load (0.000786)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 996332877) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00793)
+Rendered quotes/_quote (0.00890)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;36;1mSQL (0.000511)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583384 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000308)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 1054583384 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00166)
+  [4;36;1mTag Load (0.000357)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 1054583384) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00613)
+Rendered quotes/_quote (0.00707)
+  [4;35;1mUser Load (0.000903)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1068423631) [0m
+  [4;36;1mSQL (0.000460)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 442820205 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000387)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 442820205 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00166)
+  [4;36;1mTag Load (0.000368)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 442820205) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00713)
+Rendered quotes/_quote (0.00796)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 317248456) [0m
+  [4;36;1mSQL (0.000485)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 430326217 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000301)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 430326217 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00166)
+  [4;36;1mTag Load (0.000387)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 430326217) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00682)
+Rendered quotes/_quote (0.00766)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 160754393) [0m
+  [4;36;1mSQL (0.000518)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 986866124 AND voteable_type = 'Quote' AND vote = 1) [0m
+  [4;35;1mSQL (0.000305)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (voteable_id = 986866124 AND voteable_type = 'Quote' AND vote = 0) [0m
+Rendered votes/_quote_vote (0.00164)
+  [4;36;1mTag Load (0.000368)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Quote') AND (`taggings`.taggable_id = 986866124) AND ((context = 'tags'))) [0m
+Rendered quotes/_quote_toolbar (0.00609)
+Rendered quotes/_quote (0.00699)
+Completed in 0.09021 (11 reqs/sec) | Rendering: 0.04629 (51%) | DB: 0.03058 (33%) | 200 OK [http://localhost/]
