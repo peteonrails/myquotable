@@ -45,18 +45,15 @@ class VotesController < ApplicationController
   # POST /users/:user_id/quotes/:quote_id/votes
   # POST /users/:user_id/quotes/:quote_id/votes.xml
   def create
-    @vote  = Vote.new()
-    @vote.vote = params[:vote]
     @quote = Quote.find(params[:quote_id])
-    current_user.votes << @vote
-    @quote.votes << @vote 
     
     respond_to do |format|
-      if @vote.save
-        flash[:notice] = 'Vote was successfully saved.'
+      if current_user.vote(@quote, params[:vote])
+        format.rjs  { render :action => "create", :vote => @vote }
         format.html { redirect_to([@quote.user, @quote]) }
-        format.xml  { render :xml => @vote, :status => :created, :location => @quote }
+        format.xml  { render :xml => @quote, :status => :created, :location => @quote }
       else
+        format.rjs  { render :action => "error" }
         format.html { render :action => "new" }
         format.xml  { render :xml => @vote.errors, :status => :unprocessable_entity }
       end

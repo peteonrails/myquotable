@@ -1,0 +1,13 @@
+vote1:
+    voter: aaron
+    voteable: three
+    voteable_type: Quote
+    voter_type: User
+    vote: true
+    
+vote2:
+        voter: fred
+        voteable: three
+        voteable_type: Quote
+        voter_type: User
+        vote: true    

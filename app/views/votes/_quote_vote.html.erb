@@ -1,0 +1,23 @@
+<% 
+	# You can't vote if it is your quote, 
+	# you are not logged in, 
+	# or you have already voted on this item
+	
+	unless quote.user == current_user ||
+	!logged_in? ||
+	current_user.voted_on?(@quote)
+%>
+
+	<%= link_to_remote "Up", 
+		:url => user_quote_votes_path(quote.user, quote, :vote => :true, :format => :rjs), 
+		:method => :post
+	%> 
+	/
+	<%= link_to_remote "Down", 
+		:url => user_quote_votes_path(quote.user, quote, :vote => :false, :format => :rjs), 
+		:method => :post
+ 	%> 
+
+<% end %>
+
+Votes: <%= quote.votes_for - quote.votes_against %>

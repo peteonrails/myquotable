@@ -10,19 +10,13 @@ module PeteOnRails
       module ClassMethods
         def acts_as_voter
           has_many :votes, :as => :voter, :dependent => :nullify  # If a voting entity is deleted, keep the votes. 
-            include PeteOnRails::Acts::Voter::InstanceMethods
+          include PeteOnRails::Acts::Voter::InstanceMethods
           extend  PeteOnRails::Acts::Voter::SingletonMethods
         end
       end
       
       # This module contains class methods
       module SingletonMethods
-        def find_votes_cast_by(voter)
-          Vote.find(:all,
-            :conditions => ["voter_id = ? and voter_type = ?", voter.id, voter.type.name],
-            :order => "created_at DESC"
-          )
-        end
       end
       
       # This module contains instance methods
@@ -47,6 +41,36 @@ module PeteOnRails
                   self.id, self.type.name, voteable.id, voteable.type.name
                   ])
         end
+
+        def voted_against?(voteable)
+          0 < Vote.count(:all, :conditions => [
+                  "voter_id = ? AND voter_type = ? AND vote = FALSE AND voteable_id = ? AND voteable_type = ?",
+                  self.id, self.type.name, voteable.id, voteable.type.name
+                  ])
+        end
+
+        def voted_on?(voteable)
+          0 < Vote.count(:all, :conditions => [
+                  "voter_id = ? AND voter_type = ? AND voteable_id = ? AND voteable_type = ?",
+                  self.id, self.type.name, voteable.id, voteable.type.name
+                  ])
+        end
+                
+        def vote_for(voteable)
+          self.vote(voteable, true)
+        end
+        
+        def vote_against(voteable)
+          self.vote(voteable, false)
+        end
+
+        def vote(voteable, vote)
+          vote = Vote.new(:vote => vote)
+          voteable.votes << vote
+          self.votes     << vote
+          vote.save
+        end
+
       end
     end
   end
