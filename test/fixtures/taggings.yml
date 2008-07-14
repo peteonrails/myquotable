@@ -1,0 +1,7 @@
+funny_pete:
+    taggable: one
+    taggable_type: Quote
+    tagger: pete
+    tagger_type: User
+    tag: funny
+    context: tags

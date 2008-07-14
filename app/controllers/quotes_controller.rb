@@ -51,6 +51,7 @@ class QuotesController < ApplicationController
   def create
     @quote = Quote.new(params[:quote])
     @quote.user = current_user
+    claim_tags
     
     respond_to do |format|
       if @quote.save
@@ -68,7 +69,8 @@ class QuotesController < ApplicationController
   # PUT /users/:id/quotes/1.xml
   def update
     @quote = Quote.find(params[:id])
-
+    claim_tags
+    
     respond_to do |format|
       if @quote.update_attributes(params[:quote])
         flash[:notice] = 'Quote was successfully updated.'
@@ -96,6 +98,10 @@ class QuotesController < ApplicationController
   private
   def find_user 
     @user = User.find(params[:user_id])
+  end
+  
+  def claim_tags
+    current_user.tag(@quote, :with => params[:quote][:tag_list], :on => :tags)
   end
   
   def join_tag_list

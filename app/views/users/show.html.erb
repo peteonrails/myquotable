@@ -17,3 +17,11 @@
 	<% end %>
 
 </div>
+
+<% if logged_in? %>
+	<div id="sidebar">
+  		This is a placeholder sidebar.
+  		<h3>Tags</h3>
+		<% render :partial => "users/tag_cloud" %>
+	</div>
+<% end %>

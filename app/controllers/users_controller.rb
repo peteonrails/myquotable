@@ -14,7 +14,8 @@ class UsersController < ApplicationController
 
   # GET /users/:id
   def show
-
+    @tags = current_user.tag_counts
+    RAILS_DEFAULT_LOGGER.debug "Tags: #{@tags}"
   end
   
 
