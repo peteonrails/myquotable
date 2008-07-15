@@ -1,3 +1,11 @@
-<% tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| %>
-  <%= link_to tag.name, { :action => :tag, :id => tag.name }, :class => css_class %>
+<h3><%= @user.login %>'s Tags</h3>
+<ul>
+<% @tags.each do |tag|%>
+	<li><%= link_to tag[0], user_tag_path(@user, tag[0]) %></li>
 <% end %>
+</ul>
+<br />
+Tag Cloud Coming Soon
+<%# tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| %>
+  <%# link_to tag[0], { :action => :tag, :id => tag[0] }, :class => css_class %>
+<%# end %>

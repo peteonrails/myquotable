@@ -57,6 +57,13 @@
 		<%= yield %>
 	</div>
 
+
+	<% if logged_in? %>
+		<div id="sidebar" class="sidebar">
+			<%= render :partial => "users/tag_cloud" %>
+		</div>
+	<% end %>
+
 </div>
 
 <br />

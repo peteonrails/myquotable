@@ -2,6 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :users, :member => { :suspend => :put, :unsuspend => :put, :purge => :delete } do |user|
     user.resources :votes
+    user.resources :tags
     user.resources :quotes do |quote|
       quote.resources :votes
     end

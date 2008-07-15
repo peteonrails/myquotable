@@ -1,5 +1,5 @@
 class VotesController < ApplicationController
-  
+
   # First, figure out our nested scope. User or Quote? Important for presenting lists
   before_filter :find_votes_for_my_scope, :only => [:index]
      

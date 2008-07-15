@@ -14,7 +14,12 @@ class UsersController < ApplicationController
 
   # GET /users/:id
   def show
-    @tags = current_user.owned_tags
+    @tags = { }
+    current_user.owned_taggings.each do |tagging|
+      @tags[tagging.tag] = [] unless @tags[tagging]
+      @tags[tagging.tag].push(tagging)
+    end
+    
     RAILS_DEFAULT_LOGGER.debug "Tags: #{@tags}"
   end
   
