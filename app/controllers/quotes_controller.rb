@@ -97,6 +97,7 @@ class QuotesController < ApplicationController
     @user = User.find(params[:user_id])
   end
   
+  # Hm. Controller is getting fat. Too many cookies.
   def assign_tags_to_user
     current_user.tag(@quote, :with => params[:quote][:tag_list], :on => :tags)
   end

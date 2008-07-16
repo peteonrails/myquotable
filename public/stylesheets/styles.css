@@ -56,6 +56,12 @@ a:hover { color: #fff; background-color:#000; }
 	margin-right: 10px;
 }
 
+#logo p {
+	color: #cfe0f0;
+	font-size: 1.6em;
+	margin-top: 20px;
+}
+
 #statusbar {
 	clear: both;
 	width: 100%;
@@ -307,17 +313,29 @@ br#clearfix {
 
 #footer_nav {
 	float: left;
-	width: 60%;
+	width: 50%;
 }
 
 #copyright {
 	text-align: right;
 	float: right;
-	width: 30%;
+	width: 40%;
 }
 
 #footer a {
-  border-bottom: 1px dotted #002139;
+	text-decoration: none;
+  	border-bottom: 1px dotted #002139;
+}
+
+#version {
+  background: #cfe0f0;
+  clear: both;
+  padding: 10px;
+  height: 20px;
+  color: #000;
+  font-size: 11px;
+  text-align: right;
+  border-top: 1px dotted;
 }
 
 .css1 { font-size: 1.0em; }

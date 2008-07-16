@@ -12,7 +12,7 @@
 	<%= link_to 'Friends', root_path %> |
 	<%= link_to 'Sent to You', root_path %>
 
-	<% for @quote in @user.quotes.descending %>
+	<% for @quote in (current_user == @user) ?  @user.quotes.descending : @user.quotes.public.descending %>
 		<%= render :partial => "quotes/quote" %>
 	<% end %>
 

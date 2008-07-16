@@ -63,5 +63,14 @@ seven:
     quoted_by: Peter Jackson
     quoted_at: 2008-07-04
     user: aaron
-        
+
+seven: 
+    quote: 	Even Aaron needs a private quote 
+    author: Brent Collier
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: aaron
+    private: true
+    
+
     

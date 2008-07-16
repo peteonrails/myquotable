@@ -4,8 +4,8 @@
 
 <% content_for :statusbar do %>
 	Home -> Most Recent Member Quotes -- view 
-	<%= link_to "popular", root_path%>, 
-	<%= link_to "yours", user_path(current_user)%>
+	<%= link_to "popular", root_path%>
+	<%= link_to "yours", user_path(current_user) if logged_in?%>
 <% end %>
 
 <div id="quotes_container">
