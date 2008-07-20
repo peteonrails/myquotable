@@ -8,8 +8,7 @@ module ApplicationHelper
   
   def toggle_div(div) 
     update_page do |page| 
-      page[div].toggle 
-      page[div].visual_effect :highlight 
+      page.visual_effect :toggle_slide, div
     end 
   end 
   
