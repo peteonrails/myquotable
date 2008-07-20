@@ -4,7 +4,7 @@ development:
   domain: myquotable.com
   authentication: login
   username: admin+myquotable.com
-  password: Rx6RIX3aXDmI
+  password: FIXME
   
 production:
   server: mail.myquotable.com
@@ -12,5 +12,5 @@ production:
   domain: myquotable.com
   authentication: login
   username: admin+myquotable.com
-  password: Rx6RIX3aXDmI
+  password: FIXME
   tls: true

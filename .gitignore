@@ -2,3 +2,4 @@
 tmp/**/*
 log/*.log
 config/database.yml
+config/email.yml

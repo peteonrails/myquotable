@@ -27,6 +27,7 @@ task :restart, :roles => :app do
 end
 
 task :after_update_code, :roles => [:web, :db, :app] do
+  run "ln -nfs #{deploy_to}/#{shared_dir}/config/email.yml #{release_path}/config/email.yml" 
   run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml" 
   run "chmod 755 #{release_path}/public -R" 
 end
