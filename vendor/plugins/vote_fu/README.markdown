@@ -44,12 +44,18 @@ _____
 
 ### To cast a vote for a Model you can do the following:
 
+#### Shorthand syntax
+	voter.vote_for(voteable)     # Adds a +1 vote
+	voter.vote_against(voteable) # Adds a -1 vote
+	voter.vote(voteable, t_or_f) # Adds either +1 or -1 vote true => +1, false => -1
+	
+#### ActsAsVoteable syntax
+The old acts\_as\_voteable syntax is still supported:
+
     vote = Vote.new(:vote => true)
     m    = Model.find(params[:id])
     m.votes    << vote
     user.votes << vote
-
-There will be new functionality coming soon to make casting a vote simpler. 
 
 ### Querying votes
 
@@ -62,6 +68,15 @@ ActiveRecord models that act as voteable can be queried for the positive votes, 
 And because the Vote Fu plugin will add the has_many votes relationship to your model you can always get all the votes by using the votes property:
 
     allVotes = m.votes
+
+The mixin also provides these methods: 
+
+    voter.voted_for?(voteable)  # True if the voter voted for this object. 
+	voter.vote_count([true|false|"all"]) # returns the count of +1, -1, or all votes 
+
+	voteable.voted_by?(voter) # True if the voter voted for this object. 
+	@voters = voteable.voters_who_voted
+
 
 #### Named Scopes
 
