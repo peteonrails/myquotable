@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   # GET /users/:id
   def show
     @tags = { }
-    current_user.owned_taggings.each do |tagging|
+    @user.owned_taggings.each do |tagging|
       @tags[tagging.tag] = [] unless @tags[tagging]
       @tags[tagging.tag].push(tagging)
     end

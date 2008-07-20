@@ -28,6 +28,7 @@ ActionController::Routing::Routes.draw do |map|
   # Map the actions that are website-only and not restful
   map.with_options :controller => "site" do |site|
     site.root 
+    site.formatted_root '/index.:format', :action => "index"
     site.popular '/popular', :action => "popular"
     site.about   '/about',   :action => "about"
     site.contact '/contact', :action => "contact"

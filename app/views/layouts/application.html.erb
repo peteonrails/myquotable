@@ -7,6 +7,8 @@
   <title><%= yield(:pagename) %>: MyQuotable.com</title>
   <meta name="description" content="Store, Organize, Discover, and Share your favorite quotes"/>
 	<meta name="keywords" content="quotes, quotable, micro-blog, blog, social"/>
+	
+	<%= yield(:head) %>
 
 	<%= stylesheet_link_tag 'styles' %>
 	<%= javascript_include_tag :defaults %>

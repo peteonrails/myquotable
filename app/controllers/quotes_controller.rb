@@ -7,16 +7,17 @@ class QuotesController < ApplicationController
   # GET /users/:id/quotes
   # GET /users/:id/quotes.xml
   def index
-    @quotes = Quote.public.descending
+    @quotes = (current_user == @user) ? @user.quotes.descending : @user.quotes.public.descending
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @quotes }
+      format.html # show.html.erb
+      format.xml  { render :xml => @quote }
+      format.rss
     end
   end
 
-  # GET /users/:id/quotes/1
-  # GET /users/:id/quotes/1.xml
+  # GET /users/:user_id/quotes/1
+  # GET /users/:user_id/quotes/1.xml
   def show
     @quote = Quote.find(params[:id])
 

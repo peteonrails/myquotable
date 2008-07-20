@@ -8,6 +8,8 @@
   <meta name="description" content="Store, Organize, Discover, and Share your favorite quotes"/>
 	<meta name="keywords" content="quotes, quotable, micro-blog, blog, social"/>
 
+	<%= yield(:head) %>
+
 	<%= stylesheet_link_tag 'styles' %>
 	<%= javascript_include_tag :defaults %>
 
@@ -58,11 +60,9 @@
 	</div>
 
 
-	<% if logged_in? %>
-		<div id="sidebar" class="sidebar">
-			<%= render :partial => "users/tag_cloud" %>
-		</div>
-	<% end %>
+	<div id="sidebar" class="sidebar">
+		<%= render :partial => "users/tag_cloud" %>
+	</div>
 
 </div>
 

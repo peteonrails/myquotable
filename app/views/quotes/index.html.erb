@@ -1,9 +1,16 @@
+<% content_for :head do %>
+  <link rel="alternate" 
+    type="application/rss+xml" 
+    title="MyQuotable: <%= @user.login %>'s Quotes" 
+    href="<%= formatted_user_quotes_path(@user, :rss) %>" />
+<% end %>
+
 <% content_for :pagename do %>
  Home
 <% end %>
 
 <% content_for :statusbar do %>
-	<%= @user.login %> -> Your quotes -> all (<%= @user.quotes.count %>)  -- view
+	<%= @user.login %> -> Quotes -> all (<%= @user.quotes.count %>)  -- view
 	<%= link_to "Most Recent Member Quotes", root_path %>,
 	<%= link_to "popular", root_path%>
 <% end %>

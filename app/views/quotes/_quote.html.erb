@@ -6,7 +6,7 @@
 		&#8211;&#8211; <%=h @quote.author %> <%=h @quote.quote_context %> 	
 	</div>
 	
-	<div id="quote_extended_<%= @quote.id %>" class="quote_extended" style="display: none;">	
+	<div id="quote_extended_<%= @quote.id %>" class="quote_extended" style="display: <%= defined?(extended) && extended ? '' : 'none' %>;">	
 	  <ul>
 	
 	  <% if @quote.quoted_by != "" || @quote.quoted_at != "" || @quote.copyright != "" %>

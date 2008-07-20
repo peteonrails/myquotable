@@ -7,6 +7,7 @@ class SiteController < ApplicationController
     respond_to do |format|
       format.html
       format.xml  { render :xml => @quotes }
+      format.rss  
     end
   end
 
