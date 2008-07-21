@@ -14,8 +14,8 @@ aaron:
   first_name: Aaron
   last_name: NoName
   email: aaron@example.com
-  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
-  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  salt: eb841dde11cab68fa5f9c775435718cc1d3c0b44
+  crypted_password: 3b7d5ef7bbd4eebace78a5dbc3c7e32ac15b438b 
   created_at: <%= 1.days.ago.to_s :db %>
   activation_code: 8f24789ae988411ccf33ab0c30fe9106fab32e9a 
   state: pending
@@ -25,8 +25,8 @@ fred:
     first_name: Fred
     last_name: SomeName
     email: fred@example.com
-    salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
-    crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+    salt: eb841dde11cab68fa5f9c775435718cc1d3c0b44
+    crypted_password: 3b7d5ef7bbd4eebace78a5dbc3c7e32ac15b438b 
     created_at: <%= 1.days.ago.to_s :db %>
     activation_code: 8f24789ae988411ccf33ab0c30fe9106fab32e9a 
     state: actve

@@ -9,7 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080714011610) do
+ActiveRecord::Schema.define(:version => 20080720201033) do
+
+  create_table "logged_exceptions", :force => true do |t|
+    t.string   "exception_class"
+    t.string   "controller_name"
+    t.string   "action_name"
+    t.text     "message"
+    t.text     "backtrace"
+    t.text     "environment"
+    t.text     "request"
+    t.datetime "created_at"
+  end
 
   create_table "quotes", :force => true do |t|
     t.text     "quote"

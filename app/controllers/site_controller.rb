@@ -17,7 +17,7 @@ class SiteController < ApplicationController
     respond_to do |format|
       format.html { render :action => "index" }
       format.xml  { render :xml => @quotes }
-      format.rss  
+      format.rss  { render :action => "index" }
     end
     
   end

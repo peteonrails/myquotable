@@ -25,6 +25,8 @@ class UsersController < ApplicationController
   
 
   def create
+    @tags = { }
+
     cookies.delete :auth_token
     @user = User.new(params[:user])
     @user.register! if @user.valid?

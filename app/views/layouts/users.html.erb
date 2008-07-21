@@ -59,10 +59,11 @@
 		<%= yield %>
 	</div>
 
-
+  <% if defined?(@user) %>
 	<div id="sidebar" class="sidebar">
 		<%= render :partial => "users/tag_cloud" %>
 	</div>
+  <% end %>
 
 </div>
 
