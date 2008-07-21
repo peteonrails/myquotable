@@ -27,8 +27,8 @@ class QuotesController < ApplicationController
     end
   end
 
-  # GET /users/:id/quotes/new
-  # GET /users/:id/quotes/new.xml
+  # GET /users/:user_id/quotes/new
+  # GET /users/:user_id/quotes/new.xml
   def new
     @quote = Quote.new
     @quote.quoted_by = "#{current_user.first_name} #{current_user.last_name}"
@@ -39,13 +39,13 @@ class QuotesController < ApplicationController
     end
   end
 
-  # GET /users/:id/quotes/1/edit
+  # GET /users/:user_id/quotes/1/edit
   def edit 
     @quote ||= Quote.find(params[:id])
   end
 
-  # POST /users/:id/quotes
-  # POST /users/:id/quotes.xml
+  # POST /users/:user_id/quotes
+  # POST /users/:user_id/quotes.xml
   def create
     @quote = Quote.new(params[:quote])
     @quote.user = current_user
@@ -63,8 +63,8 @@ class QuotesController < ApplicationController
     end
   end
 
-  # PUT /users/:id/quotes/1
-  # PUT /users/:id/quotes/1.xml
+  # PUT /users/:user_id/quotes/1
+  # PUT /users/:user_id/quotes/1.xml
   def update
     @quote = Quote.find(params[:id])
     assign_tags_to_user
@@ -81,8 +81,8 @@ class QuotesController < ApplicationController
     end
   end
 
-  # DELETE /users/:id/quotes/1
-  # DELETE /users/:id/quotes/1.xml
+  # DELETE /users/:user_id/quotes/1
+  # DELETE /users/:user_id/quotes/1.xml
   def destroy
     @quote = Quote.find(params[:id])
     @quote.destroy
