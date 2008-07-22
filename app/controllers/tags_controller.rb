@@ -7,6 +7,7 @@ class TagsController < ApplicationController
   
   # GET /users/:user_id/tags/:id
   def show
+    
   end
   
   
