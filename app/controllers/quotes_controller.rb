@@ -11,7 +11,7 @@ class QuotesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @quote }
+      format.xml  { render :xml => @quotes }
       format.rss
     end
   end

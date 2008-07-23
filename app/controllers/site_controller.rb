@@ -12,7 +12,7 @@ class SiteController < ApplicationController
   end
 
   def popular 
-    @quotes = Quote.public.popular
+    @quotes = Quote.public.tally({:at_least => 1, :at_most => 10000 })
     
     respond_to do |format|
       format.html { render :action => "index" }
