@@ -10,13 +10,16 @@ module Juixe
       module ClassMethods
         def acts_as_voteable
           has_many :votes, :as => :voteable, :dependent => :nullify
+          named_scope :popular, lambda { |*args| {:conditions => ["created_at > ?", (args.first || 1.day.ago).to_s(:db)]} }
+
           include Juixe::Acts::Voteable::InstanceMethods
           extend  Juixe::Acts::Voteable::SingletonMethods
-        end
+        end        
       end
       
       # This module contains class methods
       module SingletonMethods
+        
       end
       
       # This module contains instance methods

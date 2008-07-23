@@ -1,6 +1,7 @@
 require 'digest/sha1'
 class User < ActiveRecord::Base
   has_many :quotes
+  has_many :news
   
   acts_as_tagger
   acts_as_voter
