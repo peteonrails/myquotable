@@ -12,18 +12,7 @@
 <% content_for :statusbar do %>
 	<%= @user.login %> -> Quotes -> all (<%= @user.quotes.count %>)  -- view
 	<%= link_to "Most Recent Member Quotes", root_path %>,
-	<%= link_to "popular", root_path%>
+	<%= link_to "popular", root_path %>
 <% end %>
 
-<div id="quotes_container">
-
-	<%# link_to 'Recent', root_path %> 
-	<%# link_to 'Popular', root_path %> 
-	<%# link_to 'Friends', root_path %> 
-	<%# link_to 'Sent to You', root_path %>
-
-	<% for @quote in @quotes %>
-		<%= render :partial => "quotes/quote" %>
-	<% end %>
-
-</div>
+<%= render :partial => "quotes/quote_container" %>

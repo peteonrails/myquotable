@@ -1,17 +1,17 @@
 <% content_for :head do %>
   <link rel="alternate" 
     type="application/rss+xml" 
-    title="MyQuotable: Recent Member's Quotes" 
-    href="<%= formatted_root_path(:rss) %>" />
+    title="MyQuotable: Most Popular Quotes" 
+    href="<%= formatted_popular_path(:rss) %>" />
 <% end %>
 
 <% content_for :pagename do %>
- Home
+ Popular
 <% end %>
 
 <% content_for :statusbar do %>
-	Home -> Most Recent Member Quotes -- view 
-	<%= link_to "popular", popular_path%>
+	Home -> Most Popular Quotes -- view 
+	<%= link_to "recent", root_path%>
 	<%= link_to "yours", user_path(current_user) if logged_in?%>
 <% end %>
 

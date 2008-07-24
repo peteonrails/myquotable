@@ -13,15 +13,5 @@
  <%= @user.login %> -> Quotes -> all (<%= @user.quotes.count %>)
 <% end %>
 
-<div id="quotes_container">
-
-	<%= link_to 'Recent', root_path %> |
-	<%= link_to 'Popular', root_path %> |
-	<%= link_to 'Friends', root_path %> |
-	<%= link_to 'Sent to You', root_path %>
-
-	<% for @quote in (current_user == @user) ?  @user.quotes.descending : @user.quotes.public.descending %>
-		<%= render :partial => "quotes/quote" %>
-	<% end %>
-
-</div>
+<% @quotes = (current_user == @user) ?  @user.quotes.descending : @user.quotes.public.descending %>
+<%= render :partial => "quotes/quote_container" %>

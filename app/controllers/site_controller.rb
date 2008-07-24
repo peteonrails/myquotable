@@ -15,9 +15,9 @@ class SiteController < ApplicationController
     @quotes = Quote.public.tally({:at_least => 1, :at_most => 10000 })
     
     respond_to do |format|
-      format.html { render :action => "index" }
+      format.html
       format.xml  { render :xml => @quotes }
-      format.rss  { render :action => "index" }
+      format.rss 
     end
     
   end

@@ -28,13 +28,14 @@ ActionController::Routing::Routes.draw do |map|
   # Map the actions that are website-only and not restful
   map.with_options :controller => "site" do |site|
     site.root 
-    site.formatted_root '/index.:format', :action => "index"
-    site.popular '/popular', :action => "popular"
-    site.about   '/about',   :action => "about"
-    site.contact '/contact', :action => "contact"
-    site.terms   '/terms',   :action => "terms"
-    site.privacy '/privacy', :action => "privacy"
-    site.api     '/api',     :action => "api"
+    site.formatted_root     '/index.:format',   :action => "index"
+    site.popular            '/popular',         :action => "popular"
+    site.formatted_popular  '/popular.:format', :action => "popular"
+    site.about              '/about',           :action => "about"
+    site.contact            '/contact',         :action => "contact"
+    site.terms              '/terms',           :action => "terms"
+    site.privacy            '/privacy',         :action => "privacy"
+    site.api                '/api',             :action => "api"
   end
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
