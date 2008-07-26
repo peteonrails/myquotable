@@ -5,3 +5,11 @@ funny_pete:
     tagger_type: User
     tag: funny
     context: tags
+    
+funny_pete:
+    taggable: one
+    taggable_type: Quote
+    tagger: aaron
+    tagger_type: User
+    tag: funny
+    context: tags    
