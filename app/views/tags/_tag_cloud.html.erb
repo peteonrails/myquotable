@@ -1,6 +1,9 @@
 <h3><%= @user.login %>'s Tags</h3>
 <ul>
-<% @user.owned_tags.each do |tag|%>
+
+<%# TODO: Fix acts_as_taggable_on's owned_tags association to remove duplicates %>
+
+<% @user.owned_tags.uniq.each do |tag| %>
 	<li><%= link_to tag, user_tag_path(@user, tag) %> (<%= tag.taggings.count %>)</li>
 <% end %>
 </ul>
