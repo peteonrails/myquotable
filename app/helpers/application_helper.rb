@@ -3,7 +3,7 @@ module ApplicationHelper
   include TagsHelper
 
   def version
-    "0.0.2 alpha #{RAILS_ENV}"  
+    "0.0.3 alpha #{RAILS_ENV}"  
   end
   
   def toggle_div(div) 

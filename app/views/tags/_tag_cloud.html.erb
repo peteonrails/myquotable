@@ -1,0 +1,11 @@
+<h3><%= @user.login %>'s Tags</h3>
+<ul>
+<% @user.owned_tags.each do |tag|%>
+	<li><%= link_to tag, user_tag_path(@user, tag) %> (<%= tag.taggings.count %>)</li>
+<% end %>
+</ul>
+<br />
+Tag Cloud Coming Soon
+<%# tag_cloud @tag.taggings, %w(css1 css2 css3 css4) do |tag, css_class| %>
+  <%# link_to @tag, { :action => :tag, :id => @tag }, :class => css_class %>
+<%# end %>

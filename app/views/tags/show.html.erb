@@ -1,1 +1,11 @@
-Listing quotes by tag is coming soon. Expected implementation is July 24, 2008. 
+<% content_for :pagename do %>
+   <%= @user.login %>'s items tagged [<%= @tag.name %>]
+<% end %>
+
+<% content_for :statusbar do %>
+	<%= @user.login %> -> Quotes -> Tagged: <%= @tag.name %> (<%= @quotes.length %>)  -- view
+	<%= link_to "Most Recent Member Quotes", root_path %>,
+	<%= link_to "popular", root_path %>
+<% end %>
+
+<%= render :partial => "quotes/quote_container" %>

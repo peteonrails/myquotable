@@ -1,0 +1,9 @@
+<% content_for :pagename do %>
+  Edit tag: <%= @tag.name %>
+<% end %>
+<% content_for :statusbar do %>
+  Editing tags is not currently supported. Edit each mistagged QUOTE instead.
+<% end %>
+
+<%= render :partial => "tag_form"%>
+

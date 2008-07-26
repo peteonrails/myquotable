@@ -1,0 +1,13 @@
+<div id="message_block_container">
+  <div id="message_block_title">Editing Tag: <%= @tag.name %> </div>
+  <div id="message_block">
+
+    <% form_for([@user, @tag]) do |f| %>
+      <%= f.error_messages %>
+      <%= f.text_field :name, :size => "10"%>
+	    <%= f.submit "Rename Tag" %> or <%= link_to 'Go Back', user_tags_path %>        
+	  <% end %>
+  </div>
+</div>
+
+

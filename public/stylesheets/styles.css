@@ -208,7 +208,7 @@ img.voteimg {
 
 .sidebar {
 	margin-top: 20px;
-	margin-right: 30px;
+	margin-right: 100px;
 	padding: 10px 10px 10px 10px;
 	width: 200px;
 	float: right;
@@ -220,6 +220,14 @@ img.voteimg {
 .sidebar ul {	
 	margin-left: 25px;
 }
+
+#whatsnew li {	
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
 
 #message_block_container {
 	float: center;

@@ -6,7 +6,7 @@
 <% end %>
 
 <% content_for :pagename do %>
- Home
+ <%= @user.login %>'s Home
 <% end %>
 
 <% content_for :statusbar do %>
@@ -16,3 +16,4 @@
 <% end %>
 
 <%= render :partial => "quotes/quote_container" %>
+
