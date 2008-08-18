@@ -30,7 +30,7 @@ Rails::Initializer.run do |config|
 #  config.gem "mbleigh-acts-as-taggable-on", :source => "http://gems.github.com", :lib => "acts-as-taggable-on"
 #  config.gem "peteonrails-vote_fu", :source => "http://gems.github.com", :lib => "vote_fu"
   config.gem "will_paginate"
-
+  config.gem "haml"
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
   # :all can be used as a placeholder for all plugins not explicitly named
