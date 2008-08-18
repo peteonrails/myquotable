@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   
   acts_as_tagger
   acts_as_voter
+  has_karma :quotes
   
   # Virtual attribute for the unencrypted password
   attr_accessor :password
