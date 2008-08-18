@@ -20,6 +20,7 @@ module ApplicationHelper
       when "users": " " + 
         case params[:action]
           when "new": " -> New User "
+          when "activate": " -> Activate New User "
           else get_login_breadcrumb + "quotes -> all (" + @user.quotes.count.to_s + ")"
         end
       when "site": " -> " + 
