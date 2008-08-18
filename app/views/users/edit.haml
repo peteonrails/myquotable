@@ -1,0 +1,47 @@
+- content_for :pagename do
+  = @user.login + " >> Editing profile"
+  
+#message_block_container
+  #message_block_title
+    Edit your profile
+  #message_block
+    #message_block_left
+      -  form_for @user do |f| 
+        %p
+          %label{ :for => "first_name"} First Name
+          %br
+          = f.text_field :first_name
+	
+        %p
+          %label{ :for => "last_name"} Last Name
+          %br
+          = f.text_field :last_name 
+		
+        %p
+          %label{ :for => "login" } Login
+          %br
+          = f.text_field :login 
+		
+        %p
+          %label{ :for => "email" } Email
+          %br
+          = f.text_field :email
+		  
+        %p
+          %label{ :for => "password" } Password
+          %br
+          = f.password_field :password
+	
+        %p
+          %label{ :for => "password_confirmation"} Confirm Password
+          %br
+          = f.password_field :password_confirmation
+		
+        %p
+          = submit_tag 'Save Changes'
+    #message_block_right
+      = error_messages_for :user 
+      - if flash[:errors]
+        #errorExplanation
+          = flash[:errors] 
+    %br#clearfix

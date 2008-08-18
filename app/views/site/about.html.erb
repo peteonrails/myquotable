@@ -1,12 +1,6 @@
 <% content_for :pagename do %>
  About
 <% end %>
-<% content_for :statusbar do %>
-	Home -> About -- view 
-	<%= link_to "Most Recent Member Quotes", root_path%>,
-	<%= link_to "popular", root_path%>, 
-	<%= link_to "yours", user_path(current_user)%>
-<% end %>
 
 <div id="message_block_container">
 <div id="message_block_title">

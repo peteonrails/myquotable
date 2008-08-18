@@ -1,4 +1,5 @@
 @import colors.sass
+@import borders.sass
 
 .pagination
   :background = !deeperblue
@@ -9,26 +10,26 @@
     :display block
     :float left
     :margin-right 1px
-    :border-radius 5px
-    :-moz-border-radius 5px
-    :-webkit-border-radius 5px
+    :border-radius = !smallrounded
+    :-moz-border-radius = !smallrounded
+    :-webkit-border-radius = !smallrounded
   span.disabled
-    :color #999
-    :border 1px solid #DDD
+    :color = !disabledtext
+    :border = "1px solid " + !invisigrey
   span.current
     :font-weight bold
-    :background !borders
-    :color !white
-    :border 1px solid !borders
+    :background = !borders
+    :color white
+    :border = !borders + " 1px solid "
   a
     :text-decoration none
-    :color = !darklinkcolor
-    :border 1px solid !pagelinkborder
+    :color = !pagelinkcolor
+    :border = "1px solid " + !pagelinkborder
     &:hover, &:focus
-      :color #003
-      :border-color #003
+      :color = !linkfocus
+      :border-color = !linkfocus
   .page_info
-    :background #2E6AB1
+    :background = !borders
     :color white
     :padding .4em .6em
     :width 22em
@@ -36,7 +37,7 @@
     :text-align center
     b
       :color #003
-      :background = #2E6AB1 + 60
+      :background = !borders + 60
       :padding .1em .25em
     
   /* self-clearing method:

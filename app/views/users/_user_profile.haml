@@ -1,0 +1,18 @@
+- if current_user == @user
+  %div{ :style => "text-align: right; width = 100%;"}
+    = link_to "Edit", edit_user_path(@user)
+%h3= @user.login + "'s Profile"
+Name: 
+= @user.first_name
+= @user.last_name
+%br
+Total Quotes: 
+= @user.quotes.count
+%br
+Total Votes: 
+= 42
+%br
+Has voted for: 
+= 2
+%br
+

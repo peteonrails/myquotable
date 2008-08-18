@@ -12,22 +12,22 @@
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px; }
   .pagination span.disabled {
-    color: #999;
-    border: 1px solid #DDD; }
+    color: #999999;
+    border: 1px solid #dddddd; }
   .pagination span.current {
     font-weight: bold;
-    background: !borders;
-    color: !white;
-    border: 1px solid !borders; }
+    background: #2e6ab1;
+    color: white;
+    border: #2e6ab1 1px solid ; }
   .pagination a {
     text-decoration: none;
     color: #105cb6;
-    border: 1px solid !pagelinkborder; }
+    border: 1px solid #9aafe5; }
     .pagination a:hover, .pagination a:focus {
-      color: #003;
-      border-color: #003; }
+      color: #000033;
+      border-color: #000033; }
   .pagination .page_info {
-    background: #2E6AB1;
+    background: #2e6ab1;
     color: white;
     padding: .4em .6em;
     width: 22em;

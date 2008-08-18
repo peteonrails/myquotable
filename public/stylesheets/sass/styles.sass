@@ -1,6 +1,7 @@
 @import colors.sass
 @import quotes.sass
 @import borders.sass
+@import inputs.sass
 
 body 
   :background-color = !deeperblue
@@ -120,13 +121,15 @@ a
   :margin-right auto
 
 #message_block_title
+  :color = !white
   :background = !toolbar
   :padding 5px 10px 5px 10px
-  :width 780px
+  :width 770px
   :border-radius = !roundedtop
   :-moz-border-radius = !roundedtop 
   :-webkit-border-radius = !roundedtop
   :font-weight bold
+  :padding-left 20px
   
 #message_block 
   :background = !quotebg

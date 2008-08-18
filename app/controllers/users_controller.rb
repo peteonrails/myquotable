@@ -4,12 +4,14 @@ class UsersController < ApplicationController
   
   # Protect these actions behind an admin login
   before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
-  before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge, :show]
+  before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge, :show, :edit]
 
-  before_filter :login_required, :only => [:index]
+  before_filter :login_required, :only => [:index, :update, :edit, :suspend, :unsuspend, :destroy, :purge]
+  before_filter :must_be_this_user, :only => [:edit, :update]
 
   # render new.html.erb
   def new
+    
   end
 
   # GET /users/:id
@@ -17,7 +19,24 @@ class UsersController < ApplicationController
 
   end
   
-
+  def edit
+    
+  end
+  
+  def update
+    respond_to do |format|
+      if @user.update_attributes(params[:user])
+        flash[:notice] = 'Your profile was successfully updated.'
+        format.html { redirect_to(@user) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+      end
+    end
+    
+  end
+  
   def create
     @tags = { }
 
@@ -70,7 +89,18 @@ class UsersController < ApplicationController
 
 protected
   def find_user
-    @user = User.find(params[:id])
+    @user ||= User.find(params[:id])
   end
 
+  def must_be_this_user
+    find_user
+    current_user == @user || access_denied
+  end
+  
+  def access_denied
+    flash[:errors] = "You are not authorized to edit that user! Here is your own profile. You can edit this one instead."
+    RAILS_DEFAULT_LOGGER.info("Security violation: #{current_user[:login]} tried to edit #{@user.login}")
+    redirect_to(edit_user_path(current_user))
+  end
+  
 end

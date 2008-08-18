@@ -99,6 +99,11 @@ img.voteimg {
   font-style: italic;
   margin-top: 6px; }
 
+input {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
 body {
   background-color: #cfe0f0;
   color: #333333;
@@ -214,13 +219,15 @@ a {
   margin-right: auto; }
 
 #message_block_title {
+  color: #ffffff;
   background: #2e6ab1;
   padding: 5px 10px 5px 10px;
-  width: 780px;
+  width: 770px;
   border-radius: 20px 20px 0px 0px;
   -moz-border-radius: 20px 20px 0px 0px;
   -webkit-border-radius: 20px 20px 0px 0px;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-left: 20px; }
 
 #message_block {
   background: #edf3fe;

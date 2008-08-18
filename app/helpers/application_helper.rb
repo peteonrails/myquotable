@@ -14,13 +14,19 @@ module ApplicationHelper
 
   def get_statusbar
     html = link_to('Home', root_path)
-
+    
     
     html += case params[:controller]
       when "users": get_login_breadcrumb + "quotes -> all (" + @user.quotes.count.to_s + ")"
-      when "site": case params[:action]
-          when "index":   " -> Most Recent Member Quotes "
-          when "popular": " -> Most Popular Member Quotes"
+      when "site": " -> " + 
+        case params[:action]
+          when "index":   "Most Recent Member Quotes "
+          when "popular": "Most Popular Member Quotes"
+          when "about":   "About MyQuotable"
+          when "contact": "Contact Us"
+          when "privacy": "Privacy Policy"
+          when "terms": "Terms of Use"
+          else " "
         end
       when "tags": 	get_login_breadcrumb + "quotes -> tagged: " + @tag.name + "(" + @quotes.length.to_s + ")"
       when "quotes": get_login_breadcrumb + 
@@ -28,6 +34,7 @@ module ApplicationHelper
           when "new": "Adding a new quote (" + (@user.quotes.count + 1).to_s + ")"
           when "show": "Viewing quote"
           when "edit": "Editing quote"
+          else " "
         end
       else " "
     end

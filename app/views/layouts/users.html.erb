@@ -59,6 +59,10 @@
 	</div>
 
   <% if defined?(@user) %>
+	<div class="sidebar">
+		<%= render :partial => "users/user_profile" %>
+	</div>
+  <br style="clear: right;">
 	<div id="sidebar" class="sidebar">
 		<%= render :partial => "tags/tag_cloud" %>
 	</div>
