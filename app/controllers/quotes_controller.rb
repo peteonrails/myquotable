@@ -10,7 +10,7 @@ class QuotesController < ApplicationController
     @quotes = (current_user == @user) ? @user.quotes.descending : @user.quotes.public.descending
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { @quotes = @quotes.paginate(:page => params[:page])}
       format.xml  { render :xml => @quotes }
       format.rss
     end

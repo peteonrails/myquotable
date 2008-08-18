@@ -6,8 +6,82 @@ vote1:
     vote: true
     
 vote2:
+    voter: fred
+    voteable: three
+    voteable_type: Quote
+    voter_type: User
+    vote: true    
+        
+vote3:
+    voter: fred
+    voteable: four
+    voteable_type: Quote
+    voter_type: User
+    vote: true
+
+vote4:
+    voter: fred
+    voteable: five
+    voteable_type: Quote
+    voter_type: User
+    vote: true
+vote5:
+    voter: aaron
+    voteable: five
+    voteable_type: Quote
+    voter_type: User
+    vote: true
+vote6:
+    voter: fred
+    voteable: six
+    voteable_type: Quote
+    voter_type: User
+    vote: true
+vote7:
+    voter: fred
+    voteable: seven
+    voteable_type: Quote
+    voter_type: User
+    vote: true    
+vote8:
+    voter: fred
+    voteable: eight
+    voteable_type: Quote
+    voter_type: User
+    vote: true
+vote9:
         voter: fred
-        voteable: three
+        voteable: nine
         voteable_type: Quote
         voter_type: User
-        vote: true    
+        vote: true
+vote10:
+        voter: fred
+        voteable: ten
+        voteable_type: Quote
+        voter_type: User
+        vote: true
+vote11a: 
+    voter: fred
+    voteable: eleven
+    voteable_type: Quote
+    voter_type: User
+    vote: true
+vote11b:
+    voter: pete
+    voteable: eleven
+    voteable_type: Quote
+    voter_type: User
+    vote: true
+vote11c:
+    voter: aaron
+    voteable: eleven
+    voteable_type: Quote
+    voter_type: User
+    vote: true
+vote12:
+    voter: fred
+    voteable: twelve
+    voteable_type: Quote
+    voter_type: User
+    vote: true

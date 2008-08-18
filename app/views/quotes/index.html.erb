@@ -9,11 +9,5 @@
  <%= @user.login %>'s Home
 <% end %>
 
-<% content_for :statusbar do %>
-	<%= @user.login %> -> Quotes -> all (<%= @user.quotes.count %>)  -- view
-	<%= link_to "Most Recent Member Quotes", root_path %>,
-	<%= link_to "popular", root_path %>
-<% end %>
-
 <%= render :partial => "quotes/quote_container" %>
 
