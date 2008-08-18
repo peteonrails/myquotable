@@ -20,7 +20,8 @@
 	<div id="header">
 		<div id="header-left">
 		  <!--div id="logo"></div-->
-        <h1>MyQuotable: Share, Tag, Organize</h1>
+        <span class='title'>MyQuotable: </span>
+        <span class="tagline">Share, Organize, and Rate quotable sayings</span>
 		</div>
 		<div id="header-right">
 			<%= "logged in as #{current_user.login} |" if logged_in? %>  
@@ -29,6 +30,8 @@
 		</div>
 	</div>
 
+  <br id="clearfix" />
+  
   <% content_for :statusbar do %>
     <%= get_statusbar %>
   <% end %>

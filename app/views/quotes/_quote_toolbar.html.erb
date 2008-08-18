@@ -17,7 +17,9 @@
 	
     <br class="clearfix"/>
 
-	<div id="quote_tags_<%= @quote.id %>" class="quote_tags">
-		Tags: <%= @quote.tags.join(' ') %>
-	</div>
+  <% if !@quote.tags.empty? %>
+	  <div id="quote_tags_<%= @quote.id %>" class="quote_tags">
+		  Tags: <%= @quote.tags.join(' ') %>
+	  </div>
+	<% end %>
 </div>

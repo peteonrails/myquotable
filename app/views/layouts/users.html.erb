@@ -18,10 +18,11 @@
 <body>
 <div id="container">
 	<div id="header">
-		<div id="header-left">
-		  <!--div id="logo"></div-->
-        <h1>MyQuotable: Share, Tag, Organize</h1>
-		</div>
+  		<div id="header-left">
+  		  <!--div id="logo"></div-->
+          <span class='title'>MyQuotable: </span>
+          <span class="tagline">Share, Organize, and Rate quotable sayings</span>
+  		</div>
 		
 		<div id="header-right">
 			<%= "logged in as #{current_user.login} |" if logged_in? %>  

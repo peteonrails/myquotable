@@ -19,6 +19,8 @@
   -webkit-border-radius: 20px; }
 
 .quote_text {
+  font-weight: bold;
+  font-size: 13px;
   background: #edf3fe;
   padding: 5px 10px 5px 10px;
   width: auto;

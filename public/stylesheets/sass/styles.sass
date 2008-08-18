@@ -37,10 +37,13 @@ a
   :font-size +2
   #header-left 
     :float left
-    :width 500px
-    h1  
-      :font-size 16px
+    :width 600px
+    span.title  
+      :font-size 18px
       :margin-top 0
+    span.tagline
+      :font-size 16px
+      :font-style italic
 
   #header-right 
     :float right
@@ -66,6 +69,7 @@ a
   :-moz-border-radius = !smallrounded
   :-webkit-border-radius = !smallrounded
   :color = !white
+  :margin-top 5px
   a
     :color = !statusbarlink
   #statusbar-left 
@@ -90,7 +94,7 @@ a
 .sidebar
   :margin-top 20px
   :margin-right 100px
-  :padding 10px 10px 10px 10px
+  :padding 15px 
   :width 200px
   :float right
   :background = !quotebg
@@ -100,7 +104,20 @@ a
   :-webkit-border-radius = !rounded
   ul 
     :margin-left 25px
-
+    li
+      :font-size 12px
+  span.left
+    :float left
+    :font-size 14px
+    :font-weight bold 
+    :border-bottom 1px dotted
+    :margin-bottom 5px
+  span.right
+    :float right
+    :margin-bottom 5px
+    a
+      :color = !ltgrey
+    
 #whatsnew 
   li
     :margin-top 10px
