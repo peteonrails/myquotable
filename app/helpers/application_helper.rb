@@ -47,7 +47,7 @@ module ApplicationHelper
     html += " -- view "
   	html += link_to("popular", popular_path) + " " 
   	html += link_to("yours", user_path(current_user)) if logged_in?
-  	html += " " + link_to("post a quote", new_user_quote_path(current_user)) if logged_in?
+  	html += " -- " + link_to("post a quote", new_user_quote_path(current_user)) if logged_in?
   	html
   end
   
