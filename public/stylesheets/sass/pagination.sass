@@ -1,0 +1,52 @@
+@import colors.sass
+
+.pagination
+  :background = !deeperblue
+  :float right
+  :margin-bottom 5px
+  a, span
+    :padding .2em .5em
+    :display block
+    :float left
+    :margin-right 1px
+    :border-radius 5px
+    :-moz-border-radius 5px
+    :-webkit-border-radius 5px
+  span.disabled
+    :color #999
+    :border 1px solid #DDD
+  span.current
+    :font-weight bold
+    :background !borders
+    :color !white
+    :border 1px solid !borders
+  a
+    :text-decoration none
+    :color = !darklinkcolor
+    :border 1px solid !pagelinkborder
+    &:hover, &:focus
+      :color #003
+      :border-color #003
+  .page_info
+    :background #2E6AB1
+    :color white
+    :padding .4em .6em
+    :width 22em
+    :margin-bottom .3em
+    :text-align center
+    b
+      :color #003
+      :background = #2E6AB1 + 60
+      :padding .1em .25em
+    
+  /* self-clearing method:
+  &:after
+    :content "."
+    :display block
+    :height 0
+    :clear both
+    :visibility hidden
+  * html &
+    :height 1%
+  *:first-child+html &
+    :overflow hidden

@@ -1,10 +1,6 @@
 <% content_for :pagename do %>
   New quote
 <% end %>
-<% content_for :statusbar do %>
-	<%= @user.login %> -> Adding a new quote (<%= @user.quotes.count + 1 %>)
-	
-<% end %>
 
 <%= render :partial => "quote_form"%>
   

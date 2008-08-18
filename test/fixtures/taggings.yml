@@ -6,10 +6,19 @@ funny_pete:
     tag: funny
     context: tags
     
-funny_pete:
+funny_pete2:
     taggable: one
     taggable_type: Quote
     tagger: aaron
     tagger_type: User
     tag: funny
     context: tags    
+
+tag_two:
+    taggable: two
+    taggable_type: Quote
+    tagger: aaron
+    tagger_type: User
+    tag: funny
+    context: tags
+

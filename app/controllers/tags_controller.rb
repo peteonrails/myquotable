@@ -17,7 +17,7 @@ class TagsController < ApplicationController
   # GET /users/:user_id/tags/:id.xml
   def show  
     @tag = Tag.find(params[:id])
-    @quotes = Quote.find_tagged_with(@tag.name, :conditions => ["tagger_id = ?", @user.id])
+    @quotes = Quote.find_tagged_with(@tag.name, :conditions => ["tagger_id = ?", @user.id]).paginate(:page => params[:page])
   end
 
   # PUT /users/:user_id/tags/:id

@@ -5,8 +5,20 @@
 	<%# link_to 'Friends', root_path %> 
 	<%# link_to 'Sent to You', root_path %>
 
+  <div class="pagination">
+    <%= will_paginate @quotes %>
+  </div>
+
+  <br id="clearfix" />
+  
 	<% for @quote in @quotes %>
 		<%= render :partial => "quotes/quote" %>
 	<% end %>
 
+  <div class="pagination">
+    <%= will_paginate @quotes %>
+  </div>
+
+  <br id="clearfix" />
+  
 </div>

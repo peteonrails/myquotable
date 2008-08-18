@@ -9,9 +9,7 @@
 <% content_for :pagename do %>
  <%= @user.login %>'s Home
 <% end %>
-<% content_for :statusbar do %>
- <%= @user.login %> -> Quotes -> all (<%= @user.quotes.count %>)
-<% end %>
 
-<% @quotes = (current_user == @user) ?  @user.quotes.descending : @user.quotes.public.descending %>
+<% @quotes = (current_user == @user) ?  @user.quotes.descending.paginate(:page => params[:page]) : @user.quotes.public.descending.paginate(:page => params[:page]) %>
+
 <%= render :partial => "quotes/quote_container" %>

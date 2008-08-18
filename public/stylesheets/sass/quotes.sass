@@ -1,0 +1,105 @@
+@import colors.sass
+@import borders.sass
+
+.quote 
+  :border = !borders +  " 1px solid"
+  :width 500px
+  :padding 5px 5px 5px 5px
+  :margin-bottom 10px
+  :background = !quotebg
+  :border-radius = !rounded
+  :-moz-border-radius =  !rounded
+  :-webkit-border-radius = !rounded
+  
+.quote_private 
+  :border red 2px dotted
+  :width 500px
+  :padding 5px 5px 5px 5px
+  :background = !quotebg
+  :margin-bottom 10px
+  :border-radius = !rounded
+  :-moz-border-radius  = !rounded
+  :-webkit-border-radius  = !rounded
+
+.quote_text 
+  :background = !quotebg
+  :padding 5px 10px 5px 10px 
+  :width auto
+  :border-bottom = !borders + " 1px dotted"
+  :border-radius = !roundedtop
+  :-moz-border-radius  = !roundedtop
+  :-webkit-border-radius = !roundedtop
+  
+
+.quote_author 
+  :background = !quotebg
+  :padding 1px 10px 2px 10px
+  :width auto
+  :text-align right
+  :font-style italic
+
+.quote_toolbar
+  :background = !quotebg
+  :padding 0px 1px 0px 1px
+  :width auto 
+  :color = !toolbartext 
+  :font-size 10px
+  :line-height 20px
+  :border-radius  = !roundedbottom
+  :-moz-border-radius = !roundedbottom
+  :-webkit-border-radius = !roundedbottom
+  input 
+    :width 90%
+    :height 13px
+
+.quote_tools 
+  :float left
+  :text-align left
+  :margin-bottom 0px
+
+.quote_votes 
+  :text-align right
+  :width 35%
+  :float right
+  :margin-bottom 0px
+  :padding 0px 2px 0px 2px
+  
+.quote_tags
+  :text-align left
+  :padding 0px 0px 0px 0px
+  :margin-top 0px
+  :margin-left 2px
+
+img.voteimg 
+  :border 0
+
+.quote_extended
+  :border-top = !borders + " 1px dotted" 	
+  :margin-bottom 15px
+  ul
+    :list-style none
+    :margin-left 25px
+    :font-size 10px
+
+.quote_extended_form 
+  ul 
+    :list-style none
+    :margin-left 25px
+    :padding 5px
+    :font-size 10px
+    li 
+      :padding-bottom 8px
+      :font-size 10px
+
+#quote_author_input 
+  :width auto 
+  :text-align right
+  :font-style italic
+  :float left
+  :margin-top 6px
+  
+#quote_context_input
+  :width auto
+  :text-align right
+  :font-style italic
+  :margin-top 6px

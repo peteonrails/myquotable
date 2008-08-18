@@ -9,10 +9,4 @@
  Popular
 <% end %>
 
-<% content_for :statusbar do %>
-	Home -> Most Popular Quotes -- view 
-	<%= link_to "recent", root_path%>
-	<%= link_to "yours", user_path(current_user) if logged_in?%>
-<% end %>
-
 <%= render :partial => "quotes/quote_container" %>

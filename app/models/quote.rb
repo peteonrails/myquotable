@@ -11,4 +11,7 @@ class Quote < ActiveRecord::Base
   
   attr_accessible :quote, :quote_context, :author, :quoted_at, :quoted_by, :private, :author_title, :copyright 
 
+  cattr_reader :per_page
+  @@per_page = 5
+
 end

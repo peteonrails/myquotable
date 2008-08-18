@@ -64,7 +64,7 @@ seven:
     quoted_at: 2008-07-04
     user: aaron
 
-seven: 
+eight: 
     quote: 	Even Aaron needs a private quote 
     author: Brent Collier
     quoted_by: Peter Jackson
@@ -72,5 +72,57 @@ seven:
     user: aaron
     private: true
     
+nine:
+    quote: This is quote number nine
+    author: Peter Jackson
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: pete
 
-    
+ten:
+    quote: This is quote number ten
+    author: Peter Jackson
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: pete
+
+eleven:
+    quote: This one goes to eleven
+    author: Nigel
+    quote_context: in This Is Spinal Tap
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: pete
+
+twelve:
+    quote: This is quote number twelve
+    author: Peter Jackson
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: pete
+
+thirteen:
+    quote: This is quote number thirteen
+    author: Peter Jackson
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: pete
+
+fourteen:
+    quote: This is quote number fourteen
+    author: Peter Jackson
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: pete
+
+fifteen:
+    quote: This is quote number fifteen
+    author: Peter Jackson
+    quoted_by: Peter Jackson
+    quoted_at: 2008-07-04
+    user: pete
+
+
+
+
+

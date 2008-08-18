@@ -1,0 +1,222 @@
+@import colors.sass
+@import quotes.sass
+@import borders.sass
+
+body 
+  :background-color = !deeperblue
+  :color = !textcolor
+  :font-family verdana, arial, helvetica, sans-serif
+  :font-size  13px
+  :line-height 18px
+  p, ol, ul, td 
+    :margin 0
+    :text-align left
+    :padding 0
+
+pre
+  :background-color = !prebg
+  :padding 10px
+  :font-size 11px
+
+a 
+  :color = !black
+  visited 
+    :color = !linkvisit
+  hover
+    :color = !white 
+    :background-color = !black
+
+.fieldWithErrors 
+  :padding 2px
+  :background-color red
+  :display table
+
+#header 
+  :font-weight bold
+  :font-size +2
+  #header-left 
+    :float left
+    :width 500px
+    h1  
+      :font-size 16px
+      :margin-top 0
+
+  #header-right 
+    :float right
+    :margin-right 10px
+
+#logo   
+  :background url(/images/mqlogo.jpg)
+  :height 60px
+  :width 150px
+  :float left
+  :margin-right 10px
+  p 
+    :color = !deeperblue
+    :font-size 1.6em
+    :margin-top 20px
+
+#statusbar 
+  :clear both
+  :width 100%
+  :background = !toolbar
+  :padding 5px 0px 5px 0px
+  :border-radius = !smallrounded
+  :-moz-border-radius = !smallrounded
+  :-webkit-border-radius = !smallrounded
+  :color = !white
+  a
+    :color = !statusbarlink
+  #statusbar-left 
+    :float left
+    :width 60%
+    :margin-left 10px
+  #searchbox 
+    :float right
+    :width 30%
+
+#container 
+  :min-height 500px
+  :margin 0px auto 
+  :min-width 750px 	
+  #main-content 
+    :margin-left 10px
+    :padding-top 10px
+    :clear left
+    :float left
+
+  
+.sidebar
+  :margin-top 20px
+  :margin-right 100px
+  :padding 10px 10px 10px 10px
+  :width 200px
+  :float right
+  :background = !quotebg
+  :border = !borders + " 1px solid "
+  :border-radius = !rounded
+  :-moz-border-radius = !rounded
+  :-webkit-border-radius = !rounded
+  ul 
+    :margin-left 25px
+
+#whatsnew 
+  li
+    :margin-top 10px
+    :margin-right 10px
+    :font-size 10px
+    :font-weight bold
+
+#message_block_container
+  :float center
+  :border = !borders + " 1px solid"
+  :border-radius = !rounded
+  :-moz-border-radius = !rounded 
+  :-webkit-border-radius = !rounded
+  :background = !deeperblue 
+  :width 800px
+  :padding 5px 5px 5px 5px
+  :margin-left auto
+  :margin-right auto
+
+#message_block_title
+  :background = !toolbar
+  :padding 5px 10px 5px 10px
+  :width 780px
+  :border-radius = !roundedtop
+  :-moz-border-radius = !roundedtop 
+  :-webkit-border-radius = !roundedtop
+  :font-weight bold
+  
+#message_block 
+  :background = !quotebg
+  :padding 5px 10px 5px 10px
+  :width 780px
+  :border-radius = !roundedbottom
+  :-moz-border-radius  = !roundedbottom
+  :-webkit-border-radius = !roundedbottom
+  
+  p 
+    :margin 5px
+  ul 
+    :margin-left 25px
+    :font-size 10px
+  #message_block_left
+    :float left
+    :width 270px
+  #message_block_right 
+    :float right
+    :width 500px
+
+br#clearfix
+  :width 100%
+  :clear both
+  :margin 0
+  :padding .5em
+
+#errorExplanation
+  :width 400px
+  :border 2px solid red
+  :padding 7px
+  :padding-bottom 12px
+  :margin-bottom 20px
+  :background-color = !errorexp
+  h2 
+    :text-align left
+    :font-weight bold
+    :padding 5px 5px 5px 15px
+    :font-size 12px
+    :margin -7px
+    :background-color = !errorexpbg
+    :color = !white
+  p  
+    :color = !errorexptext
+    :margin-bottom 0
+    :padding 5px
+  ul 
+    li 
+      :font-size 12px
+      :list-style square
+
+#footer 
+  :background = !footerbg
+  :clear both
+  :padding 10px
+  :height 20px
+  :color = !black
+  :font-size 11px
+  :text-align left
+  :border-radius = !smallrounded
+  :-moz-border-radius = !smallrounded
+  :-webkit-border-radius = !smallrounded
+  #footer_nav 
+    :float left
+    :width 50%
+  #copyright 
+    :text-align right
+    :float right
+    :width 40%
+  a 
+    :text-decoration none
+    :border-bottom = !borders + " 1px dotted"
+
+#version
+  :background = !deeperblue
+  :clear both
+  :padding 10px
+  :height 20px
+  :color = !black
+  :font-size 11px
+  :text-align right
+  :border-top 1px dotted
+
+.css1
+  :font-size 1.0em
+.css2
+  :font-size 1.2em
+.css3
+  :font-size 1.4em
+.css4
+  :font-size  1.6em
+  
+
