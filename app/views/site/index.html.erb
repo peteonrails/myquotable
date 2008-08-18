@@ -11,7 +11,7 @@
 
 <% if @quotes.empty? %>
   There are no recent quotes to view. 
-  <%= link_to "Add a quote now", new_user_quote_path(@user) if logged_in? %>
+  <%= link_to "Add a quote now", new_user_quote_path(current_user) if logged_in? %>
   <%= link_to "Log in or Create an Account", login_path unless logged_in? %>
   to get started!
 <% end %>
