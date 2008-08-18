@@ -17,7 +17,11 @@ module ApplicationHelper
     
     
     html += case params[:controller]
-      when "users": get_login_breadcrumb + "quotes -> all (" + @user.quotes.count.to_s + ")"
+      when "users": " " + 
+        case params[:action]
+          when "new": " -> New User "
+          else get_login_breadcrumb + "quotes -> all (" + @user.quotes.count.to_s + ")"
+        end
       when "site": " -> " + 
         case params[:action]
           when "index":   "Most Recent Member Quotes "
