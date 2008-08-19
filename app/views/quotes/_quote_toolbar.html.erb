@@ -3,10 +3,10 @@
 		by <%= link_to @quote.user.login, user_path(@quote.user) %> on <%= @quote.created_at.to_s(:short) %>
 		&nbsp;
 	
-		<%= link_to_function "details", toggle_div("quote_extended_#{@quote.id}")%>
+		<%# link_to_function "details", toggle_div("quote_extended_#{@quote.id}")%>
 	
 		<% if (@quote.user == current_user) %>
-    		/ <%= link_to 'edit', edit_user_quote_path(@quote.user, @quote) %> 
+      <%= link_to 'edit', edit_user_quote_path(@quote.user, @quote) %> 
 			/ <%= link_to('delete', user_quote_path(@quote.user, @quote), :confirm => 'Are you sure?', :method => :delete) %>
 		<% end %>
 	</div>
