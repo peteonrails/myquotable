@@ -1,7 +1,7 @@
 module ActionView
 	module Helpers
 		
-		module JavascriptHelper
+		module JavaScriptHelper
 			
 			# This function can be used to render rjs inline
 			#
@@ -133,6 +133,7 @@ module ActionView
 					js_options['data'] = options[:with].gsub("Form.serialize(this.form)","#{JQUERY_VAR}.param(#{JQUERY_VAR}(this.form).serializeArray())")
 				end
 				
+				js_options['type'] ||= "'post'"
 				if options[:method]
 					if method_option_to_s(options[:method]) == "'put'" || method_option_to_s(options[:method]) == "'delete'"
 						js_options['type'] = "'post'"
@@ -153,7 +154,7 @@ module ActionView
 					end
 					js_options['data'] << "#{request_forgery_protection_token}=' + encodeURIComponent('#{escape_javascript form_authenticity_token}')"
 				end
-			
+				js_options['data'] = "''" if js_options['type'] == "'post'" && js_options['data'].nil?
 				options_for_javascript(js_options.reject {|key, value| value.nil?})
 			end
 			
@@ -168,10 +169,10 @@ module ActionView
 			end
 
 			def build_insertion(insertion)
-				insertion ||= 'html'
+				insertion = insertion ? insertion.to_s.downcase : 'html'
 				insertion = 'append' if insertion == 'bottom'
 				insertion = 'prepend' if insertion == 'top'
-				insertion.downcase
+				insertion
 			end
 
 			def build_observer(klass, name, options = {})
@@ -253,6 +254,11 @@ module ActionView
 		end
 		
 		class JavaScriptElementCollectionProxy < JavaScriptCollectionProxy #:nodoc:\
+			
+			unless const_defined? :JQUERY_VAR
+				JQUERY_VAR = ActionView::Helpers::PrototypeHelper::JQUERY_VAR
+			end
+			
 			def initialize(generator, pattern)
 				super(generator, "#{JQUERY_VAR}(#{pattern.to_json})")
 			end
@@ -354,7 +360,6 @@ module ActionView
 				options.delete(:ghosting)
 				
 				if options[:onUpdate] || options[:url]
-					options[:method] = "post"
 					options[:with] ||= "#{JQUERY_VAR}(this).sortable('serialize',{key:'#{element_id}'})"
 					options[:onUpdate] ||= "function(){" + remote_function(options) + "}"
 				end
@@ -362,7 +367,7 @@ module ActionView
 				options.delete_if { |key, value| PrototypeHelper::AJAX_OPTIONS.include?(key) }
 				options[:update] = options.delete(:onUpdate) if options[:onUpdate]
 				
-				[:items, :axis, :handle, :containment].each do |option|
+				[:axis, :cancel, :containment, :cursor, :handle, :tolerance, :items, :placeholder].each do |option|
 					options[option] = "'#{options[option]}'" if options[option]
 				end
 				
@@ -388,7 +393,9 @@ module ActionView
 				options.delete_if { |key, value| PrototypeHelper::AJAX_OPTIONS.include?(key) }
 
 				options[:accept] = array_or_string_for_javascript(options[:accept]) if options[:accept]    
-				options[:hoverClass] = "'#{options[:hoverClass]}'" if options[:hoverClass]
+				[:activeClass, :hoverClass, :tolerance].each do |option|
+					options[option] = "'#{options[option]}'" if options[option]
+				end
 				
 				%(#{JQUERY_VAR}('#{jquery_id(element_id)}').droppable(#{options_for_javascript(options)});)
 			end
