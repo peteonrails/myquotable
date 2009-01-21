@@ -1,4 +1,4 @@
-class VotesController < ApplicationController
+class FacebookController < ApplicationController
   def index 
   end
 end
