@@ -16,4 +16,6 @@ class ApplicationController < ActionController::Base
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password   
 
+  ensure_application_is_installed_by_facebook_user
+  
 end

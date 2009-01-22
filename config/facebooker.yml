@@ -6,7 +6,7 @@ development:
   api_key: 9e2696286c69eb9d3287a897faf9323c
   secret_key: 356bb3a8c076a67ee40350c75976795f
   canvas_page_name: myquotable
-  callback_url: http://www.myquotable.com/facebook
+  callback_url: http://www.myquotable.com/
   tunnel:
     public_host_username: mmangino
     public_host: cab.elevatedrails.com
@@ -17,7 +17,7 @@ test:
   api_key: 9e2696286c69eb9d3287a897faf9323c
   secret_key: 356bb3a8c076a67ee40350c75976795f
   canvas_page_name: myquotable
-  callback_url: http://www.myquotable.com/facebook
+  callback_url: http://www.myquotable.com/
   tunnel:
     public_host_username: 
     public_host: 
@@ -28,7 +28,7 @@ production:
   api_key: 9e2696286c69eb9d3287a897faf9323c
   secret_key: 356bb3a8c076a67ee40350c75976795f
   canvas_page_name: myquotable
-  callback_url: http://www.myquotable.com/facebook 
+  callback_url: http://www.myquotable.com/
   tunnel:
     public_host_username: 
     public_host: 
