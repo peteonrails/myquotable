@@ -1,3 +1,3 @@
 %fb:fbml
-  %fb:request-form{:action => new_invitation_path, :method => "POST", :invite => "true", :type => "My Quotable", :content => "I added My Quotable!"}
+  %fb:request-form{:action => invitations_path, :method => "POST", :invite => "true", :type => "MyQuotable", :content => "I added My Quotable, the social quoting application for Facebook. Join today and start tagging, sharing, and voting on quotes!"}
     %fb:multi-friend-selector{:showborder => "false", :actiontext => "Invite your friends to use My Quotable."}
