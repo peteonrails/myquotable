@@ -1,9 +1,6 @@
 - tag = h "<fb:req-choice url=\"#{new_invitation_url(:from => @from_user_id, :canvas => true)}\" label=\"Invite Friends\" />"
-
-- content =<<EOC 
-  I added My Quotable, the social quoting application for Facebook. Join today and start tagging, sharing, and voting on quotes!
-  #{tag}
-EOC
+- msg = "I added My Quotable, the social quoting application for Facebook. Join today and start tagging, sharing, and voting on quotes!"
+- content = "#{msg} #{tag}"
 
 %fb:fbml
   %fb:request-form{:action => invitations_path, :method => "POST", :invite => "true", :type => "MyQuotable", :content => content}
