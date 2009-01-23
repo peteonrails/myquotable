@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   acts_as_voter
   has_karma :quotes
 
-  def self.for(facebook_id)
+  def self.for(facebook_id, facebook_session = nil)
     returning find_or_create_by_facebook_id(facebook_id) do |user| 
       user.update_attribute(:session_key, facebook_session.session_key) unless facebook_session.nil? 
     end
