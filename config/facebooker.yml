@@ -8,9 +8,9 @@ development:
   canvas_page_name: myquotable
   callback_url: http://www.myquotable.com/
   tunnel:
-    public_host_username: mmangino
-    public_host: cab.elevatedrails.com
-    public_port: 3002
+    public_host_username: pete
+    public_host: baldr.webhostserver.biz
+    public_port: 9001
     local_port: 3000
 
 test:
