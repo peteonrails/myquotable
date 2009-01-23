@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080722182647) do
+ActiveRecord::Schema.define(:version => 20080720201033) do
 
   create_table "logged_exceptions", :force => true do |t|
     t.string   "exception_class"
@@ -22,14 +22,6 @@ ActiveRecord::Schema.define(:version => 20080722182647) do
     t.datetime "created_at"
   end
 
-  create_table "news", :force => true do |t|
-    t.integer  "user_id",    :limit => 11
-    t.string   "title"
-    t.string   "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "quotes", :force => true do |t|
     t.text     "quote"
     t.text     "author"
@@ -38,19 +30,19 @@ ActiveRecord::Schema.define(:version => 20080722182647) do
     t.text     "author_title"
     t.text     "copyright"
     t.date     "quoted_at"
-    t.integer  "user_id",       :limit => 11
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "private"
   end
 
   create_table "taggings", :force => true do |t|
-    t.integer  "tag_id",        :limit => 11
-    t.integer  "taggable_id",   :limit => 11
+    t.integer  "tag_id"
+    t.integer  "taggable_id"
     t.string   "taggable_type"
     t.string   "context"
     t.datetime "created_at"
-    t.integer  "tagger_id",     :limit => 11
+    t.integer  "tagger_id"
     t.string   "tagger_type"
   end
 
@@ -81,15 +73,15 @@ ActiveRecord::Schema.define(:version => 20080722182647) do
   create_table "votes", :force => true do |t|
     t.boolean  "vote",                        :default => false
     t.string   "voteable_type", :limit => 15, :default => "",    :null => false
-    t.integer  "voteable_id",   :limit => 11, :default => 0,     :null => false
-    t.integer  "voter_id",      :limit => 11, :default => 0,     :null => false
+    t.integer  "voteable_id",                 :default => 0,     :null => false
+    t.integer  "voter_id",                    :default => 0,     :null => false
     t.string   "voter_type",    :limit => 15, :default => "",    :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "votes", ["voteable_id", "voteable_type", "voter_id", "voter_type"], :name => "uniq_voter_voteable", :unique => true
-  add_index "votes", ["voter_id", "voter_type"], :name => "fk_voters"
   add_index "votes", ["voteable_id", "voteable_type"], :name => "fk_voteables"
+  add_index "votes", ["voter_id", "voter_type"], :name => "fk_voters"
 
 end
