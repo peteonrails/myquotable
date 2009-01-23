@@ -18,4 +18,12 @@ class ApplicationController < ActionController::Base
 
   ensure_application_is_installed_by_facebook_user
   
+  attr_accessor :current_user
+  before_filter :create_user
+  helper_attr   :current_user
+    
+  def create_user
+    self.current_user = User.for(facebook_session.user.to_i)
+  end
+  
 end
