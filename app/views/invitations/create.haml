@@ -1,6 +1,6 @@
 %fb:fbml
-  - for user in @sent_to_ids 
-    %fb:profile-pic{:uid => user}
-    %fb:name{:uid => user} 
+  = for user in @sent_to_ids 
+    %fb:profile-pic{:uid => id}
+    %fb:name{:uid => id} 
     %br
   = link_to "Send another invitation", new_invitation_path
