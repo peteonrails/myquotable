@@ -16,6 +16,7 @@ class ApplicationController < ActionController::Base
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
 <<<<<<< HEAD:app/controllers/application.rb
+<<<<<<< HEAD:app/controllers/application.rb
 
   ensure_application_is_installed_by_facebook_user    
 
@@ -27,6 +28,8 @@ class ApplicationController < ActionController::Base
 >>>>>>> c0523ec... Invitations:app/controllers/application.rb
 =======
 >>>>>>> c0523ec... Invitations:app/controllers/application.rb
+=======
+>>>>>>> e22cbdc... Facebook placeholder:app/controllers/application.rb
 =======
 >>>>>>> e22cbdc... Facebook placeholder:app/controllers/application.rb
 end
