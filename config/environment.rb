@@ -70,8 +70,5 @@ Rails::Initializer.run do |config|
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector
   config.active_record.observers = :user_observer
-
-  # For the facebook application
-  config.action_controller.allow_forgery_protection = false 
   
 end
