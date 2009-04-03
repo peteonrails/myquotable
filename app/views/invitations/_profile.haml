@@ -1,5 +1,6 @@
-%a{:href => new_invitation_url(user.to_s,:canvas=>true)}
-  Share quotes with your friends, install MyQuotable 
-%br
-I was sent here by 
-%fb:name{:uid => from}
+%fb:fbml
+  %a{:href => new_invitation_url(user.to_s,:canvas=>true)}
+    Share quotes with your friends, install MyQuotable 
+  %br
+  I was sent here by 
+  %fb:name{:uid => from}
