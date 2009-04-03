@@ -12,8 +12,7 @@ set :deploy_to, "/home/pete/apps/#{application}"
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
 set :scm, :git
-#set :deploy_via, :copy
-set :deploy_via, :remote_cache
+set :deploy_via, :copy
 
 set :use_sudo, false
 set :group_writable, false

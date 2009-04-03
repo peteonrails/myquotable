@@ -1,5 +1,5 @@
 class InvitationsController < ApplicationController
-  layout 'facebook'
+  layout :facebook
   
   def new 
     update_profile if should_update_profile?
