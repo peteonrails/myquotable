@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
 
   def self.for(facebook_id, facebook_session = nil)
     returning find_or_create_by_facebook_id(facebook_id) do |user| 
-      user.store_session(:session_key, facebook_session.session_key) unless facebook_session.nil? 
+      user.update_attribute(:session_key, facebook_session.session_key) unless facebook_session.nil? 
     end
   end
   
