@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password   
 
-  ensure_application_is_installed_by_facebook_user
+  ensure_application_is_installed_by_facebook_user if params[:format] == "facebook"
   
   attr_accessor :current_user
   before_filter :create_user

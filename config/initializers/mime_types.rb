@@ -4,3 +4,4 @@
 # Mime::Type.register "text/richtext", :rtf
 Mime::Type.register_alias "text/javascript", :rjs
 Mime::Type.register_alias "application/rss+xml", :rss
+Mime::Type.register_alias "text/html", :facebook
